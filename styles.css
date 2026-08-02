@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Calibri', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  background: #2D5A5A;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #D4A574;
+}
+
+.hero {
+  background: linear-gradient(rgba(45, 90, 90, 0.7), rgba(45, 90, 90, 0.7)), url('https://via.placeholder.com/1200x600');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Georgia', serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #2D5A5A;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1a3a3a;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: white;
+  color: #2D5A5A;
+  border: 2px solid #2D5A5A;
+}
+
+.btn-secondary:hover {
+  background: #D4A574;
+  color: white;
+  border-color: #D4A574;
+}
+
+.why-choose {
+  padding: 4rem 0;
+  background: white;
+}
+
+.why-choose h2,
+.services h2,
+.transformations h2,
+.meet-groomer h2,
+.faq h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2D5A5A;
+  font-family: 'Georgia', serif;
+}
+
+.cards-grid,
+.services-grid,
+.transformations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card,
+.service-card,
+.transformation {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #D4A574;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover,
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3,
+.service-card h3,
+.transformation h3 {
+  color: #2D5A5A;
+  margin-bottom: 0.5rem;
+  font-family: 'Georgia', serif;
+}
+
+.price {
+  color: #D4A574;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.services {
+  padding: 4rem 0;
+  background: #f8f8f8;
+}
+
+.transformations {
+  padding: 4rem 0;
+  background: white;
+}
+
+.transformations > .container > p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.meet-groomer {
+  padding: 4rem 0;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.meet-groomer h2 {
+  margin-bottom: 1rem;
+}
+
+.meet-groomer > .container > p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.faq {
+  padding: 4rem 0;
+  background: white;
+}
+
+.faq-items {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #2D5A5A;
+}
+
+.faq-item h3 {
+  color: #2D5A5A;
+  margin-bottom: 0.5rem;
+  font-family: 'Georgia', serif;
+}
+
+.faq-item p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.contact {
+  padding: 4rem 0;
+  background: linear-gradient(rgba(45, 90, 90, 0.9), rgba(45, 90, 90, 0.9));
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  color: white;
+}
+
+.contact-info {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+footer {
+  background: #1a3a3a;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
