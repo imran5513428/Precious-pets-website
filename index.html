@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Precious Pets - Premium Dog Grooming</title>
+  <title>Precious Pets - Premium Dog Grooming London</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,7 +22,9 @@
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="cta-link">Book Now</a></li>
     </ul>
   </div>
 </nav>
@@ -30,9 +32,9 @@
 <!-- Hero Section -->
 <section id="home" class="hero">
   <div class="container">
-    <h1>Professional Dog Grooming with a Gentle Touch</h1>
-    <p>From a quick freshen-up to a full spa experience, we'll help your dog look, feel and smell their best.</p>
-    <div class="hero-buttons">
+    <h1 class="fade-up">Professional Dog Grooming with a Gentle Touch</h1>
+    <p class="fade-up" style="animation-delay: 0.1s">From a quick freshen-up to a full spa experience, we'll help your dog look, feel and smell their best.</p>
+    <div class="hero-buttons fade-up" style="animation-delay: 0.2s">
       <button class="btn btn-primary">Book an Appointment</button>
       <button class="btn btn-secondary">View Services</button>
     </div>
@@ -40,150 +42,284 @@
 </section>
 
 <!-- Why Choose Us -->
-<section id="why-us" class="why-choose">
+<section id="about" class="why-choose">
   <div class="container">
-    <h2>Why Choose Precious Pets?</h2>
+    <h2 class="section-title">Why Choose Precious Pets?</h2>
     <div class="cards-grid">
-      <div class="card">
+      <div class="card fade-up">
         <h3>Gentle One-to-One Care</h3>
-        <p>Your dog is our priority</p>
+        <p>Your dog is our priority. Every grooming appointment is tailored to your pet's unique needs and temperament.</p>
       </div>
-      <div class="card">
+      <div class="card fade-up" style="animation-delay: 0.1s">
         <h3>Safe & Hygienic</h3>
-        <p>Clean, safe grooming every visit</p>
+        <p>Clean, safe grooming every visit. We maintain the highest hygiene standards to protect your pet's health.</p>
       </div>
-      <div class="card">
+      <div class="card fade-up" style="animation-delay: 0.2s">
         <h3>Premium Products</h3>
-        <p>Only gentle, pet-safe products</p>
+        <p>Only gentle, pet-safe products. We use professional-grade shampoos and conditioners suited to all coat types.</p>
       </div>
-      <div class="card">
+      <div class="card fade-up" style="animation-delay: 0.3s">
         <h3>Trusted by Pet Owners</h3>
-        <p>Recommended by local families</p>
+        <p>Recommended by local families. Thousands of happy dogs have experienced our professional care.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Services -->
+<!-- Testimonials -->
+<section class="testimonials">
+  <div class="container">
+    <div class="testimonial-card">
+      <div class="quote-mark">"</div>
+      <p class="testimonial-text">Absolutely fantastic service. Teddy actually gets excited when the grooming van arrives.</p>
+      <p class="testimonial-author">Sarah & Teddy</p>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Preview -->
 <section id="services" class="services">
   <div class="container">
-    <h2>Our Grooming Services</h2>
+    <h2 class="section-title">Our Grooming Services</h2>
+    <p class="section-subtitle">Professional care tailored to every dog</p>
     <div class="services-grid">
-      <div class="service-card">
+      <div class="service-card fade-up">
+        <div class="service-icon">🛁</div>
         <h3>Wash & Go</h3>
-        <p>Quick refresh for between grooming</p>
-        <p class="price">From £40</p>
+        <p>A quick refresh to keep your dog clean, comfortable and smelling fresh between grooming appointments.</p>
+        <span class="price">From £40</span>
+        <a href="#services" class="learn-more">Learn More →</a>
       </div>
-      <div class="service-card">
+      <div class="service-card fade-up" style="animation-delay: 0.1s">
+        <div class="service-icon">✨</div>
         <h3>Wash & Tidy</h3>
-        <p>Bath plus finishing touches</p>
-        <p class="price">From £45</p>
+        <p>More than a bath, with gentle finishing touches to keep your dog looking neat and well cared for.</p>
+        <span class="price">From £45</span>
+        <a href="#services" class="learn-more">Learn More →</a>
       </div>
-      <div class="service-card">
+      <div class="service-card fade-up" style="animation-delay: 0.2s">
+        <div class="service-icon">💇</div>
         <h3>Full Groom</h3>
-        <p>Complete professional grooming</p>
-        <p class="price">From £50</p>
+        <p>Complete nose-to-tail grooming with a professional haircut tailored to your dog's breed and lifestyle.</p>
+        <span class="price">From £50</span>
+        <a href="#services" class="learn-more">Learn More →</a>
       </div>
-      <div class="service-card">
+      <div class="service-card fade-up" style="animation-delay: 0.3s">
+        <div class="service-icon">🐶</div>
         <h3>Puppy Groom</h3>
-        <p>Gentle first grooming experience</p>
-        <p class="price">From £35</p>
+        <p>A calm, positive first grooming experience that helps puppies build confidence for future visits.</p>
+        <span class="price">From £35</span>
+        <a href="#services" class="learn-more">Learn More →</a>
       </div>
-      <div class="service-card">
+      <div class="service-card fade-up" style="animation-delay: 0.4s">
+        <div class="service-icon">✂️</div>
         <h3>Nail Clipping</h3>
-        <p>Regular maintenance</p>
-        <p class="price">From £10</p>
+        <p>Regular nail trim helps keep your dog stay comfortable and healthy. Professional care every time.</p>
+        <span class="price">From £10</span>
+        <a href="#services" class="learn-more">Learn More →</a>
       </div>
-      <div class="service-card">
+      <div class="service-card fade-up" style="animation-delay: 0.5s">
+        <div class="service-icon">🎨</div>
         <h3>Hand Stripping</h3>
-        <p>Specialist wire-coat grooming</p>
-        <p class="price">From £55</p>
+        <p>Specialist grooming for wire-coated breeds to maintain their natural texture, colour and coat health.</p>
+        <span class="price">From £55</span>
+        <a href="#services" class="learn-more">Learn More →</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Transformations -->
-<section id="transformations" class="transformations">
+<section id="gallery" class="transformations">
   <div class="container">
-    <h2>Happy Transformations</h2>
-    <p>See how professional grooming makes a difference</p>
+    <h2 class="section-title">Happy Transformations</h2>
+    <p class="section-subtitle">See the difference professional grooming makes</p>
     <div class="transformations-grid">
-      <div class="transformation">
+      <div class="transformation fade-up">
+        <div class="transformation-image"><!-- Bella before/after --></div>
         <h3>Bella</h3>
-        <p>"She came home looking beautiful." ⭐⭐⭐⭐⭐</p>
+        <p class="transformation-testimonial">"She came home looking beautiful."</p>
+        <p class="transformation-pet">Cockapoo</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
       </div>
-      <div class="transformation">
+      <div class="transformation fade-up" style="animation-delay: 0.1s">
+        <div class="transformation-image"><!-- Charlie before/after --></div>
         <h3>Charlie</h3>
-        <p>"He actually enjoys grooming now." ⭐⭐⭐⭐⭐</p>
+        <p class="transformation-testimonial">"He actually enjoys grooming now."</p>
+        <p class="transformation-pet">Golden Retriever</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
       </div>
-      <div class="transformation">
+      <div class="transformation fade-up" style="animation-delay: 0.2s">
+        <div class="transformation-image"><!-- Luna before/after --></div>
         <h3>Luna</h3>
-        <p>"Luna has never looked this tidy..." ⭐⭐⭐⭐⭐</p>
+        <p class="transformation-testimonial">"Luna has never looked this tidy."</p>
+        <p class="transformation-pet">Schnauzer</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Meet Groomer -->
-<section id="about" class="meet-groomer">
+<!-- Meet the Groomer -->
+<section class="meet-groomer">
   <div class="container">
-    <h2>Meet Your Groomer</h2>
-    <p>Hi, I'm Lindsay – Founder of Precious Pets Grooming Spa.</p>
-    <p>I believe every dog deserves patience, respect and lots of love.</p>
+    <div class="groomer-content">
+      <div class="groomer-text fade-up">
+        <h2>Meet Your Groomer</h2>
+        <p>Hi, I'm <strong>Lindsay</strong> – Founder of Precious Pets Grooming Spa.</p>
+        <p>I believe every dog deserves patience, respect and lots of love. That's the foundation of everything we do.</p>
+        <div class="groomer-benefits">
+          <div class="benefit">
+            <h4>✓ Gentle Handling</h4>
+            <p>Patient care built on understanding each dog's unique personality</p>
+          </div>
+          <div class="benefit">
+            <h4>✓ Professional Experience</h4>
+            <p>Years of training and expertise in breed-specific grooming</p>
+          </div>
+          <div class="benefit">
+            <h4>✓ One-to-One Care</h4>
+            <p>Personal attention that reduces stress and builds confidence</p>
+          </div>
+          <div class="benefit">
+            <h4>✓ Mobile Service</h4>
+            <p>Grooming at your home makes your dog more comfortable</p>
+          </div>
+        </div>
+      </div>
+      <div class="groomer-image fade-up" style="animation-delay: 0.2s">
+        <!-- Lindsay professional photo from portfolio -->
+        <div class="image-placeholder">Lindsay Photo</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- FAQ -->
+<!-- FAQ Section -->
 <section id="faq" class="faq">
   <div class="container">
-    <h2>Frequently Asked Questions</h2>
+    <h2 class="section-title">Frequently Asked Questions</h2>
     <div class="faq-items">
       <div class="faq-item">
-        <h3>Can you groom nervous dogs?</h3>
-        <p>Yes. We work patiently and gently to help anxious dogs feel calm and comfortable.</p>
+        <button class="faq-trigger">
+          <span class="faq-question">Can you groom nervous dogs?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p>Yes. We work patiently and gently to help anxious dogs feel calm and comfortable. Every dog is unique, and we tailor our approach to their temperament and needs. Many nervous dogs become more confident over time with our care.</p>
+        </div>
       </div>
+
       <div class="faq-item">
-        <h3>How long does a grooming appointment take?</h3>
-        <p>Appointments typically take 1-3 hours depending on the service.</p>
+        <button class="faq-trigger">
+          <span class="faq-question">How long does a grooming appointment take?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p>Appointments typically take 1–3 hours depending on the service, your dog's size, coat condition and temperament. A simple wash and tidy might take 90 minutes, while a full groom with hand stripping could take 3 hours. We'll give you an exact timeframe when you book.</p>
+        </div>
       </div>
+
       <div class="faq-item">
-        <h3>Do you come to my home?</h3>
-        <p>Yes. We're a mobile grooming service. We come to you across London.</p>
+        <button class="faq-trigger">
+          <span class="faq-question">Do you come to my home?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p>Yes. We're a mobile grooming service. Our purpose-built van comes directly to your home across London. This means your dog stays in familiar surroundings, reducing stress and anxiety.</p>
+        </div>
       </div>
+
       <div class="faq-item">
-        <h3>What should I do before my appointment?</h3>
-        <p>A light meal beforehand is recommended. Make sure your dog has water available.</p>
+        <button class="faq-trigger">
+          <span class="faq-question">What should I do before my appointment?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p>A light meal 2–3 hours beforehand is recommended to keep your dog comfortable. Make sure fresh water is available. If your dog has any skin conditions, allergies or medical concerns, please let us know when booking so we can use appropriate products.</p>
+        </div>
       </div>
+
       <div class="faq-item">
-        <h3>Do you groom puppies?</h3>
-        <p>Yes. We offer gentle, positive first grooming experiences for puppies.</p>
+        <button class="faq-trigger">
+          <span class="faq-question">Do you groom puppies?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p>Yes. We offer gentle, positive first grooming experiences for puppies. Early grooming helps build confidence and makes future appointments stress-free. We keep puppy sessions short and encouraging to create positive associations.</p>
+        </div>
       </div>
+
       <div class="faq-item">
-        <h3>How do I book?</h3>
-        <p>Call us on 07711 057585 or use the booking form below.</p>
+        <button class="faq-trigger">
+          <span class="faq-question">How do I book an appointment?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p>You can book in three ways: call us on <strong>07711 057585</strong> or <strong>07469 212849</strong>, email <strong>preciouuspetslondon@hotmail.com</strong>, or use the booking button below. Our hours are Monday–Saturday, 11:00 AM – 6:30 PM.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact -->
+<!-- Contact & CTA -->
 <section id="contact" class="contact">
   <div class="container">
     <h2>Ready to Pamper Your Furry Friend?</h2>
-    <p>Phone: 07711 057585 | Email: preciouuspetslondon@hotmail.com</p>
-    <button class="btn btn-primary">Book Appointment</button>
+    <p class="contact-intro">Get in touch to book your dog's pampering session</p>
+    
+    <div class="contact-methods">
+      <div class="contact-method">
+        <h4>📞 Phone</h4>
+        <p><a href="tel:07711057585">07711 057585</a></p>
+        <p><a href="tel:07469212849">07469 212849</a></p>
+      </div>
+      <div class="contact-method">
+        <h4>✉️ Email</h4>
+        <p><a href="mailto:preciouuspetslondon@hotmail.com">preciouuspetslondon@hotmail.com</a></p>
+      </div>
+      <div class="contact-method">
+        <h4>⏰ Hours</h4>
+        <p>Monday–Saturday<br>11:00 AM – 6:30 PM</p>
+      </div>
+    </div>
+
+    <button class="btn btn-primary btn-large">Book an Appointment</button>
   </div>
 </section>
 
 <!-- Footer -->
 <footer>
   <div class="container">
-    <p>&copy; 2026 Precious Pets. All rights reserved.</p>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Precious Pets</h4>
+        <p>Premium mobile dog grooming across London</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Trust & Security</h4>
+        <p>✓ Fully Insured<br>✓ Pet First Aid Trained<br>✓ Mobile Service</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Precious Pets. All rights reserved.</p>
+    </div>
   </div>
 </footer>
 
 <script>
+  // Hamburger Menu
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
   
@@ -197,6 +333,57 @@
       hamburger.classList.remove('active');
       navLinks.classList.remove('active');
     });
+  });
+
+  // FAQ Accordion
+  const faqTriggers = document.querySelectorAll('.faq-trigger');
+  
+  faqTriggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const faqItem = trigger.parentElement;
+      const isActive = faqItem.classList.contains('active');
+      
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      if (!isActive) {
+        faqItem.classList.add('active');
+      }
+    });
+  });
+
+  // Smooth Scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Fade-up animation on scroll
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.fade-up').forEach(el => {
+    observer.observe(el);
   });
 </script>
 
