@@ -996,6 +996,47 @@ footer {
   }
 
   .benefit p {
-    font-size: 0.85rem;
+    font-size: 0.85rem;/* ===========================
+   IMAGE OPTIMIZATION
+   =========================== */
+
+.transformation-image,
+.lindsay-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.transformation-image {
+  height: 280px;
+  margin-bottom: 1.5rem;
+}
+
+.lindsay-photo {
+  height: 400px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .transformation-image {
+    height: 220px;
+  }
+
+  .lindsay-photo {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .transformation-image {
+    height: 180px;
+  }
+
+  .lindsay-photo {
+    height: 250px;
+  }
+}
   }
 }
