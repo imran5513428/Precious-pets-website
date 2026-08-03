@@ -9,10 +9,16 @@
 <body>
 
 <!-- Navigation -->
+<!-- Navigation -->
 <nav class="navbar">
   <div class="container">
     <div class="logo">Precious Pets</div>
-    <ul class="nav-links">
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
@@ -21,15 +27,6 @@
     </ul>
   </div>
 </nav>
-
-<!-- Hero Section -->
-<section id="home" class="hero">
-  <div class="container">
-    <h1>Professional Dog Grooming with a Gentle Touch</h1>
-    <p>From a quick freshen-up to a full spa experience, we'll help your dog look, feel and smell their best.</p>
-    <div class="hero-buttons">
-      <button class="btn btn-primary">Book an Appointment</button>
-      <button class="btn btn-secondary">View Services</button>
     </div>
   </div>
 </section>
@@ -162,7 +159,20 @@
 <!-- Footer -->
 <footer>
   <div class="container">
-    <p>&copy; 2026 Precious Pets. All rights reserved.</p>
+    <p>&copy; 2026 Precious Pets. All rights reserved.</p><script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+  
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
+  });
+</script>
   </div>
 </footer>
 
