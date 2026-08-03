@@ -1,4 +1,4 @@
-Kim<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,15 +9,14 @@ Kim<!DOCTYPE html>
 <body>
 
 <!-- Navigation -->
-<!-- Navigation -->
 <nav class="navbar">
   <div class="container">
     <div class="logo">Precious Pets</div>
     <button class="hamburger" id="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -27,6 +26,15 @@ Kim<!DOCTYPE html>
     </ul>
   </div>
 </nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="container">
+    <h1>Professional Dog Grooming with a Gentle Touch</h1>
+    <p>From a quick freshen-up to a full spa experience, we'll help your dog look, feel and smell their best.</p>
+    <div class="hero-buttons">
+      <button class="btn btn-primary">Book an Appointment</button>
+      <button class="btn btn-secondary">View Services</button>
     </div>
   </div>
 </section>
@@ -143,6 +151,18 @@ Kim<!DOCTYPE html>
         <h3>Do you come to my home?</h3>
         <p>Yes. We're a mobile grooming service. We come to you across London.</p>
       </div>
+      <div class="faq-item">
+        <h3>What should I do before my appointment?</h3>
+        <p>A light meal beforehand is recommended. Make sure your dog has water available.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you groom puppies?</h3>
+        <p>Yes. We offer gentle, positive first grooming experiences for puppies.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I book?</h3>
+        <p>Call us on 07711 057585 or use the booking form below.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -159,19 +179,10 @@ Kim<!DOCTYPE html>
 <!-- Footer -->
 <footer>
   <div class="container">
-    <p>&copy; 2026 Precious Pets. All rights reserved.</p><script>
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('navLinks');
-  
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-  
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
-    });
-  });
+    <p>&copy; 2026 Precious Pets. All rights reserved.</p>
+  </div>
+</footer>
+
 <script>
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
@@ -188,8 +199,6 @@ Kim<!DOCTYPE html>
     });
   });
 </script>
-  </div>
-</footer>
 
 </body>
 </html>
