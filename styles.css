@@ -409,11 +409,13 @@ a:hover {
    SECTIONS - SPACING
    =========================== */
 
-.section-title {
+.section-subtitle {
   text-align: center;
-  color: #2D5A5A;
-  margin-bottom: 1.5rem;
-  font-size: 2.8rem;
+  color: #7A7A7A;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 3.5rem;
+  line-height: 1.8;
 }
 
 .section-subtitle {
