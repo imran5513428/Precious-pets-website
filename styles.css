@@ -186,27 +186,8 @@ HAMBURGER MENU - PREMIUM
 }
 
 /* ===========================
-NAVIGATION DRAWER
+SLIDEDOWN ANIMATION
 =========================== */
-
-.nav-drawer {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: #2D5A5A;
-  flex-direction: column;
-  gap: 0;
-  display: none;
-  padding: 0;
-  margin: 0;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  animation: slideDown 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.nav-drawer.active {
-  display: flex;
-}
 
 @keyframes slideDown {
   from {
@@ -219,25 +200,6 @@ NAVIGATION DRAWER
   }
 }
 
-.nav-drawer li {
-  padding: 1rem 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  transition: background 0.2s ease;
-}
-
-.nav-drawer li:hover {
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.nav-drawer li:last-child {
-  border-bottom: none;
-}
-
-.nav-drawer a {
-  display: block;
-  color: white;
-}
-
 /* ===========================
 HERO SECTION - PREMIUM IMPACT WITH IMAGE
 =========================== */
@@ -245,7 +207,8 @@ HERO SECTION - PREMIUM IMPACT WITH IMAGE
 .hero {
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
   color: white;
   padding: 6.5rem 0 5rem;
   text-align: center;
@@ -288,7 +251,8 @@ HERO SECTION - PREMIUM IMPACT WITH IMAGE
   color: rgba(255, 255, 255, 0.95);
   font-size: 1.2rem;
   max-width: 700px;
-  margin: 0 auto 3rem;
+  margin-bottom: 3rem;
+  margin-left: 0;
   line-height: 1.8;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
@@ -898,19 +862,42 @@ MOBILE RESPONSIVE - TABLET (768px)
     display: flex;
   }
 
-  .nav-drawer {
+  .nav-links {
     position: absolute !important;
     top: 100% !important;
     left: 0 !important;
     right: 0 !important;
     background: #2D5A5A !important;
-    flex-direction: column;
-    display: none;
+    flex-direction: column !important;
+    gap: 0 !important;
+    display: none !important;
     padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    animation: slideDown 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   }
 
-  .nav-drawer.active {
+  .nav-links.active {
     display: flex !important;
+  }
+
+  .nav-links li {
+    padding: 1rem 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: background 0.2s ease;
+  }
+
+  .nav-links li:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links a {
+    display: block;
+    color: white;
   }
 
   h1 {
@@ -931,7 +918,8 @@ MOBILE RESPONSIVE - TABLET (768px)
 
   .hero p {
     font-size: 1rem;
-    margin: 0 auto 2rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
     max-width: 90%;
     line-height: 1.9;
   }
