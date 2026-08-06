@@ -280,10 +280,10 @@ a:hover {
 }
 
 .hero p {
-  color: rgba(255,255,255,0.95);
+   color: rgba(255,255,255,0.95);
   font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto 3rem;
+  { max-width:620px;
+    margin:0 0 3rem;
   line-height: 1.8;
   text-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
