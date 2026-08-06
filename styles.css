@@ -303,6 +303,8 @@ a:hover {
     display:flex;
     justify-content:center;
     align-items:center;
+    margin-top:30px;
+}
 }
 
 .hero-image{
