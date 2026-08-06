@@ -8,7 +8,7 @@ no/* ===========================
   box-sizing: border-box;
 }
 
-html {
+html { margin: 0;
   scroll-behavior: smooth;
   scroll-padding-top: 70px;
 }
