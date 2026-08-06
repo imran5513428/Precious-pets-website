@@ -1,4 +1,4 @@
-/* ===========================
+no/* ===========================
    GLOBAL RESET & FOUNDATION
    =========================== */
 
@@ -921,7 +921,7 @@ footer {
     margin-bottom: 1.2rem;
   }
 
-  .her.hero p {
+  .hero p {
     font-size: 1rem;
     margin: 0 auto 2rem;
     max-width: 90%;
