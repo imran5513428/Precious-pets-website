@@ -270,7 +270,9 @@ a:hover {
     position:relative;
     z-index:2;
 }
-
+.hero-text {
+  text-align: left;
+}
 .hero h1 {
   color: white;
   margin-bottom: 1.5rem;
