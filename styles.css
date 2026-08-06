@@ -1,4 +1,4 @@
-no/* ===========================
+ino/* ===========================
    GLOBAL RESET & FOUNDATION
    =========================== */
 
@@ -461,10 +461,9 @@ a:hover {
 
 /* TESTIMONIALS */
 .testimonials {
-  padding: 5rem 0;
+  padding: 3.5rem 0 5rem;
   background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
 }
-
 .testimonial-card {
   max-width: 600px;
   margin: 0 auto;
