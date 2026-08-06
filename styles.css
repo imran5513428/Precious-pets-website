@@ -921,10 +921,12 @@ footer {
     margin-bottom: 1.2rem;
   }
 
-  .hero p {
+  .her.hero p {
     font-size: 1rem;
-    margin-bottom: 2rem;
-  }
+    margin: 0 auto 2rem;
+    max-width: 90%;
+    line-height: 1.9;
+}
 
   .hero-buttons {
     flex-direction: column;
