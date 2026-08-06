@@ -293,6 +293,8 @@ a:hover {
   gap: 1.5rem;
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+
 .hero-grid{
     display:grid;
     grid-template-columns:1.1fr 0.9fr;
