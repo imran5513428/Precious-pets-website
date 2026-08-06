@@ -1,6 +1,6 @@
-ino/* ===========================
-   GLOBAL RESET & FOUNDATION
-   =========================== */
+/* ===========================
+GLOBAL RESET & FOUNDATION
+=========================== */
 
 * {
   margin: 0;
@@ -8,13 +8,12 @@ ino/* ===========================
   box-sizing: border-box;
 }
 
-html { margin: 0;
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 70px;
 }
 
 body {
-   margin: 0;
   font-family: 'Calibri', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.7;
   color: #333;
@@ -29,8 +28,8 @@ body {
 }
 
 /* ===========================
-   TYPOGRAPHY
-   =========================== */
+TYPOGRAPHY
+=========================== */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Georgia', serif;
@@ -77,8 +76,8 @@ a:hover {
 }
 
 /* ===========================
-   NAVBAR - PREMIUM STICKY
-   =========================== */
+NAVBAR - PREMIUM STICKY
+=========================== */
 
 .navbar {
   background: #2D5A5A;
@@ -87,7 +86,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   transition: padding 0.3s ease;
 }
 
@@ -151,8 +150,8 @@ a:hover {
 }
 
 /* ===========================
-   HAMBURGER MENU - PREMIUM
-   =========================== */
+HAMBURGER MENU - PREMIUM
+=========================== */
 
 .hamburger {
   display: none;
@@ -170,7 +169,7 @@ a:hover {
   height: 3px;
   background: white;
   border-radius: 2px;
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .hamburger.active span:nth-child(1) {
@@ -187,10 +186,10 @@ a:hover {
 }
 
 /* ===========================
-   NAVIGATION DRAWER
-   =========================== */
+NAVIGATION DRAWER
+=========================== */
 
-.nav-links {
+.nav-drawer {
   position: absolute;
   top: 100%;
   left: 0;
@@ -201,11 +200,11 @@ a:hover {
   display: none;
   padding: 0;
   margin: 0;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  animation: slideDown 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  animation: slideDown 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.nav-links.active {
+.nav-drawer.active {
   display: flex;
 }
 
@@ -220,28 +219,28 @@ a:hover {
   }
 }
 
-.nav-links li {
+.nav-drawer li {
   padding: 1rem 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transition: background 0.2s ease;
 }
 
-.nav-links li:hover {
-  background: rgba(255,255,255,0.08);
+.nav-drawer li:hover {
+  background: rgba(255, 255, 255, 0.08);
 }
 
-.nav-links li:last-child {
+.nav-drawer li:last-child {
   border-bottom: none;
 }
 
-.nav-links a {
+.nav-drawer a {
   display: block;
   color: white;
 }
 
 /* ===========================
-   HERO SECTION - PREMIUM IMPACT WITH IMAGE
-   =========================== */
+HERO SECTION - PREMIUM IMPACT WITH IMAGE
+=========================== */
 
 .hero {
   background-size: cover;
@@ -266,26 +265,32 @@ a:hover {
   z-index: 1;
 }
 
-.hero-grid{
-    position:relative;
-    z-index:2;
+.hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 60px;
 }
+
 .hero-text {
   text-align: left;
 }
+
 .hero h1 {
   color: white;
   margin-bottom: 1.5rem;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero p {
-   color: rgba(255,255,255,0.95);
+  color: rgba(255, 255, 255, 0.95);
   font-size: 1.2rem;
-  { max-width:620px;
-    margin:0 0 3rem;
+  max-width: 700px;
+  margin: 0 auto 3rem;
   line-height: 1.8;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero-buttons {
@@ -295,48 +300,24 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.hero-grid{
-    display:grid;
-    grid-template-columns:1.1fr 0.9fr;
-    align-items:center;
-    gap:60px;
+.hero-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
-.hero-image-wrapper{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin-top:30px;
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 24px;
+  display: block;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
 }
 
-.hero-image{
-    width:100%;
-    max-width:500px;
-    border-radius:24px;
-    display:block;
-    box-shadow:0 20px 50px rgba(0,0,0,.18);
-}
-
-@media(max-width:768px){
-
-.hero-grid{
-    grid-template-columns:1fr;
-    gap:30px;
-}
-
-.hero-image-wrapper{
-    order:-1;
-}
-
-.hero-image{
-    max-width:360px;
-    margin:auto;
-}
-
-}
 /* ===========================
-   BUTTONS - PREMIUM
-   =========================== */
+BUTTONS - PREMIUM
+=========================== */
 
 .btn {
   padding: 1.1rem 2.8rem;
@@ -344,12 +325,12 @@ a:hover {
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   text-decoration: none;
   display: inline-block;
   font-weight: 600;
   letter-spacing: 0.3px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary {
@@ -384,8 +365,8 @@ a:hover {
 }
 
 /* ===========================
-   ANIMATIONS
-   =========================== */
+ANIMATIONS
+=========================== */
 
 @keyframes fadeUp {
   from {
@@ -400,27 +381,36 @@ a:hover {
 
 .fade-up {
   opacity: 0;
-  animation: fadeUp 0.6s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+  animation: fadeUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 .fade-up.visible {
-  animation: fadeUp 0.6s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+  animation: fadeUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 /* ===========================
-   SECTIONS - SPACING
-   =========================== */
+SECTIONS - SPACING
+=========================== */
+
+.section-title {
+  text-align: center;
+  color: #2D5A5A;
+  margin-bottom: 1.5rem;
+  font-size: 2.8rem;
+}
 
 .section-subtitle {
   text-align: center;
-  color: #7A7A7A;
-  font-size: 1rem;
-  font-weight: 400;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 3.5rem;
   line-height: 1.8;
-  margin-bottom: 2rem;
 }
 
-/* WHY CHOOSE US */
+/* ===========================
+WHY CHOOSE US
+=========================== */
+
 .why-choose {
   padding: 6rem 0;
   background: white;
@@ -433,16 +423,17 @@ a:hover {
 }
 
 .card {
-  background: #fff;
-  padding: 2.5rem;
-  border-radius: 16px;
-  border-top: 4px solid #D4A574;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  transition: all 0.35s ease;
+  background: white;
+  padding: 2.2rem;
+  border-radius: 8px;
+  border-left: 5px solid #D4A574;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {
@@ -455,18 +446,22 @@ a:hover {
   line-height: 1.8;
 }
 
-/* TESTIMONIALS */
+/* ===========================
+TESTIMONIALS
+=========================== */
+
 .testimonials {
-  padding: 4rem 0;
+  padding: 5rem 0;
   background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
 }
+
 .testimonial-card {
   max-width: 600px;
   margin: 0 auto;
   background: white;
   padding: 3rem;
   border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -497,7 +492,10 @@ a:hover {
   letter-spacing: 2px;
 }
 
-/* SERVICES */
+/* ===========================
+SERVICES
+=========================== */
+
 .services {
   padding: 6rem 0;
   background: white;
@@ -514,8 +512,8 @@ a:hover {
   padding: 2.5rem;
   border-radius: 8px;
   border-top: 4px solid #D4A574;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   display: flex;
   flex-direction: column;
 }
@@ -523,7 +521,7 @@ a:hover {
 .service-card:hover {
   transform: translateY(-12px);
   background: white;
-  box-shadow: 0 16px 32px rgba(0,0,0,0.12);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
 }
 
 .service-icon {
@@ -561,7 +559,10 @@ a:hover {
   transform: translateX(5px);
 }
 
-/* TRANSFORMATIONS WITH IMAGES */
+/* ===========================
+TRANSFORMATIONS WITH IMAGES
+=========================== */
+
 .transformations {
   padding: 6rem 0;
   background: linear-gradient(to bottom, #f5f5f5 0%, white 50%, #f5f5f5 100%);
@@ -578,13 +579,13 @@ a:hover {
   padding: 0;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .transformation:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
 .transformation-image {
@@ -626,7 +627,10 @@ a:hover {
   padding-bottom: 1.5rem;
 }
 
-/* MEET THE GROOMER WITH IMAGE */
+/* ===========================
+MEET THE GROOMER WITH IMAGE
+=========================== */
+
 .meet-groomer {
   padding: 6rem 0;
   background: white;
@@ -691,7 +695,7 @@ a:hover {
   height: 400px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .lindsay-photo {
@@ -701,7 +705,10 @@ a:hover {
   display: block;
 }
 
-/* FAQ SECTION */
+/* ===========================
+FAQ SECTION
+=========================== */
+
 .faq {
   padding: 6rem 0;
   background: linear-gradient(to bottom, white 0%, #f9f9f9 100%);
@@ -718,12 +725,12 @@ a:hover {
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
 
 .faq-item.active {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 .faq-trigger {
@@ -769,7 +776,7 @@ a:hover {
 .faq-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: max-height 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .faq-item.active .faq-content {
@@ -782,7 +789,10 @@ a:hover {
   line-height: 1.8;
 }
 
-/* CONTACT SECTION */
+/* ===========================
+CONTACT SECTION
+=========================== */
+
 .contact {
   padding: 6rem 0;
   background: linear-gradient(135deg, #2D5A5A 0%, #3d7a7a 100%);
@@ -796,7 +806,7 @@ a:hover {
 }
 
 .contact-intro {
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1.1rem;
   margin-bottom: 3rem;
 }
@@ -809,7 +819,7 @@ a:hover {
 }
 
 .contact-method {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   padding: 2rem;
   border-radius: 8px;
   backdrop-filter: blur(10px);
@@ -835,7 +845,10 @@ a:hover {
   color: white;
 }
 
-/* FOOTER */
+/* ===========================
+FOOTER
+=========================== */
+
 footer {
   background: #1a3a3a;
   color: white;
@@ -855,7 +868,7 @@ footer {
 }
 
 .footer-section p, .footer-section a {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.95rem;
   line-height: 1.7;
 }
@@ -871,21 +884,21 @@ footer {
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  color: rgba(255,255,255,0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 0.9rem;
 }
 
 /* ===========================
-   MOBILE RESPONSIVE
-   =========================== */
+MOBILE RESPONSIVE - TABLET (768px)
+=========================== */
 
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
 
-  .nav-links {
+  .nav-drawer {
     position: absolute !important;
     top: 100% !important;
     left: 0 !important;
@@ -896,7 +909,7 @@ footer {
     padding: 0 !important;
   }
 
-  .nav-links.active {
+  .nav-drawer.active {
     display: flex !important;
   }
 
@@ -921,11 +934,25 @@ footer {
     margin: 0 auto 2rem;
     max-width: 90%;
     line-height: 1.9;
-}
+  }
 
   .hero-buttons {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .hero-image-wrapper {
+    order: -1;
+  }
+
+  .hero-image {
+    max-width: 360px;
+    margin: auto;
   }
 
   .btn {
@@ -981,6 +1008,10 @@ footer {
     height: 300px;
   }
 }
+
+/* ===========================
+MOBILE RESPONSIVE - PHONE (480px)
+=========================== */
 
 @media (max-width: 480px) {
   .navbar {
