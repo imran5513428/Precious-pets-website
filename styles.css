@@ -414,16 +414,8 @@ a:hover {
   color: #7A7A7A;
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 2.3rem;
   line-height: 1.8;
-}
-
-.section-subtitle {
-  text-align: center;
-  color: #666;
-  font-size: 1.1rem;
-  margin-bottom: 3.5rem;
-  line-height: 1.8;
+  margin-bottom: 2rem;
 }
 
 /* WHY CHOOSE US */
