@@ -268,13 +268,6 @@ HERO SECTION - PREMIUM IMPACT WITH IMAGE
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-}
-
-.hero-image-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 0;
 }
 
