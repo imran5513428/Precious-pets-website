@@ -198,7 +198,7 @@ SLIDEDOWN ANIMATION
     opacity: 1;
     transform: translateY(0);
   }
-}
+
 
 /* ===========================
 HERO SECTION - PREMIUM IMPACT WITH IMAGE
@@ -342,7 +342,7 @@ ANIMATIONS
     opacity: 1;
     transform: translateY(0);
   }
-}
+
 
 .fade-up {
   opacity: 0;
