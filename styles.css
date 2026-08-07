@@ -271,6 +271,14 @@ HERO SECTION - PREMIUM IMPACT WITH IMAGE
   margin-top: 0;
 }
 
+.hero-image {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
 
 /* ===========================
 BUTTONS - PREMIUM
