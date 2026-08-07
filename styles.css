@@ -960,8 +960,8 @@ MOBILE RESPONSIVE - TABLET (768px)
   }
 
   .groomer-image {
-    height: 300px;
-  }
+  height: auto;
+}
 
   .groomer-benefits {
     grid-template-columns: 1fr;
