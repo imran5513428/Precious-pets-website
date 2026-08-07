@@ -356,7 +356,6 @@ SECTIONS - SPACING
   margin-bottom: 0.8rem;
   line-height: 1.2;
 }
-}
 
 .section-subtitle {
   text-align: center;
@@ -365,7 +364,6 @@ SECTIONS - SPACING
   line-height: 1.7;
   max-width: 700px;
   margin: 0 auto 3rem;
-}
 }
 
 /* ===========================
