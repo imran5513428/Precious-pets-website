@@ -359,16 +359,20 @@ SECTIONS - SPACING
 .section-title {
   text-align: center;
   color: #2D5A5A;
-  margin-bottom: 1.5rem;
   font-size: 2.8rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+}
 }
 
 .section-subtitle {
   text-align: center;
   color: #666;
   font-size: 1.1rem;
-  margin-bottom: 3.5rem;
-  line-height: 1.8;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
 }
 
 /* ===========================
