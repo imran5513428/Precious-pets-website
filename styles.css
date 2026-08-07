@@ -476,7 +476,7 @@ SERVICES
 
 .service-card {
   background: #f9f9f9;
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 8px;
   border-top: 4px solid #D4A574;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
