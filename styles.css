@@ -38,13 +38,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3.5rem;
-  line-height: 1.15;
+  font-size: 3.2rem;
+  line-height: 1.2;
   margin-bottom: 1.5rem;
 }
 
 h2 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -211,7 +211,7 @@ HERO SECTION - PREMIUM IMPACT WITH IMAGE
   background-attachment: scroll;
   background-repeat: no-repeat;
   color: white;
-  padding: 6.5rem 0 5rem;
+  padding: 5rem 0 4rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -381,7 +381,7 @@ WHY CHOOSE US
 =========================== */
 
 .why-choose {
-  padding: 5rem 0;
+  padding: 4rem 0;
   background: white;
 }
 
@@ -465,7 +465,7 @@ SERVICES
 =========================== */
 
 .services {
-  padding: 5rem 0;
+  padding: 4rem 0;
   background: white;
 }
 
@@ -532,7 +532,7 @@ TRANSFORMATIONS WITH IMAGES
 =========================== */
 
 .transformations {
-  padding: 5rem 0;
+  padding: 4rem 0;
   background: linear-gradient(to bottom, #f5f5f5 0%, white 50%, #f5f5f5 100%);
 }
 
@@ -600,7 +600,7 @@ MEET THE GROOMER WITH IMAGE
 =========================== */
 
 .meet-groomer {
-  padding: 5rem 0;
+  padding: 4rem 0;
   background: white;
 }
 
@@ -678,7 +678,7 @@ FAQ SECTION
 =========================== */
 
 .faq {
-  padding: 5rem 0;
+  padding: 4rem 0;
   background: linear-gradient(to bottom, white 0%, #f9f9f9 100%);
 }
 
@@ -762,7 +762,7 @@ CONTACT SECTION
 =========================== */
 
 .contact {
-  padding: 5rem 0;
+  padding: 4rem 0;
   background: linear-gradient(135deg, #2D5A5A 0%, #3d7a7a 100%);
   color: white;
   text-align: center;
@@ -1052,10 +1052,10 @@ MOBILE RESPONSIVE - PHONE (480px)
   }
 
   .card,
-  .service-card,
-  .transformation,
-  .faq-item {
-    padding: 1.5rem;
+.service-card,
+.faq-item {
+ padding:1.5rem;
+
   }
 
   .groomer-benefits {
@@ -1075,9 +1075,3 @@ MOBILE RESPONSIVE - PHONE (480px)
   }
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  align-items: center;
-  gap: 60px;
-}
