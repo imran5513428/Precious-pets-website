@@ -671,8 +671,8 @@ MEET THE GROOMER WITH IMAGE
   width: 100%;
   height: auto;
   display: block;
-  object-fit: contain;
-
+  border-radius: 8px;
+}
 }
 
 /* ===========================
