@@ -427,12 +427,11 @@ TESTIMONIALS
   max-width: 600px;
   margin: 0 auto;
   background: white;
-  padding: 3rem;
+  padding: 2.2rem;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
 .quote-mark {
   font-size: 4rem;
   color: #D4A574;
