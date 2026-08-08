@@ -1575,7 +1575,128 @@ SERVICE PAGE — SMALL PHONE
   .service-highlight-box {
     padding: 1.8rem;
   }
+/* ===========================
+   ABOUT PAGE — HERO
+=========================== */
+
+.about-page-hero {
+  background: linear-gradient(135deg, #f7f4ef 0%, #ffffff 100%);
+  padding: 4.5rem 0;
+  overflow: hidden;
 }
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.about-hero-content {
+  max-width: 560px;
+}
+
+.about-hero-content h1 {
+  color: #2D5A5A;
+  font-size: 3.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.4rem;
+}
+
+.about-hero-lead {
+  color: #555;
+  font-size: 1.15rem;
+  line-height: 1.85;
+  margin-bottom: 1.2rem;
+}
+
+.about-hero-content > p:not(.service-eyebrow) {
+  color: #666;
+  line-height: 1.85;
+  margin-bottom: 2rem;
+}
+
+.about-hero-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  background: #f5f5f5;
+}
+
+.about-hero-image img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+}
+/* ===========================
+   ABOUT HERO — TABLET
+=========================== */
+
+@media (max-width: 900px) {
+
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-hero-content {
+    max-width: 760px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .about-hero-image {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+
+
+/* ===========================
+   ABOUT HERO — MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+  .about-page-hero {
+    padding: 3.5rem 0;
+  }
+
+  .about-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-hero-lead {
+    font-size: 1.05rem;
+  }
+
+  .about-hero-image img {
+    aspect-ratio: 4 / 5;
+  }
+
+
+
+/* ===========================
+   ABOUT HERO — SMALL PHONE
+=========================== */
+
+@media (max-width: 480px) {
+
+  .about-page-hero {
+    padding: 3rem 0;
+  }
+
+  .about-hero-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .about-hero-lead {
+    font-size: 1rem;
+  }
+
   .benefit {
     padding: 1rem;
   }
