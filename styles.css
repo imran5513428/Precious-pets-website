@@ -1058,6 +1058,7 @@ MOBILE RESPONSIVE - PHONE (480px)
   .groomer-benefits {
     gap: 1rem;
   }
+}
 /* =========================================================
    SERVICE PAGES — PREMIUM SERVICE DETAIL LAYOUT
    Wash & Go + future service pages
@@ -1575,6 +1576,7 @@ SERVICE PAGE — SMALL PHONE
   .service-highlight-box {
     padding: 1.8rem;
   }
+}
 /* ===========================
    ABOUT PAGE — HERO
 =========================== */
@@ -1676,7 +1678,7 @@ SERVICE PAGE — SMALL PHONE
   .about-hero-image img {
     aspect-ratio: 4 / 5;
   }
-
+}
 
 
 /* ===========================
@@ -1696,7 +1698,7 @@ SERVICE PAGE — SMALL PHONE
   .about-hero-lead {
     font-size: 1rem;
   }
-
+}
   .benefit {
     padding: 1rem;
   }
