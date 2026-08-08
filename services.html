@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dog Grooming Services | Precious Pets Grooming Spa</title>
+
+  <meta
+    name="description"
+    content="Explore dog grooming services from Precious Pets Grooming Spa, including Wash & Go, Wash & Tidy, Full Groom and specialist grooming options."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ===========================
+       NAVIGATION
+  =========================== -->
+
+  <nav class="navbar">
+
+    <div class="container">
+
+      <div class="logo">Precious Pets</div>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="about.html">About</a>
+        </li>
+
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+
+        <li>
+          <a href="gallery.html">Gallery</a>
+        </li>
+
+        <li>
+          <a href="faq.html">FAQ</a>
+        </li>
+
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+
+        <li>
+          <a href="contact.html" class="cta-link">Book Now</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+
+  <!-- ===========================
+       SERVICES HERO
+  =========================== -->
+
+  <section class="services-page-hero">
+
+    <div class="container">
+
+      <div class="services-hero-content">
+
+        <p class="service-eyebrow">
+          OUR GROOMING SERVICES
+        </p>
+
+        <h1>
+          Grooming tailored to your dog.
+        </h1>
+
+        <p class="services-hero-lead">
+          From a simple wash to a complete groom, every service is designed
+          around your dog's coat, comfort and individual grooming needs.
+        </p>
+
+        <p>
+          Take a look through the options below to find the service that
+          feels right for your dog.
+        </p>
+
+        <a href="contact.html" class="btn btn-primary">
+          Book Your Dog's Grooming
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ===========================
+       JAVASCRIPT
+  =========================== -->
+
+  <script>
+
+    // Hamburger Menu
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+
+      const isOpen = hamburger.classList.toggle('active');
+
+      navLinks.classList.toggle('active');
+
+      hamburger.setAttribute(
+        'aria-expanded',
+        isOpen ? 'true' : 'false'
+      );
+
+    });
+
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+
+      link.addEventListener('click', () => {
+
+        hamburger.classList.remove('active');
+
+        navLinks.classList.remove('active');
+
+        hamburger.setAttribute(
+          'aria-expanded',
+          'false'
+        );
+
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
