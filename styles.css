@@ -2812,3 +2812,43 @@ body.gallery-page-body .gallery-cta p:not(.service-eyebrow) {
     margin-top: 1rem;
   }
 }
+/* =========================================================
+   HOMEPAGE — TRANSFORMATION IMAGE CROPPING FIX
+   Keeps Bella unchanged and properly positions the other
+   transformation images.
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Bella — keep current successful framing */
+  .transformations-grid .transformation:nth-child(1) .transformation-image {
+    object-position: center top;
+  }
+
+  /* Luna — move image crop downward to keep the dog visible */
+  .transformations-grid .transformation:nth-child(2) .transformation-image {
+    object-position: center bottom;
+  }
+
+  /* Third transformation — keep lower subject visible */
+  .transformations-grid .transformation:nth-child(3) .transformation-image {
+    object-position: center bottom;
+  }
+}
+
+
+/* Small phones — slightly finer positioning */
+@media (max-width: 480px) {
+
+  .transformations-grid .transformation:nth-child(1) .transformation-image {
+    object-position: center top;
+  }
+
+  .transformations-grid .transformation:nth-child(2) .transformation-image {
+    object-position: center 75%;
+  }
+
+  .transformations-grid .transformation:nth-child(3) .transformation-image {
+    object-position: center 75%;
+  }
+}
