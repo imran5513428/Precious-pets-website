@@ -1,4 +1,4 @@
-/* ===========================
+yup to/* ===========================
 GLOBAL RESET & FOUNDATION
 =========================== */
 
@@ -2850,5 +2850,462 @@ body.gallery-page-body .gallery-cta p:not(.service-eyebrow) {
 
   .transformations-grid .transformation:nth-child(3) .transformation-image {
     object-position: center 75%;
+  }
+}
+/* =========================================================
+   CONTACT PAGE — FINAL LAYOUT & STYLE FIX
+   Targets ONLY contact.html
+========================================================= */
+
+/* ===========================
+   CONTACT HERO
+=========================== */
+
+body.contact-page-body .service-page-hero {
+  background: linear-gradient(135deg, #f7f4ef 0%, #ffffff 100%);
+  padding: 4.5rem 0;
+  overflow: hidden;
+}
+
+body.contact-page-body .service-hero-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+body.contact-page-body .service-hero-content {
+  max-width: 560px;
+}
+
+body.contact-page-body .service-hero-content h1 {
+  color: #2D5A5A;
+  font-size: 3.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+body.contact-page-body .service-hero-lead {
+  color: #555;
+  font-size: 1.15rem;
+  line-height: 1.85;
+  margin-bottom: 1.2rem;
+}
+
+body.contact-page-body .service-hero-content > p:not(.service-eyebrow) {
+  color: #666;
+  line-height: 1.85;
+  margin-bottom: 2rem;
+}
+
+body.contact-page-body .service-hero-image {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  background: #f5f5f5;
+}
+
+body.contact-page-body .service-hero-image img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+
+/* ===========================
+   CONTACT DETAILS / METHODS
+=========================== */
+
+body.contact-page-body .service-overview {
+  padding: 4rem 0;
+  background: #ffffff;
+}
+
+body.contact-page-body .service-overview .service-section-heading {
+  max-width: 760px;
+  margin: 0 auto 2.8rem;
+  text-align: center;
+}
+
+body.contact-page-body .service-overview .service-section-heading h2 {
+  color: #2D5A5A;
+  margin-bottom: 1rem;
+}
+
+body.contact-page-body .service-overview .service-section-heading > p:last-child {
+  color: #666;
+  line-height: 1.8;
+}
+
+
+/* Contact cards */
+
+body.contact-page-body .service-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+body.contact-page-body .service-feature-card {
+  background: #ffffff;
+  padding: 2rem;
+  min-height: 280px;
+  border-radius: 8px;
+  border-top: 3px solid #D4A574;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.07);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+body.contact-page-body .service-feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+body.contact-page-body .service-feature-number {
+  display: block;
+  color: #D4A574;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+}
+
+body.contact-page-body .service-feature-card h3 {
+  color: #2D5A5A;
+  margin-bottom: 0.8rem;
+}
+
+body.contact-page-body .service-feature-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+body.contact-page-body .service-feature-card a {
+  color: #2D5A5A;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+body.contact-page-body .service-feature-card a:hover {
+  color: #D4A574;
+}
+
+
+/* ===========================
+   BEFORE YOU BOOK
+=========================== */
+
+body.contact-page-body .service-details {
+  padding: 4rem 0;
+  background: #f7f7f7;
+}
+
+body.contact-page-body .service-details .service-two-column {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+body.contact-page-body .service-details-content {
+  max-width: 700px;
+}
+
+body.contact-page-body .service-details-content h2 {
+  color: #2D5A5A;
+  margin-bottom: 1.5rem;
+}
+
+body.contact-page-body .service-details-content p:not(.service-eyebrow) {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+
+/* Highlight box */
+
+body.contact-page-body .service-highlight {
+  background: #2D5A5A;
+  color: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(45, 90, 90, 0.18);
+}
+
+body.contact-page-body .service-highlight .highlight-icon {
+  display: block;
+  color: #D4A574;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+body.contact-page-body .service-highlight h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+body.contact-page-body .service-highlight p {
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.8;
+}
+
+
+/* ===========================
+   BOOKING PROCESS
+=========================== */
+
+body.contact-page-body .service-process {
+  padding: 4rem 0;
+  background: #ffffff;
+}
+
+body.contact-page-body .service-process .service-section-heading {
+  max-width: 760px;
+  margin: 0 auto 2.8rem;
+  text-align: center;
+}
+
+body.contact-page-body .service-process .service-section-heading h2 {
+  color: #2D5A5A;
+  margin-bottom: 1rem;
+}
+
+body.contact-page-body .service-process .service-section-heading > p:last-child {
+  color: #666;
+  line-height: 1.8;
+}
+
+body.contact-page-body .service-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+body.contact-page-body .service-process-step {
+  position: relative;
+  background: #f8f8f8;
+  padding: 2rem;
+  border-radius: 8px;
+  border-top: 3px solid #D4A574;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+body.contact-page-body .service-process-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+body.contact-page-body .service-step-number {
+  display: block;
+  color: #D4A574;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+}
+
+body.contact-page-body .service-process-step h3 {
+  color: #2D5A5A;
+  margin-bottom: 0.8rem;
+}
+
+body.contact-page-body .service-process-step p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+
+/* ===========================
+   FINAL CONTACT CTA
+=========================== */
+
+body.contact-page-body .service-cta {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #2D5A5A 0%, #3d7a7a 100%);
+  color: white;
+  text-align: center;
+}
+
+body.contact-page-body .service-cta .container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+body.contact-page-body .service-cta h2 {
+  color: white;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+}
+
+body.contact-page-body .service-cta p:not(.service-eyebrow) {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+body.contact-page-body .service-cta .hero-buttons {
+  justify-content: center;
+}
+
+
+/* =========================================================
+   CONTACT PAGE — TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  body.contact-page-body .service-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  body.contact-page-body .service-hero-content {
+    max-width: 760px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  body.contact-page-body .service-hero-image {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  body.contact-page-body .service-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  body.contact-page-body .service-details .service-two-column {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  body.contact-page-body .service-details-content {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  body.contact-page-body .service-highlight {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  body.contact-page-body .service-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================================
+   CONTACT PAGE — MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  body.contact-page-body .service-page-hero {
+    padding: 3.5rem 0;
+  }
+
+  body.contact-page-body .service-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  body.contact-page-body .service-hero-lead {
+    font-size: 1.05rem;
+  }
+
+  body.contact-page-body .service-hero-image img {
+    aspect-ratio: 4 / 5;
+  }
+
+  body.contact-page-body .service-overview,
+  body.contact-page-body .service-details,
+  body.contact-page-body .service-process,
+  body.contact-page-body .service-cta {
+    padding: 3.5rem 0;
+  }
+
+  body.contact-page-body .service-features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  body.contact-page-body .service-feature-card {
+    min-height: auto;
+  }
+
+  body.contact-page-body .service-process-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  body.contact-page-body .service-highlight {
+    padding: 2.2rem;
+  }
+
+  body.contact-page-body .service-cta .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  body.contact-page-body .service-cta .btn {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   CONTACT PAGE — SMALL PHONE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  body.contact-page-body .service-page-hero {
+    padding: 3rem 0;
+  }
+
+  body.contact-page-body .service-hero-content h1 {
+    font-size: 2.1rem;
+  }
+
+  body.contact-page-body .service-hero-lead {
+    font-size: 1rem;
+  }
+
+  body.contact-page-body .service-overview,
+  body.contact-page-body .service-details,
+  body.contact-page-body .service-process {
+    padding: 2.8rem 0;
+  }
+
+  body.contact-page-body .service-feature-card,
+  body.contact-page-body .service-process-step {
+    padding: 1.6rem;
+  }
+
+  body.contact-page-body .service-highlight {
+    padding: 1.8rem;
+  }
+
+  body.contact-page-body .service-cta {
+    padding: 3.5rem 0;
+  }
+
+  body.contact-page-body .service-cta h2 {
+    font-size: 1.7rem;
   }
 }
