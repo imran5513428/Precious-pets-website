@@ -2597,3 +2597,218 @@ body.gallery-page-body .gallery-cta p:not(.service-eyebrow) {
   }
 
 }
+/* =========================================================
+   HOMEPAGE — FINAL UX/UI SPACING & POLISH
+   Controlled override — does not change page structure
+========================================================= */
+
+/* ---------------------------
+   HOMEPAGE SECTION SPACING
+--------------------------- */
+
+.why-choose {
+  padding: 2.5rem 0 3rem;
+}
+
+.testimonials {
+  padding: 2.5rem 0 3rem;
+}
+
+.services {
+  padding: 2.5rem 0 3rem;
+}
+
+.transformations {
+  padding: 2.5rem 0 3rem;
+}
+
+.meet-groomer {
+  padding: 2.5rem 0 2rem;
+}
+
+.faq {
+  padding: 2rem 0 3.5rem;
+}
+
+.contact {
+  padding: 2.8rem 0;
+}
+
+
+/* ---------------------------
+   HOMEPAGE SECTION HEADINGS
+--------------------------- */
+
+.why-choose .section-title,
+.testimonials .section-title,
+.services .section-title,
+.transformations .section-title,
+.meet-groomer .section-title,
+.faq .section-title {
+  margin-top: 0;
+  margin-bottom: 0.65rem;
+}
+
+.why-choose .section-subtitle,
+.testimonials .section-subtitle,
+.services .section-subtitle,
+.transformations .section-subtitle,
+.meet-groomer .section-subtitle,
+.faq .section-subtitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+
+/* ---------------------------
+   HOMEPAGE CARD SPACING
+--------------------------- */
+
+.why-choose .card {
+  padding: 2rem;
+}
+
+.testimonials .testimonial-card {
+  padding: 2rem;
+}
+
+.services .service-card {
+  padding: 1.8rem;
+}
+
+
+/* ---------------------------
+   BETTER VISUAL RHYTHM
+--------------------------- */
+
+.why-choose .cards-grid,
+.services .services-grid,
+.transformations .transformations-grid {
+  margin-top: 1.5rem;
+}
+
+.testimonials .testimonial-card {
+  margin-top: 1.5rem;
+}
+
+
+/* =========================================================
+   MOBILE HOMEPAGE POLISH
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .why-choose,
+  .testimonials,
+  .services,
+  .transformations {
+    padding: 2rem 0 2.5rem;
+  }
+
+  .meet-groomer {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .faq {
+    padding: 1.5rem 0 3rem;
+  }
+
+  .contact {
+    padding: 2.3rem 0;
+  }
+
+  .why-choose .section-title,
+  .testimonials .section-title,
+  .services .section-title,
+  .transformations .section-title,
+  .meet-groomer .section-title,
+  .faq .section-title {
+    margin-bottom: 0.6rem;
+  }
+
+  .why-choose .section-subtitle,
+  .testimonials .section-subtitle,
+  .services .section-subtitle,
+  .transformations .section-subtitle,
+  .meet-groomer .section-subtitle,
+  .faq .section-subtitle {
+    margin-bottom: 1.25rem;
+  }
+
+  .why-choose .cards-grid,
+  .services .services-grid,
+  .transformations .transformations-grid {
+    margin-top: 1.25rem;
+  }
+
+  .testimonials .testimonial-card {
+    margin-top: 1.25rem;
+  }
+
+  .why-choose .card,
+  .services .service-card {
+    padding: 1.5rem;
+  }
+
+  .testimonials .testimonial-card {
+    padding: 1.6rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONE — FINAL SPACING
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .why-choose,
+  .testimonials,
+  .services,
+  .transformations {
+    padding: 1.8rem 0 2.2rem;
+  }
+
+  .meet-groomer {
+    padding: 1.8rem 0 1.3rem;
+  }
+
+  .faq {
+    padding: 1.3rem 0 2.5rem;
+  }
+
+  .contact {
+    padding: 2rem 0;
+  }
+
+  .why-choose .section-title,
+  .testimonials .section-title,
+  .services .section-title,
+  .transformations .section-title,
+  .meet-groomer .section-title,
+  .faq .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 0.55rem;
+  }
+
+  .why-choose .section-subtitle,
+  .testimonials .section-subtitle,
+  .services .section-subtitle,
+  .transformations .section-subtitle,
+  .meet-groomer .section-subtitle,
+  .faq .section-subtitle {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 1.15rem;
+  }
+
+  .why-choose .cards-grid,
+  .services .services-grid,
+  .transformations .transformations-grid {
+    margin-top: 1rem;
+  }
+
+  .testimonials .testimonial-card {
+    margin-top: 1rem;
+  }
+}
