@@ -25,35 +25,13 @@ content="Contact Precious Pets Grooming Spa to discuss your dog's grooming needs
 </button>
 
 <ul class="nav-links" id="navLinks">
-
-  <li>
-    <a href="index.html">Home</a>
-  </li>
-
-  <li>
-    <a href="about.html">About</a>
-  </li>
-
-  <li>
-    <a href="services.html">Services</a>
-  </li>
-
-  <li>
-    <a href="gallery.html">Gallery</a>
-  </li>
-
-  <li>
-    <a href="index.html#faq">FAQ</a>
-  </li>
-
-  <li>
-    <a href="contact.html">Contact</a>
-  </li>
-
-  <li>
-    <a href="contact.html" class="cta-link">Book Now</a>
-  </li>
-
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="index.html#faq">FAQ</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="contact.html" class="cta-link">Book Now</a></li>
 </ul>
 
   </div>
@@ -88,17 +66,23 @@ content="Contact Precious Pets Grooming Spa to discuss your dog's grooming needs
 </h2>
 
 <p>
-  Get in touch with Precious Pets Grooming Spa to discuss your dog's
-  grooming requirements, ask any questions or arrange an appointment.
-  We provide professional mobile dog grooming across London.
+  Get in touch with Precious Pets Grooming Spa to discuss your
+  dog's grooming requirements, ask any questions or arrange an
+  appointment. We provide professional mobile dog grooming
+  across London.
 </p>
 
   </div></section><!-- ===========================
      CONTACT DETAILS
-=========================== --><section class="contact">  <div class="container"><div class="contact-methods">
+=========================== --><section class="contact">  <div class="container"><h2 class="section-title">
+  Get In Touch
+</h2>
 
+<p class="section-subtitle">
+  Choose the easiest way to contact Precious Pets.
+</p>
 
-  <!-- PHONE -->
+<div class="contact-methods">
 
   <div class="contact-method">
 
@@ -119,8 +103,6 @@ content="Contact Precious Pets Grooming Spa to discuss your dog's grooming needs
   </div>
 
 
-  <!-- EMAIL -->
-
   <div class="contact-method">
 
     <h4>✉️ Email</h4>
@@ -133,8 +115,6 @@ content="Contact Precious Pets Grooming Spa to discuss your dog's grooming needs
 
   </div>
 
-
-  <!-- HOURS -->
 
   <div class="contact-method">
 
@@ -150,7 +130,7 @@ content="Contact Precious Pets Grooming Spa to discuss your dog's grooming needs
 </div>
 
   </div></section><!-- ===========================
-     BOOKING SECTION
+     BOOKING CTA
 =========================== --><section class="service-cta">  <div class="container"><p class="service-eyebrow">
   BOOK YOUR APPOINTMENT
 </p>
@@ -164,7 +144,6 @@ content="Contact Precious Pets Grooming Spa to discuss your dog's grooming needs
   Contact Lindsay to discuss your dog's grooming needs and find
   the right service for them.
 </p>
-
 
 <div class="hero-buttons">
 
@@ -195,9 +174,7 @@ content="Contact Precious Pets Grooming Spa to discuss your dog's grooming needs
   as comfortable as possible.
 </p>
 
-
 <div class="cards-grid">
-
 
   <div class="card fade-up">
 
@@ -274,7 +251,6 @@ content="Contact Precious Pets Grooming Spa to discuss your dog's grooming needs
      FOOTER
 =========================== --><footer>  <div class="container"><div class="footer-content">
 
-
   <div class="footer-section">
 
     <h4>Precious Pets</h4>
@@ -291,31 +267,12 @@ content="Contact Precious Pets Grooming Spa to discuss your dog's grooming needs
     <h4>Quick Links</h4>
 
     <ul>
-
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-
-      <li>
-        <a href="about.html">About</a>
-      </li>
-
-      <li>
-        <a href="services.html">Services</a>
-      </li>
-
-      <li>
-        <a href="gallery.html">Gallery</a>
-      </li>
-
-      <li>
-        <a href="index.html#faq">FAQ</a>
-      </li>
-
-      <li>
-        <a href="contact.html">Contact</a>
-      </li>
-
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
 
   </div>
@@ -348,21 +305,14 @@ content="Contact Precious Pets Grooming Spa to discuss your dog's grooming needs
      JAVASCRIPT
 =========================== --><script>
 
-  // ===========================
-  // HAMBURGER MENU
-  // ===========================
+  // Hamburger Menu
 
-  const hamburger =
-    document.getElementById('hamburger');
-
-  const navLinks =
-    document.getElementById('navLinks');
-
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
 
   hamburger.addEventListener('click', () => {
 
-    const isOpen =
-      hamburger.classList.toggle('active');
+    const isOpen = hamburger.classList.toggle('active');
 
     navLinks.classList.toggle('active');
 
@@ -394,18 +344,15 @@ content="Contact Precious Pets Grooming Spa to discuss your dog's grooming needs
   });
 
 
-  // ===========================
-  // FADE-UP ANIMATION
-  // ===========================
+  // Fade-up animation
 
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
   };
 
-
-  const observer =
-    new IntersectionObserver(function(entries) {
+  const observer = new IntersectionObserver(
+    function(entries) {
 
       entries.forEach(entry => {
 
@@ -419,13 +366,13 @@ content="Contact Precious Pets Grooming Spa to discuss your dog's grooming needs
 
       });
 
-    }, observerOptions);
+    },
+    observerOptions
+  );
 
 
   document.querySelectorAll('.fade-up').forEach(el => {
-
     observer.observe(el);
-
   });
 
 </script></body>
