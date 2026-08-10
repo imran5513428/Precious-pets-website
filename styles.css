@@ -2015,12 +2015,12 @@ GALLERY SMALL PHONE
    HOMEPAGE CARD SPACING
 --------------------------- */
 
-.why-choose .card {
-  padding: 2rem;
+.why-choose {
+  padding: 2rem 0 2rem;
 }
 
-.testimonials .testimonial-card {
-  padding: 2rem;
+.testimonials {
+  padding: 2rem 0 2.5rem;
 }
 
 .services .service-card {
