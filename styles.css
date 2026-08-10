@@ -1,4 +1,4 @@
-yup to/* ===========================
+/* ===========================
 GLOBAL RESET & FOUNDATION
 =========================== */
 
@@ -21,7 +21,7 @@ body {
   background: #fff;
   overflow-x: hidden;
   width: 100%;
-  min-width: 100%;
+  min-width: 0;
 }
 .container {
   max-width: 1200px;
