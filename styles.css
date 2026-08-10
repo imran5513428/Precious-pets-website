@@ -1,4 +1,4 @@
-/* ===========================
+v/* ===========================
 GLOBAL RESET & FOUNDATION
 =========================== */
 
@@ -2146,3 +2146,27 @@ footer {
   }
 }
 
+/* =========================================================
+   PHASE 1 — STEP 1
+   TRANSFORMATION IMAGE FRAMING
+========================================================= */
+
+.transformation-image {
+  height: 300px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+@media (max-width: 768px) {
+  .transformation-image {
+    height: 250px;
+    object-position: center center;
+  }
+}
+
+@media (max-width: 480px) {
+  .transformation-image {
+    height: 230px;
+    object-position: center center;
+  }
+}
