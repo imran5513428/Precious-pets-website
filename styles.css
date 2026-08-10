@@ -1,4 +1,4 @@
-typev/* ===========================
+tryingtypev/* ===========================
 GLOBAL RESET & FOUNDATION
 =========================== */
 
@@ -1962,29 +1962,28 @@ GALLERY SMALL PHONE
 }
 
 .testimonials {
-  padding: 2.5rem 0 3rem;
+  padding: 2rem 0 2rem;
 }
 
-.services {
-  padding: 2.5rem 0 3rem;
+..services {
+  padding: 2rem 0 2.5rem;
 }
 
 .transformations {
-  padding: 2.5rem 0 3rem;
+  padding: 2rem 0 2.5rem;
 }
 
 .meet-groomer {
-  padding: 2.5rem 0 2rem;
+  padding: 2rem 0 1rem;
 }
 
-.faq {
-  padding: 2rem 0 3.5rem;
+..faq {
+  padding: 1.5rem 0 2.5rem;
 }
 
 .contact {
-  padding: 2.8rem 0;
+  padding: 2.5rem 0;
 }
-
 
 /* ---------------------------
    HOMEPAGE SECTION HEADINGS
