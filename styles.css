@@ -2170,20 +2170,3 @@ footer {
     object-position: center center;
   }
 }
-/* =========================================================
-   PHASE 1 — TRANSFORMATION IMAGES
-   MOBILE FRAMING FIX
-========================================================= */
-
-@media (max-width: 768px) {
-
-  .transformation-image {
-    width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    object-fit: contain;
-    object-position: center;
-    display: block;
-  }
-
-}
