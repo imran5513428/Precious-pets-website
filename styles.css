@@ -2103,14 +2103,15 @@ GALLERY SMALL PHONE
   }
 }
 /* =========================================================
-   GLOBAL PAGE WIDTH CONTROL
-   Prevents blank side space when browser is zoomed out
+   GLOBAL PAGE WIDTH CONTROL — ZOOM OUT FIX
 ========================================================= */
 
 html,
 body {
   width: 100%;
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar,
@@ -2118,7 +2119,30 @@ body {
 section,
 footer {
   width: 100%;
-  max-width: 100%;
+  max-width: none;
 }
 
+/* Keep normal desktop layout, but allow the content
+   area to expand naturally on wider/zoomed-out screens */
+.container {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Wider viewport / browser zoom-out */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .container {
+    max-width: 1600px;
+  }
+}
 
