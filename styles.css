@@ -1,4 +1,4 @@
-v/* ===========================
+typev/* ===========================
 GLOBAL RESET & FOUNDATION
 =========================== */
 
@@ -992,7 +992,7 @@ MOBILE RESPONSIVE - TABLET (768px)
     gap: 2rem;
   }
 
-  ..transformation-image {
+  .transformation-image {
   width: 100%;
   height: auto;
   object-fit: contain;
