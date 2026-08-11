@@ -1,4 +1,4 @@
-/* ===========================
+./* ===========================
 GLOBAL RESET & FOUNDATION
 =========================== */
 
@@ -1048,8 +1048,8 @@ MOBILE RESPONSIVE - PHONE (480px)
   }
 
   .transformation-image {
-    height: 180px;
-  }
+  height: auto;
+}
 
   .section-title {
     font-size: 1.6rem;
