@@ -1048,9 +1048,8 @@ MOBILE RESPONSIVE - PHONE (480px)
   }
 
   .transformation-image {
-  height: auto;
+  height: 180px;
 }
-
   .section-title {
     font-size: 1.6rem;
     margin-bottom: 1rem;
