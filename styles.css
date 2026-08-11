@@ -2129,6 +2129,10 @@ footer {
   max-width: none;
 }
 
+.navbar {
+  overflow: visible;
+}
+
 /* Keep normal desktop layout, but allow the content
    area to expand naturally on wider/zoomed-out screens */
 .container {
