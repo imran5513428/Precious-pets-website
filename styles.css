@@ -564,6 +564,7 @@ TRANSFORMATIONS WITH IMAGES
   object-position: center top;
   display: block;
   background: #f5f5f5;
+  max-width: 100%;
 }
 
 .transformation > h3,
