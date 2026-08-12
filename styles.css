@@ -2469,3 +2469,127 @@ Slightly tighter, but still comfortable
     padding-top: 2.2rem !important;
   }
 }
+
+/* =========================================================
+FINAL EYEBROW SPACING FIX
+SERVICES + GALLERY ONLY
+ABOUT PAGE LEFT UNTOUCHED
+========================================================= */
+
+
+/* ===========================
+SERVICES PAGE — HERO EYEBROW
+Keep eyebrow away from navbar
+and close to main heading
+=========================== */
+
+.service-page-hero .service-eyebrow {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.service-page-hero .service-eyebrow + h1 {
+    margin-top: 0;
+}
+
+
+/* ===========================
+SERVICES PAGE — SECTION EYEBROWS
+Give the eyebrow breathing room
+from the previous section/button
+=========================== */
+
+.service-section-heading {
+    padding-top: 0.8rem;
+}
+
+.service-section-heading .service-eyebrow {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.service-section-heading .service-eyebrow + h2 {
+    margin-top: 0;
+}
+
+
+/* ===========================
+GALLERY HERO
+Tighter eyebrow → heading relationship
+without changing overall page width
+=========================== */
+
+.gallery-hero {
+    padding-top: 3rem;
+}
+
+.gallery-hero .service-eyebrow {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.gallery-hero .service-eyebrow + h1 {
+    margin-top: 0;
+}
+
+
+/* ===========================
+GALLERY INTRO / OTHER EYEBROWS
+=========================== */
+
+.gallery-intro .service-eyebrow {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.gallery-intro .service-eyebrow + h2 {
+    margin-top: 0;
+}
+
+
+/* ===========================
+MOBILE — SERVICES
+=========================== */
+
+@media (max-width: 768px) {
+
+    .service-page-hero .service-eyebrow {
+        margin-bottom: 0.25rem;
+    }
+
+    .service-section-heading {
+        padding-top: 0.8rem;
+    }
+
+    .service-section-heading .service-eyebrow {
+        margin-bottom: 0.25rem;
+    }
+}
+
+
+/* ===========================
+SMALL PHONE — SERVICES + GALLERY
+=========================== */
+
+@media (max-width: 480px) {
+
+    .service-page-hero .service-eyebrow {
+        margin-bottom: 0.2rem;
+    }
+
+    .service-section-heading {
+        padding-top: 0.8rem;
+    }
+
+    .service-section-heading .service-eyebrow {
+        margin-bottom: 0.2rem;
+    }
+
+    .gallery-hero {
+        padding-top: 2.8rem;
+    }
+
+    .gallery-hero .service-eyebrow {
+        margin-bottom: 0.2rem;
+    }
+}
