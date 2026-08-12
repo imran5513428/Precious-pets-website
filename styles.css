@@ -2115,3 +2115,46 @@ padding: 1.6rem;
 }
 }
 
+/* =========================================================
+ABOUT PAGE — EYEBROW HEADINGS
+Improved visibility — typography only
+Does not affect layout or page width
+========================================================= */
+
+.about-page-hero .service-eyebrow,
+.about-approach .service-eyebrow,
+.about-values .service-eyebrow,
+.about-mobile .service-eyebrow,
+.about-experience .service-eyebrow,
+.about-promise .service-eyebrow,
+.about-services-link .service-eyebrow,
+.about-page-hero .service-cta .service-eyebrow,
+.service-cta .service-eyebrow {
+  color: #A96F3F;
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/* About page eyebrow headings on smaller screens */
+
+@media (max-width: 480px) {
+
+  .about-page-hero .service-eyebrow,
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow,
+  .service-cta .service-eyebrow {
+    color: #A96F3F;
+    font-size: 0.78rem;
+    letter-spacing: 1.8px;
+    font-weight: 800;
+  }
+
+}
