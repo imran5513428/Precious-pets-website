@@ -2196,3 +2196,52 @@ Improved visibility — typography only
   }
 
 }
+
+/* =========================================================
+EYEBROW HEADINGS — FINAL GLOBAL SPACING POLISH
+Keeps all page layouts intact
+========================================================= */
+
+/* Make all eyebrow headings clearly visible and compact */
+.service-eyebrow {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0.45rem;
+    line-height: 1.25;
+}
+
+/* Remove any accidental top spacing from the heading immediately after */
+.service-eyebrow + h1,
+.service-eyebrow + h2 {
+    margin-top: 0;
+}
+
+/* Keep eyebrow + main heading visually connected */
+.service-hero-content .service-eyebrow,
+.about-hero-content .service-eyebrow,
+.service-section-heading .service-eyebrow,
+.service-narrow .service-eyebrow,
+.service-cta .service-eyebrow {
+    margin-top: 0;
+    margin-bottom: 0.45rem;
+}
+
+/* Mobile: make the relationship even tighter */
+@media (max-width: 768px) {
+    .service-eyebrow {
+        margin-bottom: 0.35rem;
+        line-height: 1.2;
+    }
+
+    .service-eyebrow + h1,
+    .service-eyebrow + h2 {
+        margin-top: 0;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .service-eyebrow {
+        margin-bottom: 0.3rem;
+    }
+}
