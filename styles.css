@@ -2375,16 +2375,97 @@ MOBILE
 
 
 /* =========================================================
-SMALL PHONE
+FINAL EYEBROW SPACING FIX — MOBILE ONLY
+Does not affect desktop / zoom-out layouts
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* ---------------------------------
+     1. SERVICE HERO — space above eyebrow
+     --------------------------------- */
+
+  .service-page-hero {
+    padding-top: 2.2rem !important;
+  }
+
+  /* ---------------------------------
+     2. EYEBROW → MAIN HEADING
+     --------------------------------- */
+
+  .service-eyebrow {
+    margin-top: 0 !important;
+    margin-bottom: 0.45rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .service-eyebrow + h1,
+  .service-eyebrow + h2 {
+    margin-top: 0 !important;
+  }
+
+  /* ---------------------------------
+     3. CORE SERVICE / OTHER SECTIONS
+     Space above their eyebrow
+     --------------------------------- */
+
+  .service-introduction,
+  .service-details,
+  .service-suitability,
+  .service-result,
+  .service-pricing {
+    padding-top: 2.5rem !important;
+  }
+
+  /* Eyebrow inside section heading */
+  .service-section-heading .service-eyebrow,
+  .service-narrow .service-eyebrow {
+    margin-top: 0 !important;
+    margin-bottom: 0.45rem !important;
+  }
+
+  /* ---------------------------------
+     4. CTA EYEBROW
+     --------------------------------- */
+
+  .service-cta {
+    padding-top: 2.5rem !important;
+  }
+
+  .service-cta .service-eyebrow {
+    margin-top: 0 !important;
+    margin-bottom: 0.45rem !important;
+  }
+}
+
+
+/* =========================================================
+SMALL PHONES — 480px
+Slightly tighter, but still comfortable
 ========================================================= */
 
 @media (max-width: 480px) {
 
-    .service-eyebrow {
-        font-size: 0.76rem !important;
-        letter-spacing: 1.8px !important;
-        line-height: 1.2 !important;
-        margin-top: 0 !important;
-        margin-bottom: 0.35rem !important;
-    }
+  .service-page-hero {
+    padding-top: 2rem !important;
+  }
+
+  .service-eyebrow {
+    margin-bottom: 0.4rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .service-eyebrow + h1,
+  .service-eyebrow + h2 {
+    margin-top: 0 !important;
+  }
+
+  .service-introduction,
+  .service-details,
+  .service-suitability,
+  .service-result,
+  .service-pricing,
+  .service-cta {
+    padding-top: 2.2rem !important;
+  }
 }
