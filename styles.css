@@ -2158,3 +2158,40 @@ Does not affect layout or page width
   }
 
 }
+/* =========================================================
+SERVICE PAGES — EYEBROW HEADINGS
+Improved visibility — typography only
+========================================================= */
+
+.service-page-hero .service-eyebrow,
+.service-introduction .service-eyebrow,
+.service-details .service-eyebrow,
+.service-suitability .service-eyebrow,
+.service-result .service-eyebrow,
+.service-pricing .service-eyebrow,
+.service-cta .service-eyebrow {
+  color: #A96F3F;
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+
+  .service-page-hero .service-eyebrow,
+  .service-introduction .service-eyebrow,
+  .service-details .service-eyebrow,
+  .service-suitability .service-eyebrow,
+  .service-result .service-eyebrow,
+  .service-pricing .service-eyebrow,
+  .service-cta .service-eyebrow {
+    color: #A96F3F;
+    font-size: 0.78rem;
+    letter-spacing: 1.8px;
+    font-weight: 800;
+  }
+
+}
