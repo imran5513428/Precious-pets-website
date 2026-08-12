@@ -2245,3 +2245,146 @@ Keeps all page layouts intact
         margin-bottom: 0.3rem;
     }
 }
+
+/* =========================================================
+FINAL EYEBROW SYSTEM — ALL PAGES
+Use this block LAST in the CSS file.
+Controls eyebrow size, width, and spacing only.
+Does NOT alter main headings, containers, grids or zoom layout.
+========================================================= */
+
+/* ---------- GLOBAL EYEBROW ---------- */
+
+.service-eyebrow {
+    display: block;
+    width: fit-content;
+    
+    color: #A96F3F !important;
+    font-family: 'Calibri', 'Segoe UI', sans-serif;
+    font-size: 0.86rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 2.2px !important;
+    line-height: 1.25 !important;
+    text-transform: uppercase;
+
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+    padding: 0 !important;
+}
+
+
+/* ---------- EYEBROW → MAIN HEADING ---------- */
+
+.service-eyebrow + h1,
+.service-eyebrow + h2,
+.service-eyebrow + h3 {
+    margin-top: 0 !important;
+}
+
+
+/* ---------- ABOUT PAGE ---------- */
+
+.about-page-hero .service-eyebrow,
+.about-approach .service-eyebrow,
+.about-values .service-eyebrow,
+.about-mobile .service-eyebrow,
+.about-experience .service-eyebrow,
+.about-promise .service-eyebrow,
+.about-services-link .service-eyebrow {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+
+/* ---------- SERVICE PAGES ---------- */
+
+.service-page-hero .service-eyebrow,
+.service-introduction .service-eyebrow,
+.service-details .service-eyebrow,
+.service-suitability .service-eyebrow,
+.service-result .service-eyebrow,
+.service-pricing .service-eyebrow {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+
+/* ---------- SERVICE SECTION HEADING ---------- */
+
+.service-section-heading .service-eyebrow,
+.service-narrow .service-eyebrow {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+
+/* ---------- CTA EYEBROWS ---------- */
+
+.service-cta .service-eyebrow,
+.about-page-hero .service-cta .service-eyebrow {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+
+/* =========================================================
+REDUCE SPACE ABOVE EYEBROW
+Only affects sections that actually contain an eyebrow.
+Does NOT change general section spacing.
+========================================================= */
+
+.service-page-hero:has(.service-eyebrow),
+.service-introduction:has(.service-eyebrow),
+.service-details:has(.service-eyebrow),
+.service-suitability:has(.service-eyebrow),
+.service-result:has(.service-eyebrow),
+.service-pricing:has(.service-eyebrow),
+.service-cta:has(.service-eyebrow),
+.about-page-hero:has(.service-eyebrow),
+.about-approach:has(.service-eyebrow),
+.about-values:has(.service-eyebrow),
+.about-mobile:has(.service-eyebrow),
+.about-experience:has(.service-eyebrow),
+.about-promise:has(.service-eyebrow),
+.about-services-link:has(.service-eyebrow) {
+    /* Do not change section padding here.
+       The eyebrow itself is controlled instead. */
+}
+
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .service-eyebrow {
+        font-size: 0.82rem !important;
+        letter-spacing: 2px !important;
+        line-height: 1.2 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0.4rem !important;
+    }
+
+    .service-eyebrow + h1,
+    .service-eyebrow + h2,
+    .service-eyebrow + h3 {
+        margin-top: 0 !important;
+    }
+}
+
+
+/* =========================================================
+SMALL PHONE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .service-eyebrow {
+        font-size: 0.76rem !important;
+        letter-spacing: 1.8px !important;
+        line-height: 1.2 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0.35rem !important;
+    }
+}
