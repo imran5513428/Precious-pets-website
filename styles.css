@@ -2714,3 +2714,60 @@ SMALL PHONE
   }
 
 }
+/* =========================================================
+   BOOKING FORM — TEXT VISIBILITY FIX
+   Overrides existing Contact section text styles
+   ========================================================= */
+
+.booking-form-wrapper {
+  color: #333333;
+}
+
+.booking-form-wrapper h3 {
+  color: #333333 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.booking-form-intro {
+  color: #555555 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.booking-form label {
+  display: block;
+  color: #333333 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  font-weight: 600;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  color: #333333 !important;
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+  color: #777777 !important;
+  opacity: 1 !important;
+}
+
+.booking-form select {
+  color: #333333 !important;
+}
+
+.booking-form select option {
+  color: #333333 !important;
+  background-color: #ffffff !important;
+}
+
+.booking-form button {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
