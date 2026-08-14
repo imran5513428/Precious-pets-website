@@ -737,4 +737,213 @@
        FINAL CTA
   =========================== -->
 
-  <section
+  <section class="service-cta">
+
+    <div class="container">
+
+      <p class="service-eyebrow">
+        READY TO BOOK?
+      </p>
+
+
+      <h2>
+        Not sure whether Wash &amp; Go is right for your dog?
+      </h2>
+
+
+      <p>
+        If you're unsure which grooming option would suit your dog,
+        get in touch and we'll help you choose before you book.
+      </p>
+
+
+      <a
+        href="index.html#contact"
+        class="btn btn-primary btn-large"
+      >
+        Book an Appointment
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ===========================
+       FOOTER
+  =========================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-content">
+
+
+        <div class="footer-section">
+
+          <h4>
+            Precious Pets
+          </h4>
+
+
+          <p>
+            Professional mobile dog grooming across London, with gentle
+            care for dogs of all ages and sizes.
+          </p>
+
+        </div>
+
+
+
+        <div class="footer-section">
+
+          <h4>
+            Quick Links
+          </h4>
+
+
+          <ul>
+
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html#services">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a href="gallery.html">
+                Gallery
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html#faq">
+                FAQ
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html#contact">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+        <div class="footer-section">
+
+          <h4>
+            Trust &amp; Security
+          </h4>
+
+
+          <p>
+            ✓ Fully Insured<br>
+            ✓ Pet First Aid Trained<br>
+            ✓ Mobile Service
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="footer-bottom">
+
+        <p>
+          &copy; 2026 Precious Pets. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ===========================
+       JAVASCRIPT
+  =========================== -->
+
+  <script>
+
+    const hamburger =
+      document.getElementById('hamburger');
+
+    const navLinks =
+      document.getElementById('navLinks');
+
+
+    hamburger.addEventListener('click', () => {
+
+      const isActive =
+        hamburger.classList.toggle('active');
+
+      navLinks.classList.toggle('active');
+
+
+      hamburger.setAttribute(
+        'aria-expanded',
+        isActive ? 'true' : 'false'
+      );
+
+
+      hamburger.setAttribute(
+        'aria-label',
+        isActive
+          ? 'Close navigation menu'
+          : 'Open navigation menu'
+      );
+
+    });
+
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+
+      link.addEventListener('click', () => {
+
+        hamburger.classList.remove('active');
+
+        navLinks.classList.remove('active');
+
+
+        hamburger.setAttribute(
+          'aria-expanded',
+          'false'
+        );
+
+
+        hamburger.setAttribute(
+          'aria-label',
+          'Open navigation menu'
+        );
+
+      });
+
+    });
+
+  </script>
+
+
+</body>
+</html>
