@@ -2587,3 +2587,130 @@ SMALL PHONE
         margin-top: 0 !important;
     }
 }
+/* =========================================================
+   BOOKING FORM — PRECIOUS PETS
+   Added separately so existing website styling is untouched
+   ========================================================= */
+
+.booking-form-wrapper {
+  max-width: 760px;
+  margin: 50px auto 0;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.booking-form-wrapper h3 {
+  margin: 0 0 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.booking-form-intro {
+  margin: 0 auto 30px;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.booking-form {
+  width: 100%;
+}
+
+.booking-form .form-group {
+  margin-bottom: 20px;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  background: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  color: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking-form input,
+.booking-form select {
+  min-height: 48px;
+}
+
+.booking-form textarea {
+  min-height: 130px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+  opacity: 0.65;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  outline: none;
+  border-color: #999;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
+.booking-form select {
+  cursor: pointer;
+}
+
+.booking-form button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile booking form */
+@media (max-width: 600px) {
+
+  .booking-form-wrapper {
+    margin-top: 35px;
+    padding: 25px 18px;
+    border-radius: 12px;
+  }
+
+  .booking-form-wrapper h3 {
+    font-size: 1.6rem;
+  }
+
+  .booking-form-intro {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  .booking-form .form-group {
+    margin-bottom: 17px;
+  }
+
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea {
+    font-size: 16px;
+  }
+
+  .booking-form textarea {
+    min-height: 120px;
+  }
+
+}
