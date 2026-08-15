@@ -2806,9 +2806,3 @@ SMALL PHONE
 
 }
 
-/* Charlie & Luna — image framing only */
-.transformation:nth-child(2) .transformation-image,
-.transformation:nth-child(3) .transformation-image {
-    object-fit: contain;
-    object-position: center;
-}
