@@ -2801,4 +2801,136 @@ SMALL PHONE
   }
 
 }
+/* =========================================================
+   ABOUT PAGE — FINAL MOBILE EYEBROW POLISH
+   Eyebrow alignment + footer readability only
+   Does NOT change layout, widths, headings, images or spacing
+========================================================= */
 
+/* ---------------------------------------------------------
+   ABOUT PAGE — MOBILE EYEBROW ALIGNMENT
+   Keeps each eyebrow visually aligned with its centered
+   section heading and content.
+--------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+  .about-page-hero .service-eyebrow,
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow {
+
+    display: block;
+    width: fit-content;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    margin-top: 0 !important;
+    margin-bottom: 0.45rem !important;
+
+    text-align: center;
+    line-height: 1.2 !important;
+  }
+
+  /* Keep the eyebrow and heading visually connected */
+  .about-page-hero .service-eyebrow + h1,
+  .about-page-hero .service-eyebrow + h2,
+  .about-approach .service-eyebrow + h2,
+  .about-values .service-eyebrow + h2,
+  .about-mobile .service-eyebrow + h2,
+  .about-experience .service-eyebrow + h2,
+  .about-promise .service-eyebrow + h2,
+  .about-services-link .service-eyebrow + h2 {
+
+    margin-top: 0 !important;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   ABOUT PAGE — SMALL PHONE
+--------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+  .about-page-hero .service-eyebrow,
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow {
+
+    font-size: 0.78rem !important;
+    letter-spacing: 1.8px !important;
+    line-height: 1.15 !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 0.4rem !important;
+  }
+}
+
+
+/* =========================================================
+   FOOTER EYEBROW — VISIBILITY / CONTRAST FIX
+   Footer has a dark background, so the standard brown
+   eyebrow colour is replaced with a much lighter tone.
+========================================================= */
+
+footer .service-eyebrow,
+.footer-section .service-eyebrow {
+
+  color: #F4D7B5 !important;
+  font-size: 0.86rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  line-height: 1.25 !important;
+
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER — MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+  footer .service-eyebrow,
+  .footer-section .service-eyebrow {
+
+    color: #F4D7B5 !important;
+    font-size: 0.8rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 1.8px !important;
+    line-height: 1.2 !important;
+
+    margin-top: 0 !important;
+    margin-bottom: 0.45rem !important;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER — SMALL PHONE
+--------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+  footer .service-eyebrow,
+  .footer-section .service-eyebrow {
+
+    font-size: 0.76rem !important;
+    letter-spacing: 1.6px !important;
+    line-height: 1.15 !important;
+  }
+}
