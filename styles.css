@@ -2774,21 +2774,17 @@ SMALL PHONE
 
 /* ===========================
    FINAL MOBILE HERO POLISH
-   CTA alignment + spacing only
+   CTA TEXT ALIGNMENT ONLY
 =========================== */
 
 @media (max-width: 768px) {
 
   .hero-buttons .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .hero-buttons {
-    gap: 30px;
-    margin-bottom: 30px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
   }
 
 }
