@@ -1001,14 +1001,13 @@ grid-template-columns: 1fr;
 gap: 2rem;
 }
 
-.transformation-image {  
-width: 100%;  
-height: auto;  
-object-fit: contain;  
-object-position: center;  
-display: block;
-
-}
+.transformation-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center center;
+  display: block;
 }
 
 /* ===========================
