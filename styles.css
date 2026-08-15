@@ -2788,3 +2788,20 @@ SMALL PHONE
   }
 
 }
+/* =========================================
+   FINAL MOBILE SECTION TRANSITION
+   Services → Transformations
+   SPACING ONLY — NO WIDTH/LAYOUT CHANGES
+========================================= */
+
+@media (max-width: 768px) {
+
+  #services {
+    padding-bottom: 40px !important;
+  }
+
+  #gallery {
+    padding-top: 40px !important;
+  }
+
+}
