@@ -2771,3 +2771,24 @@ SMALL PHONE
   opacity: 1 !important;
   visibility: visible !important;
 }
+
+/* ===========================
+   FINAL MOBILE HERO POLISH
+   CTA alignment + spacing only
+=========================== */
+
+@media (max-width: 768px) {
+
+  .hero-buttons .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+}
