@@ -2788,3 +2788,16 @@ SMALL PHONE
   }
 
 }
+/* =========================================
+   FINAL SECTION TRANSITION POLISH
+   Services → Transformations
+   Safe spacing/background adjustment only
+========================================= */
+
+#services {
+  padding-bottom: 55px;
+}
+
+#gallery {
+  padding-top: 55px;
+}
