@@ -2959,6 +2959,37 @@ footer .service-eyebrow,
     text-align: center;
   }
 }
+/* =========================================================
+   ABOUT PAGE — CTA BOTTOM GAP ONLY
+   Creates clear separation before the next section.
+   NO width / viewport / zoom / layout changes.
+========================================================= */
+
+.about-services-link {
+  padding-bottom: 3rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .about-services-link {
+    padding-bottom: 2.8rem !important;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   SMALL PHONE
+--------------------------------------------------------- */
+
+@media (max-width: 480px) {
+  .about-services-link {
+    padding-bottom: 2.5rem !important;
+  }
+}
 
 
 /* ---------------------------------------------------------
