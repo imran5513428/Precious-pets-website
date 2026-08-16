@@ -3004,3 +3004,54 @@ footer .service-eyebrow,
     font-size: 0.95rem;
   }
 }
+/* =========================================================
+   GALLERY PAGE — FINAL EYEBROW TYPOGRAPHY
+   Matches About Page exactly
+   Center aligned + same size + same style
+   NO WIDTH / ZOOM / LAYOUT CHANGES
+========================================================= */
+
+.gallery-hero .service-eyebrow,
+.gallery-intro .service-eyebrow {
+
+  display: block;
+  width: fit-content;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.45rem !important;
+
+  color: #A96F3F !important;
+  font-family: 'Calibri', 'Segoe UI', sans-serif;
+  font-size: 0.92rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  line-height: 1.2 !important;
+
+  text-transform: uppercase;
+  text-align: center !important;
+}
+
+
+/* =========================================================
+   GALLERY PAGE — SMALL PHONE
+   Same as About Page
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .gallery-hero .service-eyebrow,
+  .gallery-intro .service-eyebrow {
+
+    font-size: 0.88rem !important;
+    letter-spacing: 1.9px !important;
+    line-height: 1.2 !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 0.4rem !important;
+
+    text-align: center !important;
+  }
+}
