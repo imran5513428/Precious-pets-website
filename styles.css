@@ -2898,3 +2898,78 @@ footer .service-eyebrow,
     text-align: center !important;
   }
 }
+/* =========================================================
+   ABOUT PAGE — EXPLORE GROOMING SERVICES CTA
+   FINAL BUTTON VISIBILITY FIX
+   Does NOT affect viewport, width, zoom or page layout
+========================================================= */
+
+.about-services-link {
+  text-align: center;
+}
+
+.about-services-link .btn {
+  display: inline-block;
+  width: auto;
+  min-width: 220px;
+  padding: 1rem 2.2rem;
+  margin-top: 0.8rem;
+
+  background: #D4A574;
+  color: #ffffff !important;
+
+  border: 2px solid #D4A574;
+  border-radius: 6px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.about-services-link .btn:hover {
+  background: #2D5A5A;
+  border-color: #2D5A5A;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+  .about-services-link .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    min-width: 220px;
+
+    padding: 0.95rem 1.8rem;
+    margin-top: 0.7rem;
+
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   SMALL PHONE
+--------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+  .about-services-link .btn {
+    min-width: 210px;
+    padding: 0.9rem 1.6rem;
+    font-size: 0.95rem;
+  }
+}
