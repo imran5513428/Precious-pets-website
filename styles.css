@@ -2768,50 +2768,11 @@ SMALL PHONE
   visibility: visible !important;
 }
 
-/* ===========================
-   FINAL MOBILE HERO POLISH
-   CTA TEXT ALIGNMENT ONLY
-=========================== */
-
-@media (max-width: 768px) {
-
-  .hero-buttons .btn {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    line-height: 1.2 !important;
-  }
-
-}
-/* =========================================
-   FINAL MOBILE SECTION TRANSITION
-   Services → Transformations
-   SPACING ONLY — NO WIDTH/LAYOUT CHANGES
-========================================= */
-
-@media (max-width: 768px) {
-
-  #services {
-    padding-bottom: 40px !important;
-  }
-
-  #gallery {
-    padding-top: 40px !important;
-  }
-
-}
 /* =========================================================
-   ABOUT PAGE — FINAL MOBILE EYEBROW POLISH
-   Eyebrow alignment + footer readability only
-   Does NOT change layout, widths, headings, images or spacing
+   FINAL ABOUT PAGE EYEBROW POLISH
+   MOBILE READABILITY + CENTER ALIGNMENT
+   TYPOGRAPHY ONLY — NO WIDTH / ZOOM / LAYOUT CHANGES
 ========================================================= */
-
-/* ---------------------------------------------------------
-   ABOUT PAGE — MOBILE EYEBROW ALIGNMENT
-   Keeps each eyebrow visually aligned with its centered
-   section heading and content.
---------------------------------------------------------- */
 
 @media (max-width: 768px) {
 
@@ -2828,15 +2789,18 @@ SMALL PHONE
 
     margin-left: auto !important;
     margin-right: auto !important;
-
     margin-top: 0 !important;
     margin-bottom: 0.45rem !important;
 
-    text-align: center;
+    color: #A96F3F !important;
+    font-size: 0.92rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 2px !important;
     line-height: 1.2 !important;
+
+    text-align: center !important;
   }
 
-  /* Keep the eyebrow and heading visually connected */
   .about-page-hero .service-eyebrow + h1,
   .about-page-hero .service-eyebrow + h2,
   .about-approach .service-eyebrow + h2,
@@ -2845,15 +2809,14 @@ SMALL PHONE
   .about-experience .service-eyebrow + h2,
   .about-promise .service-eyebrow + h2,
   .about-services-link .service-eyebrow + h2 {
-
     margin-top: 0 !important;
   }
 }
 
 
-/* ---------------------------------------------------------
-   ABOUT PAGE — SMALL PHONE
---------------------------------------------------------- */
+/* =========================================================
+   ABOUT PAGE EYEBROW — SMALL PHONES
+========================================================= */
 
 @media (max-width: 480px) {
 
@@ -2865,29 +2828,32 @@ SMALL PHONE
   .about-promise .service-eyebrow,
   .about-services-link .service-eyebrow {
 
-    font-size: 0.78rem !important;
-    letter-spacing: 1.8px !important;
-    line-height: 1.15 !important;
+    font-size: 0.88rem !important;
+    letter-spacing: 1.9px !important;
+    line-height: 1.2 !important;
 
     margin-left: auto !important;
     margin-right: auto !important;
     margin-bottom: 0.4rem !important;
+
+    text-align: center !important;
   }
 }
 
 
 /* =========================================================
-   FOOTER EYEBROW — FINAL MOBILE POLISH
-   READY WHEN YOU ARE
+   FOOTER EYEBROW — READY WHEN YOU ARE
+   MOBILE READABILITY + CENTER ALIGNMENT
 ========================================================= */
 
 footer .service-eyebrow,
 .footer-section .service-eyebrow {
+
   display: block;
   width: fit-content;
 
   color: #FFFFFF !important;
-  font-size: 0.86rem !important;
+  font-size: 0.9rem !important;
   font-weight: 800 !important;
   letter-spacing: 2px !important;
   line-height: 1.25 !important;
@@ -2900,43 +2866,29 @@ footer .service-eyebrow,
 }
 
 
-/* ---------------------------------------------------------
-   FOOTER EYEBROW — MOBILE
---------------------------------------------------------- */
-
 @media (max-width: 768px) {
 
   footer .service-eyebrow,
   .footer-section .service-eyebrow {
 
-    display: block;
-    width: fit-content;
-
     margin-left: auto !important;
     margin-right: auto !important;
 
-    color: #FFFFFF !important;
-    font-size: 0.82rem !important;
-    font-weight: 800 !important;
-    letter-spacing: 1.8px !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 1.9px !important;
     line-height: 1.2 !important;
 
     text-align: center !important;
-    margin-bottom: 0.45rem !important;
   }
 }
 
-
-/* ---------------------------------------------------------
-   FOOTER EYEBROW — SMALL PHONE
---------------------------------------------------------- */
 
 @media (max-width: 480px) {
 
   footer .service-eyebrow,
   .footer-section .service-eyebrow {
 
-    font-size: 0.8rem !important;
+    font-size: 0.88rem !important;
     letter-spacing: 1.8px !important;
     line-height: 1.2 !important;
 
