@@ -1,12 +1,13 @@
-no/* ===========================
+/* ===========================
 GLOBAL RESET & FOUNDATION
 =========================== */
 
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
+
 
 html {
 scroll-behavior: smooth;
@@ -29,12 +30,12 @@ margin: 0 auto;
 padding: 0 20px;
 }
 @media (max-width: 768px) {
-  .container {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+.container {
+width: 100%;
+max-width: 100%;
+padding-left: 16px;
+padding-right: 16px;
+}
 }
 
 /* ===========================
@@ -566,13 +567,13 @@ box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
 .transformation-image {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  object-fit: contain;
-  object-position: center center;
-  display: block;
-  background: #f5f5f5;
+width: 100%;
+aspect-ratio: 16 / 9;
+height: auto;
+object-fit: contain;
+object-position: center center;
+display: block;
+background: #f5f5f5;
 }
 
 .transformation > h3,
@@ -1002,12 +1003,12 @@ gap: 2rem;
 }
 
 .transformation-image {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
-  object-position: center center;
-  display: block;
+width: 100%;
+height: auto;
+aspect-ratio: 16 / 9;
+object-fit: contain;
+object-position: center center;
+display: block;
 }
 
 /* ===========================
@@ -1782,18 +1783,18 @@ box-shadow: 0 12px 28px rgba(0, 0, 0, 0.13);
 
 /* Gallery Images — show complete original PNG composition */
 .gallery-item img {
-  width: 100%;
-  height: auto !important;
-  aspect-ratio: auto !important;
-  object-fit: contain !important;
-  object-position: center;
-  display: block;
-  background: #f5f5f5;
-  transition: none;
+width: 100%;
+height: auto !important;
+aspect-ratio: auto !important;
+object-fit: contain !important;
+object-position: center;
+display: block;
+background: #f5f5f5;
+transition: none;
 }
 
 .gallery-item:hover img {
-  transform: none;
+transform: none;
 }
 /* Gallery Text */
 .gallery-item-content {
@@ -2126,32 +2127,32 @@ Does not affect layout or page width
 .about-services-link .service-eyebrow,
 .about-page-hero .service-cta .service-eyebrow,
 .service-cta .service-eyebrow {
-  color: #A96F3F;
-  font-size: 0.86rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  line-height: 1.4;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
+color: #A96F3F;
+font-size: 0.86rem;
+font-weight: 800;
+letter-spacing: 2px;
+line-height: 1.4;
+margin-bottom: 1rem;
+text-transform: uppercase;
 }
 
 /* About page eyebrow headings on smaller screens */
 
 @media (max-width: 480px) {
 
-  .about-page-hero .service-eyebrow,
-  .about-approach .service-eyebrow,
-  .about-values .service-eyebrow,
-  .about-mobile .service-eyebrow,
-  .about-experience .service-eyebrow,
-  .about-promise .service-eyebrow,
-  .about-services-link .service-eyebrow,
-  .service-cta .service-eyebrow {
-    color: #A96F3F;
-    font-size: 0.78rem;
-    letter-spacing: 1.8px;
-    font-weight: 800;
-  }
+.about-page-hero .service-eyebrow,
+.about-approach .service-eyebrow,
+.about-values .service-eyebrow,
+.about-mobile .service-eyebrow,
+.about-experience .service-eyebrow,
+.about-promise .service-eyebrow,
+.about-services-link .service-eyebrow,
+.service-cta .service-eyebrow {
+color: #A96F3F;
+font-size: 0.78rem;
+letter-spacing: 1.8px;
+font-weight: 800;
+}
 
 }
 
@@ -2167,29 +2168,29 @@ Improved visibility — typography only
 .service-result .service-eyebrow,
 .service-pricing .service-eyebrow,
 .service-cta .service-eyebrow {
-  color: #A96F3F;
-  font-size: 0.86rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  line-height: 1.4;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
+color: #A96F3F;
+font-size: 0.86rem;
+font-weight: 800;
+letter-spacing: 2px;
+line-height: 1.4;
+margin-bottom: 1rem;
+text-transform: uppercase;
 }
 
 @media (max-width: 480px) {
 
-  .service-page-hero .service-eyebrow,
-  .service-introduction .service-eyebrow,
-  .service-details .service-eyebrow,
-  .service-suitability .service-eyebrow,
-  .service-result .service-eyebrow,
-  .service-pricing .service-eyebrow,
-  .service-cta .service-eyebrow {
-    color: #A96F3F;
-    font-size: 0.78rem;
-    letter-spacing: 1.8px;
-    font-weight: 800;
-  }
+.service-page-hero .service-eyebrow,
+.service-introduction .service-eyebrow,
+.service-details .service-eyebrow,
+.service-suitability .service-eyebrow,
+.service-result .service-eyebrow,
+.service-pricing .service-eyebrow,
+.service-cta .service-eyebrow {
+color: #A96F3F;
+font-size: 0.78rem;
+letter-spacing: 1.8px;
+font-weight: 800;
+}
 
 }
 
@@ -2200,16 +2201,16 @@ Keeps all page layouts intact
 
 /* Make all eyebrow headings clearly visible and compact */
 .service-eyebrow {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 0.45rem;
-    line-height: 1.25;
+display: block;
+margin-top: 0;
+margin-bottom: 0.45rem;
+line-height: 1.25;
 }
 
 /* Remove any accidental top spacing from the heading immediately after */
 .service-eyebrow + h1,
 .service-eyebrow + h2 {
-    margin-top: 0;
+margin-top: 0;
 }
 
 /* Keep eyebrow + main heading visually connected */
@@ -2218,28 +2219,29 @@ Keeps all page layouts intact
 .service-section-heading .service-eyebrow,
 .service-narrow .service-eyebrow,
 .service-cta .service-eyebrow {
-    margin-top: 0;
-    margin-bottom: 0.45rem;
+margin-top: 0;
+margin-bottom: 0.45rem;
 }
 
 /* Mobile: make the relationship even tighter */
 @media (max-width: 768px) {
-    .service-eyebrow {
-        margin-bottom: 0.35rem;
-        line-height: 1.2;
-    }
+.service-eyebrow {
+margin-bottom: 0.35rem;
+line-height: 1.2;
+}
 
-    .service-eyebrow + h1,
-    .service-eyebrow + h2 {
-        margin-top: 0;
-    }
+.service-eyebrow + h1,  
+.service-eyebrow + h2 {  
+    margin-top: 0;  
+}
+
 }
 
 /* Small phones */
 @media (max-width: 480px) {
-    .service-eyebrow {
-        margin-bottom: 0.3rem;
-    }
+.service-eyebrow {
+margin-bottom: 0.3rem;
+}
 }
 
 /* =========================================================
@@ -2252,31 +2254,30 @@ Does NOT alter main headings, containers, grids or zoom layout.
 /* ---------- GLOBAL EYEBROW ---------- */
 
 .service-eyebrow {
-    display: block;
-    width: fit-content;
-    
-    color: #A96F3F !important;
-    font-family: 'Calibri', 'Segoe UI', sans-serif;
-    font-size: 0.86rem !important;
-    font-weight: 800 !important;
-    letter-spacing: 2.2px !important;
-    line-height: 1.25 !important;
-    text-transform: uppercase;
+display: block;
+width: fit-content;
 
-    margin-top: 0 !important;
-    margin-bottom: 0.5rem !important;
-    padding: 0 !important;
+color: #A96F3F !important;  
+font-family: 'Calibri', 'Segoe UI', sans-serif;  
+font-size: 0.86rem !important;  
+font-weight: 800 !important;  
+letter-spacing: 2.2px !important;  
+line-height: 1.25 !important;  
+text-transform: uppercase;  
+
+margin-top: 0 !important;  
+margin-bottom: 0.5rem !important;  
+padding: 0 !important;
+
 }
-
 
 /* ---------- EYEBROW → MAIN HEADING ---------- */
 
 .service-eyebrow + h1,
 .service-eyebrow + h2,
 .service-eyebrow + h3 {
-    margin-top: 0 !important;
+margin-top: 0 !important;
 }
-
 
 /* ---------- ABOUT PAGE ---------- */
 
@@ -2287,10 +2288,9 @@ Does NOT alter main headings, containers, grids or zoom layout.
 .about-experience .service-eyebrow,
 .about-promise .service-eyebrow,
 .about-services-link .service-eyebrow {
-    margin-top: 0 !important;
-    margin-bottom: 0.5rem !important;
+margin-top: 0 !important;
+margin-bottom: 0.5rem !important;
 }
-
 
 /* ---------- SERVICE PAGES ---------- */
 
@@ -2300,28 +2300,25 @@ Does NOT alter main headings, containers, grids or zoom layout.
 .service-suitability .service-eyebrow,
 .service-result .service-eyebrow,
 .service-pricing .service-eyebrow {
-    margin-top: 0 !important;
-    margin-bottom: 0.5rem !important;
+margin-top: 0 !important;
+margin-bottom: 0.5rem !important;
 }
-
 
 /* ---------- SERVICE SECTION HEADING ---------- */
 
 .service-section-heading .service-eyebrow,
 .service-narrow .service-eyebrow {
-    margin-top: 0 !important;
-    margin-bottom: 0.5rem !important;
+margin-top: 0 !important;
+margin-bottom: 0.5rem !important;
 }
-
 
 /* ---------- CTA EYEBROWS ---------- */
 
 .service-cta .service-eyebrow,
 .about-page-hero .service-cta .service-eyebrow {
-    margin-top: 0 !important;
-    margin-bottom: 0.5rem !important;
+margin-top: 0 !important;
+margin-bottom: 0.5rem !important;
 }
-
 
 /* =========================================================
 REDUCE SPACE ABOVE EYEBROW
@@ -2343,10 +2340,9 @@ Does NOT change general section spacing.
 .about-experience:has(.service-eyebrow),
 .about-promise:has(.service-eyebrow),
 .about-services-link:has(.service-eyebrow) {
-    /* Do not change section padding here.
-       The eyebrow itself is controlled instead. */
+/* Do not change section padding here.
+The eyebrow itself is controlled instead. */
 }
-
 
 /* =========================================================
 MOBILE
@@ -2354,21 +2350,21 @@ MOBILE
 
 @media (max-width: 768px) {
 
-    .service-eyebrow {
-        font-size: 0.82rem !important;
-        letter-spacing: 2px !important;
-        line-height: 1.2 !important;
-        margin-top: 0 !important;
-        margin-bottom: 0.4rem !important;
-    }
+.service-eyebrow {  
+    font-size: 0.82rem !important;  
+    letter-spacing: 2px !important;  
+    line-height: 1.2 !important;  
+    margin-top: 0 !important;  
+    margin-bottom: 0.4rem !important;  
+}  
 
-    .service-eyebrow + h1,
-    .service-eyebrow + h2,
-    .service-eyebrow + h3 {
-        margin-top: 0 !important;
-    }
+.service-eyebrow + h1,  
+.service-eyebrow + h2,  
+.service-eyebrow + h3 {  
+    margin-top: 0 !important;  
 }
 
+}
 
 /* =========================================================
 FINAL EYEBROW SPACING FIX — MOBILE ONLY
@@ -2377,63 +2373,62 @@ Does not affect desktop / zoom-out layouts
 
 @media (max-width: 768px) {
 
-  /* ---------------------------------
-     1. SERVICE HERO — space above eyebrow
-     --------------------------------- */
+/* ---------------------------------
+1. SERVICE HERO — space above eyebrow
+--------------------------------- */
 
-  .service-page-hero {
-    padding-top: 2.2rem !important;
-  }
-
-  /* ---------------------------------
-     2. EYEBROW → MAIN HEADING
-     --------------------------------- */
-
-  .service-eyebrow {
-    margin-top: 0 !important;
-    margin-bottom: 0.45rem !important;
-    line-height: 1.2 !important;
-  }
-
-  .service-eyebrow + h1,
-  .service-eyebrow + h2 {
-    margin-top: 0 !important;
-  }
-
-  /* ---------------------------------
-     3. CORE SERVICE / OTHER SECTIONS
-     Space above their eyebrow
-     --------------------------------- */
-
-  .service-introduction,
-  .service-details,
-  .service-suitability,
-  .service-result,
-  .service-pricing {
-    padding-top: 2.5rem !important;
-  }
-
-  /* Eyebrow inside section heading */
-  .service-section-heading .service-eyebrow,
-  .service-narrow .service-eyebrow {
-    margin-top: 0 !important;
-    margin-bottom: 0.45rem !important;
-  }
-
-  /* ---------------------------------
-     4. CTA EYEBROW
-     --------------------------------- */
-
-  .service-cta {
-    padding-top: 2.5rem !important;
-  }
-
-  .service-cta .service-eyebrow {
-    margin-top: 0 !important;
-    margin-bottom: 0.45rem !important;
-  }
+.service-page-hero {
+padding-top: 2.2rem !important;
 }
 
+/* ---------------------------------
+2. EYEBROW → MAIN HEADING
+--------------------------------- */
+
+.service-eyebrow {
+margin-top: 0 !important;
+margin-bottom: 0.45rem !important;
+line-height: 1.2 !important;
+}
+
+.service-eyebrow + h1,
+.service-eyebrow + h2 {
+margin-top: 0 !important;
+}
+
+/* ---------------------------------
+3. CORE SERVICE / OTHER SECTIONS
+Space above their eyebrow
+--------------------------------- */
+
+.service-introduction,
+.service-details,
+.service-suitability,
+.service-result,
+.service-pricing {
+padding-top: 2.5rem !important;
+}
+
+/* Eyebrow inside section heading */
+.service-section-heading .service-eyebrow,
+.service-narrow .service-eyebrow {
+margin-top: 0 !important;
+margin-bottom: 0.45rem !important;
+}
+
+/* ---------------------------------
+4. CTA EYEBROW
+--------------------------------- */
+
+.service-cta {
+padding-top: 2.5rem !important;
+}
+
+.service-cta .service-eyebrow {
+margin-top: 0 !important;
+margin-bottom: 0.45rem !important;
+}
+}
 
 /* =========================================================
 SMALL PHONES — 480px
@@ -2442,28 +2437,28 @@ Slightly tighter, but still comfortable
 
 @media (max-width: 480px) {
 
-  .service-page-hero {
-    padding-top: 2rem !important;
-  }
+.service-page-hero {
+padding-top: 2rem !important;
+}
 
-  .service-eyebrow {
-    margin-bottom: 0.4rem !important;
-    line-height: 1.2 !important;
-  }
+.service-eyebrow {
+margin-bottom: 0.4rem !important;
+line-height: 1.2 !important;
+}
 
-  .service-eyebrow + h1,
-  .service-eyebrow + h2 {
-    margin-top: 0 !important;
-  }
+.service-eyebrow + h1,
+.service-eyebrow + h2 {
+margin-top: 0 !important;
+}
 
-  .service-introduction,
-  .service-details,
-  .service-suitability,
-  .service-result,
-  .service-pricing,
-  .service-cta {
-    padding-top: 2.2rem !important;
-  }
+.service-introduction,
+.service-details,
+.service-suitability,
+.service-result,
+.service-pricing,
+.service-cta {
+padding-top: 2.2rem !important;
+}
 }
 
 /* =========================================================
@@ -2472,45 +2467,43 @@ DO NOT AFFECT ABOUT / SERVICE PAGES
 ========================================================= */
 
 .gallery-hero {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+padding-top: 2rem;
+padding-bottom: 3rem;
 }
 
 /* Eyebrow itself */
 .gallery-hero .service-eyebrow {
-    display: block;
-    margin: 0 0 0.15rem 0;
-    padding: 0;
-    line-height: 1.1;
+display: block;
+margin: 0 0 0.15rem 0;
+padding: 0;
+line-height: 1.1;
 }
 
 /* Main Gallery heading */
 .gallery-hero h1 {
-    margin-top: 0 !important;
-    margin-bottom: 1.2rem;
-    line-height: 1.15;
+margin-top: 0 !important;
+margin-bottom: 1.2rem;
+line-height: 1.15;
 }
-
 
 /* ===========================
 GALLERY — SECOND EYEBROW
 =========================== */
 
 .gallery-intro {
-    padding-top: 2.5rem;
+padding-top: 2.5rem;
 }
 
 .gallery-intro .service-eyebrow {
-    display: block;
-    margin: 0 0 0.15rem 0;
-    padding: 0;
-    line-height: 1.1;
+display: block;
+margin: 0 0 0.15rem 0;
+padding: 0;
+line-height: 1.1;
 }
 
 .gallery-intro h2 {
-    margin-top: 0 !important;
+margin-top: 0 !important;
 }
-
 
 /* ===========================
 MOBILE
@@ -2518,33 +2511,33 @@ MOBILE
 
 @media (max-width: 768px) {
 
-    .gallery-hero {
-        padding-top: 2rem;
-        padding-bottom: 2.5rem;
-    }
+.gallery-hero {  
+    padding-top: 2rem;  
+    padding-bottom: 2.5rem;  
+}  
 
-    .gallery-hero .service-eyebrow {
-        margin-bottom: 0.1rem;
-        line-height: 1.1;
-    }
+.gallery-hero .service-eyebrow {  
+    margin-bottom: 0.1rem;  
+    line-height: 1.1;  
+}  
 
-    .gallery-hero h1 {
-        margin-top: 0 !important;
-    }
+.gallery-hero h1 {  
+    margin-top: 0 !important;  
+}  
 
-    .gallery-intro {
-        padding-top: 2rem;
-    }
+.gallery-intro {  
+    padding-top: 2rem;  
+}  
 
-    .gallery-intro .service-eyebrow {
-        margin-bottom: 0.1rem;
-    }
+.gallery-intro .service-eyebrow {  
+    margin-bottom: 0.1rem;  
+}  
 
-    .gallery-intro h2 {
-        margin-top: 0 !important;
-    }
+.gallery-intro h2 {  
+    margin-top: 0 !important;  
 }
 
+}
 
 /* ===========================
 SMALL PHONE
@@ -2552,509 +2545,504 @@ SMALL PHONE
 
 @media (max-width: 480px) {
 
-    .gallery-hero {
-        padding-top: 1.7rem;
-        padding-bottom: 2.3rem;
-    }
+.gallery-hero {  
+    padding-top: 1.7rem;  
+    padding-bottom: 2.3rem;  
+}  
 
-    .gallery-hero .service-eyebrow {
-        font-size: 0.78rem;
-        letter-spacing: 1.8px;
-        line-height: 1;
-        margin-bottom: 0.05rem;
-    }
+.gallery-hero .service-eyebrow {  
+    font-size: 0.78rem;  
+    letter-spacing: 1.8px;  
+    line-height: 1;  
+    margin-bottom: 0.05rem;  
+}  
 
-    .gallery-hero h1 {
-        margin-top: 0 !important;
-    }
+.gallery-hero h1 {  
+    margin-top: 0 !important;  
+}  
 
-    .gallery-intro {
-        padding-top: 1.8rem;
-    }
+.gallery-intro {  
+    padding-top: 1.8rem;  
+}  
 
-    .gallery-intro .service-eyebrow {
-        font-size: 0.78rem;
-        letter-spacing: 1.8px;
-        line-height: 1;
-        margin-bottom: 0.05rem;
-    }
+.gallery-intro .service-eyebrow {  
+    font-size: 0.78rem;  
+    letter-spacing: 1.8px;  
+    line-height: 1;  
+    margin-bottom: 0.05rem;  
+}  
 
-    .gallery-intro h2 {
-        margin-top: 0 !important;
-    }
+.gallery-intro h2 {  
+    margin-top: 0 !important;  
+}
+
 }
 /* =========================================================
-   BOOKING FORM — PRECIOUS PETS
-   Added separately so existing website styling is untouched
-   ========================================================= */
+BOOKING FORM — PRECIOUS PETS
+Added separately so existing website styling is untouched
+========================================================= */
 
 .booking-form-wrapper {
-  max-width: 760px;
-  margin: 50px auto 0;
-  padding: 35px;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-  text-align: left;
+max-width: 760px;
+margin: 50px auto 0;
+padding: 35px;
+background: #ffffff;
+border-radius: 16px;
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+text-align: left;
 }
 
 .booking-form-wrapper h3 {
-  margin: 0 0 10px;
-  text-align: center;
-  font-size: 2rem;
+margin: 0 0 10px;
+text-align: center;
+font-size: 2rem;
 }
 
 .booking-form-intro {
-  margin: 0 auto 30px;
-  max-width: 600px;
-  text-align: center;
-  line-height: 1.6;
+margin: 0 auto 30px;
+max-width: 600px;
+text-align: center;
+line-height: 1.6;
 }
 
 .booking-form {
-  width: 100%;
+width: 100%;
 }
 
 .booking-form .form-group {
-  margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .booking-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
-  line-height: 1.4;
+display: block;
+margin-bottom: 8px;
+font-weight: 600;
+line-height: 1.4;
 }
 
 .booking-form input,
 .booking-form select,
 .booking-form textarea {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 13px 15px;
-  border: 1px solid #d8d8d8;
-  border-radius: 8px;
-  background: #ffffff;
-  font-family: inherit;
-  font-size: 1rem;
-  color: inherit;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+width: 100%;
+box-sizing: border-box;
+padding: 13px 15px;
+border: 1px solid #d8d8d8;
+border-radius: 8px;
+background: #ffffff;
+font-family: inherit;
+font-size: 1rem;
+color: inherit;
+transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .booking-form input,
 .booking-form select {
-  min-height: 48px;
+min-height: 48px;
 }
 
 .booking-form textarea {
-  min-height: 130px;
-  resize: vertical;
-  line-height: 1.5;
+min-height: 130px;
+resize: vertical;
+line-height: 1.5;
 }
 
 .booking-form input::placeholder,
 .booking-form textarea::placeholder {
-  opacity: 0.65;
+opacity: 0.65;
 }
 
 .booking-form input:focus,
 .booking-form select:focus,
 .booking-form textarea:focus {
-  outline: none;
-  border-color: #999;
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+outline: none;
+border-color: #999;
+box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
 }
 
 .booking-form select {
-  cursor: pointer;
+cursor: pointer;
 }
 
 .booking-form button {
-  display: block;
-  width: 100%;
-  margin-top: 10px;
-  border: none;
-  cursor: pointer;
+display: block;
+width: 100%;
+margin-top: 10px;
+border: none;
+cursor: pointer;
 }
 
 /* Mobile booking form */
 @media (max-width: 600px) {
 
-  .booking-form-wrapper {
-    margin-top: 35px;
-    padding: 25px 18px;
-    border-radius: 12px;
-  }
-
-  .booking-form-wrapper h3 {
-    font-size: 1.6rem;
-  }
-
-  .booking-form-intro {
-    font-size: 0.95rem;
-    margin-bottom: 25px;
-  }
-
-  .booking-form .form-group {
-    margin-bottom: 17px;
-  }
-
-  .booking-form input,
-  .booking-form select,
-  .booking-form textarea {
-    font-size: 16px;
-  }
-
-  .booking-form textarea {
-    min-height: 120px;
-  }
-
-}
-/* =========================================================
-   BOOKING FORM — TEXT VISIBILITY FIX
-   Overrides existing Contact section text styles
-   ========================================================= */
-
 .booking-form-wrapper {
-  color: #333333;
+margin-top: 35px;
+padding: 25px 18px;
+border-radius: 12px;
 }
 
 .booking-form-wrapper h3 {
-  color: #333333 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+font-size: 1.6rem;
 }
 
 .booking-form-intro {
-  color: #555555 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+font-size: 0.95rem;
+margin-bottom: 25px;
 }
 
-.booking-form label {
-  display: block;
-  color: #333333 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  font-weight: 600;
+.booking-form .form-group {
+margin-bottom: 17px;
 }
 
 .booking-form input,
 .booking-form select,
 .booking-form textarea {
-  color: #333333 !important;
-  background-color: #ffffff !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+font-size: 16px;
+}
+
+.booking-form textarea {
+min-height: 120px;
+}
+
+}
+/* =========================================================
+BOOKING FORM — TEXT VISIBILITY FIX
+Overrides existing Contact section text styles
+========================================================= */
+
+.booking-form-wrapper {
+color: #333333;
+}
+
+.booking-form-wrapper h3 {
+color: #333333 !important;
+opacity: 1 !important;
+visibility: visible !important;
+}
+
+.booking-form-intro {
+color: #555555 !important;
+opacity: 1 !important;
+visibility: visible !important;
+}
+
+.booking-form label {
+display: block;
+color: #333333 !important;
+opacity: 1 !important;
+visibility: visible !important;
+font-weight: 600;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+color: #333333 !important;
+background-color: #ffffff !important;
+opacity: 1 !important;
+visibility: visible !important;
 }
 
 .booking-form input::placeholder,
 .booking-form textarea::placeholder {
-  color: #777777 !important;
-  opacity: 1 !important;
+color: #777777 !important;
+opacity: 1 !important;
 }
 
 .booking-form select {
-  color: #333333 !important;
+color: #333333 !important;
 }
 
 .booking-form select option {
-  color: #333333 !important;
-  background-color: #ffffff !important;
+color: #333333 !important;
+background-color: #ffffff !important;
 }
 
 .booking-form button {
-  opacity: 1 !important;
-  visibility: visible !important;
+opacity: 1 !important;
+visibility: visible !important;
 }
 
 /* =========================================================
-   FINAL ABOUT PAGE EYEBROW POLISH
-   MOBILE READABILITY + CENTER ALIGNMENT
-   TYPOGRAPHY ONLY — NO WIDTH / ZOOM / LAYOUT CHANGES
+FINAL ABOUT PAGE EYEBROW POLISH
+MOBILE READABILITY + CENTER ALIGNMENT
+TYPOGRAPHY ONLY — NO WIDTH / ZOOM / LAYOUT CHANGES
 ========================================================= */
 
 @media (max-width: 768px) {
 
-  .about-page-hero .service-eyebrow,
-  .about-approach .service-eyebrow,
-  .about-values .service-eyebrow,
-  .about-mobile .service-eyebrow,
-  .about-experience .service-eyebrow,
-  .about-promise .service-eyebrow,
-  .about-services-link .service-eyebrow {
+.about-page-hero .service-eyebrow,
+.about-approach .service-eyebrow,
+.about-values .service-eyebrow,
+.about-mobile .service-eyebrow,
+.about-experience .service-eyebrow,
+.about-promise .service-eyebrow,
+.about-services-link .service-eyebrow {
 
-    display: block;
-    width: fit-content;
+display: block;  
+width: fit-content;  
 
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 0 !important;
-    margin-bottom: 0.45rem !important;
+margin-left: auto !important;  
+margin-right: auto !important;  
+margin-top: 0 !important;  
+margin-bottom: 0.45rem !important;  
 
-    color: #A96F3F !important;
-    font-size: 0.92rem !important;
-    font-weight: 800 !important;
-    letter-spacing: 2px !important;
-    line-height: 1.2 !important;
+color: #A96F3F !important;  
+font-size: 0.92rem !important;  
+font-weight: 800 !important;  
+letter-spacing: 2px !important;  
+line-height: 1.2 !important;  
 
-    text-align: center !important;
-  }
+text-align: center !important;
 
-  .about-page-hero .service-eyebrow + h1,
-  .about-page-hero .service-eyebrow + h2,
-  .about-approach .service-eyebrow + h2,
-  .about-values .service-eyebrow + h2,
-  .about-mobile .service-eyebrow + h2,
-  .about-experience .service-eyebrow + h2,
-  .about-promise .service-eyebrow + h2,
-  .about-services-link .service-eyebrow + h2 {
-    margin-top: 0 !important;
-  }
 }
 
+.about-page-hero .service-eyebrow + h1,
+.about-page-hero .service-eyebrow + h2,
+.about-approach .service-eyebrow + h2,
+.about-values .service-eyebrow + h2,
+.about-mobile .service-eyebrow + h2,
+.about-experience .service-eyebrow + h2,
+.about-promise .service-eyebrow + h2,
+.about-services-link .service-eyebrow + h2 {
+margin-top: 0 !important;
+}
+}
 
 /* =========================================================
-   ABOUT PAGE EYEBROW — SMALL PHONES
+ABOUT PAGE EYEBROW — SMALL PHONES
 ========================================================= */
 
 @media (max-width: 480px) {
 
-  .about-page-hero .service-eyebrow,
-  .about-approach .service-eyebrow,
-  .about-values .service-eyebrow,
-  .about-mobile .service-eyebrow,
-  .about-experience .service-eyebrow,
-  .about-promise .service-eyebrow,
-  .about-services-link .service-eyebrow {
+.about-page-hero .service-eyebrow,
+.about-approach .service-eyebrow,
+.about-values .service-eyebrow,
+.about-mobile .service-eyebrow,
+.about-experience .service-eyebrow,
+.about-promise .service-eyebrow,
+.about-services-link .service-eyebrow {
 
-    font-size: 0.88rem !important;
-    letter-spacing: 1.9px !important;
-    line-height: 1.2 !important;
+font-size: 0.88rem !important;  
+letter-spacing: 1.9px !important;  
+line-height: 1.2 !important;  
 
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-bottom: 0.4rem !important;
+margin-left: auto !important;  
+margin-right: auto !important;  
+margin-bottom: 0.4rem !important;  
 
-    text-align: center !important;
-  }
+text-align: center !important;
+
+}
 }
 
-
 /* =========================================================
-   FOOTER EYEBROW — READY WHEN YOU ARE
-   MOBILE READABILITY + CENTER ALIGNMENT
+FOOTER EYEBROW — READY WHEN YOU ARE
+MOBILE READABILITY + CENTER ALIGNMENT
 ========================================================= */
 
 footer .service-eyebrow,
 .footer-section .service-eyebrow {
 
-  display: block;
-  width: fit-content;
+display: block;
+width: fit-content;
 
-  color: #FFFFFF !important;
-  font-size: 0.9rem !important;
-  font-weight: 800 !important;
-  letter-spacing: 2px !important;
-  line-height: 1.25 !important;
+color: #FFFFFF !important;
+font-size: 0.9rem !important;
+font-weight: 800 !important;
+letter-spacing: 2px !important;
+line-height: 1.25 !important;
 
-  margin-top: 0 !important;
-  margin-bottom: 0.5rem !important;
+margin-top: 0 !important;
+margin-bottom: 0.5rem !important;
 
-  opacity: 1 !important;
-  visibility: visible !important;
+opacity: 1 !important;
+visibility: visible !important;
 }
-
 
 @media (max-width: 768px) {
 
-  footer .service-eyebrow,
-  .footer-section .service-eyebrow {
+footer .service-eyebrow,
+.footer-section .service-eyebrow {
 
-    margin-left: auto !important;
-    margin-right: auto !important;
+margin-left: auto !important;  
+margin-right: auto !important;  
 
-    font-size: 0.9rem !important;
-    letter-spacing: 1.9px !important;
-    line-height: 1.2 !important;
+font-size: 0.9rem !important;  
+letter-spacing: 1.9px !important;  
+line-height: 1.2 !important;  
 
-    text-align: center !important;
-  }
+text-align: center !important;
+
 }
-
+}
 
 @media (max-width: 480px) {
 
-  footer .service-eyebrow,
-  .footer-section .service-eyebrow {
+footer .service-eyebrow,
+.footer-section .service-eyebrow {
 
-    font-size: 0.88rem !important;
-    letter-spacing: 1.8px !important;
-    line-height: 1.2 !important;
+font-size: 0.88rem !important;  
+letter-spacing: 1.8px !important;  
+line-height: 1.2 !important;  
 
-    margin-left: auto !important;
-    margin-right: auto !important;
+margin-left: auto !important;  
+margin-right: auto !important;  
 
-    text-align: center !important;
-  }
+text-align: center !important;
+
+}
 }
 /* =========================================================
-   ABOUT PAGE — EXPLORE GROOMING SERVICES CTA
-   FINAL BUTTON VISIBILITY FIX
-   Does NOT affect viewport, width, zoom or page layout
+ABOUT PAGE — EXPLORE GROOMING SERVICES CTA
+FINAL BUTTON VISIBILITY FIX
+Does NOT affect viewport, width, zoom or page layout
 ========================================================= */
 
 .about-services-link {
-  text-align: center;
+text-align: center;
 }
 
 .about-services-link .btn {
-  display: inline-block;
-  width: auto;
-  min-width: 220px;
-  padding: 1rem 2.2rem;
-  margin-top: 0.8rem;
+display: inline-block;
+width: auto;
+min-width: 220px;
+padding: 1rem 2.2rem;
+margin-top: 0.8rem;
 
-  background: #D4A574;
-  color: #ffffff !important;
+background: #D4A574;
+color: #ffffff !important;
 
-  border: 2px solid #D4A574;
-  border-radius: 6px;
+border: 2px solid #D4A574;
+border-radius: 6px;
 
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.2;
-  text-align: center;
+font-size: 1rem;
+font-weight: 600;
+line-height: 1.2;
+text-align: center;
 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .about-services-link .btn:hover {
-  background: #2D5A5A;
-  border-color: #2D5A5A;
-  color: #ffffff !important;
-  transform: translateY(-2px);
+background: #2D5A5A;
+border-color: #2D5A5A;
+color: #ffffff !important;
+transform: translateY(-2px);
 }
 
-
 /* ---------------------------------------------------------
-   MOBILE
+MOBILE
 --------------------------------------------------------- */
 
 @media (max-width: 768px) {
 
-  .about-services-link .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.about-services-link .btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
 
-    width: auto;
-    min-width: 220px;
+width: auto;  
+min-width: 220px;  
 
-    padding: 0.95rem 1.8rem;
-    margin-top: 0.7rem;
+padding: 0.95rem 1.8rem;  
+margin-top: 0.7rem;  
 
-    font-size: 1rem;
-    line-height: 1.2;
-    text-align: center;
-  }
+font-size: 1rem;  
+line-height: 1.2;  
+text-align: center;
+
+}
 }
 /* =========================================================
-   ABOUT PAGE — CTA BOTTOM GAP ONLY
-   Creates clear separation before the next section.
-   NO width / viewport / zoom / layout changes.
+ABOUT PAGE — CTA BOTTOM GAP ONLY
+Creates clear separation before the next section.
+NO width / viewport / zoom / layout changes.
 ========================================================= */
 
 .about-services-link {
-  padding-bottom: 3rem !important;
+padding-bottom: 3rem !important;
 }
 
-
 /* ---------------------------------------------------------
-   MOBILE
+MOBILE
 --------------------------------------------------------- */
 
 @media (max-width: 768px) {
-  .about-services-link {
-    padding-bottom: 2.8rem !important;
-  }
+.about-services-link {
+padding-bottom: 2.8rem !important;
+}
 }
 
-
 /* ---------------------------------------------------------
-   SMALL PHONE
+SMALL PHONE
 --------------------------------------------------------- */
 
 @media (max-width: 480px) {
-  .about-services-link {
-    padding-bottom: 2.5rem !important;
-  }
+.about-services-link {
+padding-bottom: 2.5rem !important;
+}
 }
 
-
 /* ---------------------------------------------------------
-   SMALL PHONE
+SMALL PHONE
 --------------------------------------------------------- */
 
 @media (max-width: 480px) {
 
-  .about-services-link .btn {
-    min-width: 210px;
-    padding: 0.9rem 1.6rem;
-    font-size: 0.95rem;
-  }
+.about-services-link .btn {
+min-width: 210px;
+padding: 0.9rem 1.6rem;
+font-size: 0.95rem;
+}
 }
 /* =========================================================
-   GALLERY PAGE — FINAL EYEBROW TYPOGRAPHY
-   Matches About Page exactly
-   Center aligned + same size + same style
-   NO WIDTH / ZOOM / LAYOUT CHANGES
+GALLERY PAGE — FINAL EYEBROW TYPOGRAPHY
+Matches About Page exactly
+Center aligned + same size + same style
+NO WIDTH / ZOOM / LAYOUT CHANGES
 ========================================================= */
 
 .gallery-hero .service-eyebrow,
 .gallery-intro .service-eyebrow {
 
-  display: block;
-  width: fit-content;
+display: block;
+width: fit-content;
 
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-top: 0 !important;
-  margin-bottom: 0.45rem !important;
+margin-left: auto !important;
+margin-right: auto !important;
+margin-top: 0 !important;
+margin-bottom: 0.45rem !important;
 
-  color: #A96F3F !important;
-  font-family: 'Calibri', 'Segoe UI', sans-serif;
-  font-size: 0.92rem !important;
-  font-weight: 800 !important;
-  letter-spacing: 2px !important;
-  line-height: 1.2 !important;
+color: #A96F3F !important;
+font-family: 'Calibri', 'Segoe UI', sans-serif;
+font-size: 0.92rem !important;
+font-weight: 800 !important;
+letter-spacing: 2px !important;
+line-height: 1.2 !important;
 
-  text-transform: uppercase;
-  text-align: center !important;
+text-transform: uppercase;
+text-align: center !important;
 }
 
-
 /* =========================================================
-   GALLERY PAGE — SMALL PHONE
-   Same as About Page
+GALLERY PAGE — SMALL PHONE
+Same as About Page
 ========================================================= */
 
 @media (max-width: 480px) {
 
-  .gallery-hero .service-eyebrow,
-  .gallery-intro .service-eyebrow {
+.gallery-hero .service-eyebrow,
+.gallery-intro .service-eyebrow {
 
-    font-size: 0.88rem !important;
-    letter-spacing: 1.9px !important;
-    line-height: 1.2 !important;
+font-size: 0.88rem !important;  
+letter-spacing: 1.9px !important;  
+line-height: 1.2 !important;  
 
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-bottom: 0.4rem !important;
+margin-left: auto !important;  
+margin-right: auto !important;  
+margin-bottom: 0.4rem !important;  
 
-    text-align: center !important;
-  }
+text-align: center !important;
+
 }
-
-
-  
+}
