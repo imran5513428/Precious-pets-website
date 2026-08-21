@@ -1590,8 +1590,7 @@ overflow: hidden;
 .about-hero-grid {
 display: grid;
 grid-template-columns: 0.9fr 1.1fr;
-align-items: center;
-gap: 4rem;
+align-items: start;
 }
 
 .about-hero-content {
