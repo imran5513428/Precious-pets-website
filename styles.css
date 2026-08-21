@@ -1590,12 +1590,11 @@ overflow: hidden;
 .about-hero-grid {
 display: grid;
 grid-template-columns: 0.9fr 1.1fr;
-align-items: start;
+align-items: center;
 }
 
 .about-hero-content {
 max-width: 560px;
-transform: translateY(-12px);
 }
 .about-hero-content h1 {
 color: #2D5A5A;
