@@ -3433,3 +3433,91 @@ text-align: center !important;
   }
 
 }
+/* =========================================================
+   FINAL BOOKING FORM ALIGNMENT
+   Controlled fix — protects existing mobile layout
+   ========================================================= */
+
+.booking-form-wrapper {
+    width: 100%;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.booking-form-wrapper *,
+.booking-form-wrapper *::before,
+.booking-form-wrapper *::after {
+    box-sizing: border-box;
+}
+
+.booking-form {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.booking-form .form-group {
+    width: 100%;
+    max-width: 100%;
+}
+
+.booking-form label {
+    width: 100%;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.booking-form button {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* ---------- PHONE ---------- */
+
+@media (max-width: 768px) {
+
+    .booking-form-wrapper {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .booking-form {
+        width: 100%;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea,
+    .booking-form button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+/* ---------- SMALL PHONE ---------- */
+
+@media (max-width: 480px) {
+
+    .booking-form-wrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+}
