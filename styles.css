@@ -1595,7 +1595,8 @@ align-items: center;
 
 .about-hero-content {
 max-width: 560px;
-transform: translateY(-45px);
+position: relative;
+top: -45px;
 }
 .about-hero-content h1 {
 color: #2D5A5A;
