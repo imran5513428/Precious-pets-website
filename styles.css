@@ -4457,168 +4457,85 @@ text-align: center !important;
 
 
 /* =========================================================
-   ABOUT PAGE — MEDIUM DESKTOP / TABLET
+   ABOUT PAGE — RESPONSIVE SYSTEM
+   Tablet + Mobile
+   ========================================================= */
+
+
+/* =========================================================
+   MEDIUM DESKTOP / TABLET
    769px–1050px
    ========================================================= */
 
 @media (min-width: 769px) and (max-width: 1050px) {
 
+  /* ---------- HERO ---------- */
+
   .about-page-hero {
-    padding: 48px 0 56px;
+    padding: 3.2rem 0 3.8rem;
   }
 
   .about-hero-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.8fr);
-    gap: 42px;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.82fr);
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .about-hero-content {
+    max-width: 620px;
   }
 
   .about-hero-content h1 {
-    font-size: 42px;
+    font-size: clamp(2.35rem, 4.5vw, 3rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
   }
 
   .about-hero-lead {
     font-size: 1rem;
+    line-height: 1.65;
+    max-width: 570px;
   }
 
-  .about-values-grid,
-  .about-experience-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
+  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    max-width: 560px;
   }
 
-  .about-two-column {
-    gap: 42px;
+  .about-hero-image {
+    max-width: 480px;
+    width: 100%;
+    margin-left: auto;
   }
 
-  .about-mobile-highlight {
-    max-width: 340px;
-    padding: 28px 24px;
+  .about-hero-image img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
   }
 
-  footer .footer-content {
-    gap: 28px;
+
+  /* ---------- GENERAL SECTIONS ---------- */
+
+  .about-approach,
+  .about-values,
+  .about-mobile,
+  .about-experience,
+  .about-promise,
+  .about-services-link {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
-}
-
-
-/* =========================================================
-   ABOUT PAGE — LARGE DESKTOP
-   ========================================================= */
-
-@media (min-width: 1100px) {
-
-  .about-page-hero {
-    padding-top: 64px;
-    padding-bottom: 70px;
-  }
-
-  .about-hero-grid {
-    gap: 72px;
-  }
-
-  .about-values-grid,
-  .about-experience-grid {
-    gap: 20px;
-  }
-
-}
-
-
-/* =========================================================
-   ABOUT PAGE — MOBILE VISUAL RHYTHM
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-  /* -----------------------------------------
-     HERO
-     ----------------------------------------- */
-
-  .about-page-hero {
-    padding: 2.4rem 0 2.8rem;
-  }
-
-  .about-hero-content {
-    text-align: center;
+  .about-narrow {
+    max-width: 760px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .about-hero-content .service-eyebrow {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-bottom: 0.4rem !important;
-    text-align: center !important;
-  }
 
-  .about-hero-content h1 {
-    margin: 0 auto 0.9rem !important;
-    font-size: 2.25rem;
-    line-height: 1.12;
-    text-align: center;
-  }
-
-  .about-hero-lead {
-    max-width: 600px;
-    margin: 0 auto 0.8rem;
-    font-size: 1rem;
-    line-height: 1.65;
-    text-align: center;
-  }
-
-  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 0.94rem;
-    line-height: 1.65;
-    text-align: center;
-  }
-
-  .about-hero-image {
-    max-width: 520px;
-    margin: 1.8rem auto 0;
-    border-radius: 12px;
-  }
-
-  .about-hero-image img {
-    border-radius: 12px;
-  }
-
-
-  /* -----------------------------------------
-     SHARED SECTION SPACING
-     ----------------------------------------- */
-
-  .about-approach {
-    padding: 2.8rem 0;
-    text-align: center;
-  }
-
-  .about-values,
-  .about-experience {
-    padding: 2.8rem 0;
-    text-align: center;
-  }
-
-  .about-mobile {
-    padding: 3rem 0;
-  }
-
-  .about-promise {
-    padding: 3rem 0;
-    text-align: center;
-  }
-
-  .about-services-link {
-    padding: 2.8rem 0;
-    text-align: center;
-  }
-
-
-  /* -----------------------------------------
-     SHARED HEADING SCALE
-     ----------------------------------------- */
+  /* ---------- HEADINGS ---------- */
 
   .about-narrow h2,
   .about-values .service-section-heading h2,
@@ -4626,26 +4543,14 @@ text-align: center !important;
   .about-experience .service-section-heading h2,
   .about-promise-inner h2,
   .about-services-link h2 {
-    font-size: 1.8rem;
-    line-height: 1.18;
-    margin-top: 0 !important;
-    margin-bottom: 0.85rem !important;
-  }
-
-  .about-narrow p:not(.service-eyebrow),
-  .about-values .service-section-heading > p:last-child,
-  .about-mobile-content p:not(.service-eyebrow),
-  .about-experience .service-section-heading > p:last-child,
-  .about-promise-inner > p:not(.service-eyebrow):not(.about-signature),
-  .about-services-link p:not(.service-eyebrow) {
-    font-size: 0.95rem;
-    line-height: 1.65;
+    font-size: clamp(1.9rem, 3.2vw, 2.35rem);
+    line-height: 1.16;
+    margin-top: 0;
+    margin-bottom: 0.9rem;
   }
 
 
-  /* -----------------------------------------
-     EYEBROWS
-     ----------------------------------------- */
+  /* ---------- EYEBROWS ---------- */
 
   .about-approach .service-eyebrow,
   .about-values .service-eyebrow,
@@ -4653,42 +4558,34 @@ text-align: center !important;
   .about-experience .service-eyebrow,
   .about-promise .service-eyebrow,
   .about-services-link .service-eyebrow {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-bottom: 0.4rem !important;
-
-    font-size: 0.82rem !important;
-    letter-spacing: 1.9px !important;
-    line-height: 1.2 !important;
-
-    text-align: center !important;
+    margin-bottom: 0.5rem;
+    font-size: 0.76rem;
+    letter-spacing: 1.8px;
   }
 
 
-  /* -----------------------------------------
-     VALUE CARDS
-     ----------------------------------------- */
+  /* ---------- VALUE / EXPERIENCE CARDS ---------- */
 
   .about-values .service-section-heading,
   .about-experience .service-section-heading {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
   }
 
   .about-values-grid,
   .about-experience-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.15rem;
   }
 
   .about-value-card,
   .about-experience-step {
-    padding: 1.4rem;
-    text-align: left;
+    padding: 1.5rem;
   }
 
   .about-value-card h3,
   .about-experience-step h3 {
     font-size: 1.08rem;
+    line-height: 1.3;
   }
 
   .about-value-card p,
@@ -4698,20 +4595,425 @@ text-align: center !important;
   }
 
 
-  /* -----------------------------------------
-     MOBILE GROOMING
-     ----------------------------------------- */
+  /* ---------- MOBILE GROOMING ---------- */
 
   .about-two-column {
-    grid-template-columns: 1fr;
-    gap: 1.8rem;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.7fr);
+    gap: 3rem;
+    align-items: center;
   }
 
   .about-mobile-content {
     max-width: 650px;
-    margin: 0 auto;
+  }
+
+  .about-mobile-highlight {
+    max-width: 340px;
+    margin-left: auto;
+    padding: 1.7rem;
+  }
+
+
+  /* ---------- PROMISE ---------- */
+
+  .about-promise-inner {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------- SERVICES CTA ---------- */
+
+  .about-services-link .container {
+    max-width: 760px;
+  }
+
+
+  /* ---------- FINAL CTA ---------- */
+
+  .service-cta {
+    padding: 3.6rem 0;
+  }
+
+  .service-cta h2 {
+    font-size: 2.15rem;
+    line-height: 1.17;
+    margin-bottom: 0.9rem;
+  }
+
+  .service-cta p:not(.service-eyebrow) {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.65;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  footer .footer-content {
+    gap: 2rem;
+  }
+
+}
+
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1100px+
+   ========================================================= */
+
+@media (min-width: 1100px) {
+
+  .about-page-hero {
+    padding-top: 4rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .about-hero-grid {
+    gap: 4.5rem;
+  }
+
+  .about-values-grid,
+  .about-experience-grid {
+    gap: 1.25rem;
+  }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+   0–768px
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+
+  /* =======================================================
+     HERO
+     ======================================================= */
+
+  .about-page-hero {
+    padding: 2.5rem 0 2.8rem;
+  }
+
+  .about-hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about-hero-content {
+    width: 100%;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
+
+
+  /* ---------- Hero eyebrow ---------- */
+
+  .about-hero-content .service-eyebrow {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 0.55rem !important;
+
+    font-size: 0.72rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: 1.8px !important;
+
+    text-align: center !important;
+  }
+
+
+  /* ---------- Hero heading ---------- */
+
+  .about-hero-content h1 {
+    max-width: 600px;
+
+    margin: 0 auto 0.9rem !important;
+
+    font-size: clamp(2rem, 8vw, 2.35rem);
+    line-height: 1.1;
+
+    text-align: center;
+  }
+
+
+  /* ---------- Hero lead ---------- */
+
+  .about-hero-lead {
+    max-width: 580px;
+
+    margin: 0 auto 0.8rem;
+
+    font-size: 0.98rem;
+    line-height: 1.6;
+
+    text-align: center;
+  }
+
+
+  /* ---------- Hero supporting paragraph ---------- */
+
+  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
+    max-width: 560px;
+
+    margin: 0 auto;
+
+    font-size: 0.9rem;
+    line-height: 1.62;
+
+    text-align: center;
+  }
+
+
+  /* ---------- Hero button ---------- */
+
+  .about-hero-content .btn {
+    margin-top: 1.25rem;
+  }
+
+
+  /* ---------- Hero image ---------- */
+
+  .about-hero-image {
+    width: 100%;
+    max-width: 520px;
+
+    margin: 1.8rem auto 0;
+  }
+
+  .about-hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    border-radius: 12px;
+  }
+
+
+
+  /* =======================================================
+     SECTION SPACING
+     ======================================================= */
+
+  .about-approach {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .about-values {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .about-mobile {
+    padding: 3rem 0;
+  }
+
+  .about-experience {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .about-promise {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .about-services-link {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+
+
+  /* =======================================================
+     SECTION CONTAINERS
+     ======================================================= */
+
+  .about-narrow,
+  .about-promise-inner {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  /* =======================================================
+     SHARED SECTION HEADINGS
+     ======================================================= */
+
+  .about-narrow h2,
+  .about-values .service-section-heading h2,
+  .about-mobile-content h2,
+  .about-experience .service-section-heading h2,
+  .about-promise-inner h2,
+  .about-services-link h2 {
+
+    max-width: 650px;
+
+    margin: 0 auto 0.8rem !important;
+
+    font-size: clamp(1.65rem, 6.5vw, 1.9rem);
+    line-height: 1.18;
+
+    text-align: center;
+  }
+
+
+  /* =======================================================
+     SHARED BODY TEXT
+     ======================================================= */
+
+  .about-narrow p:not(.service-eyebrow),
+  .about-values .service-section-heading > p:last-child,
+  .about-mobile-content p:not(.service-eyebrow),
+  .about-experience .service-section-heading > p:last-child,
+  .about-promise-inner > p:not(.service-eyebrow):not(.about-signature),
+  .about-services-link p:not(.service-eyebrow) {
+
+    max-width: 650px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 0.94rem;
+    line-height: 1.65;
+  }
+
+
+  /* =======================================================
+     APPROACH PARAGRAPH RHYTHM
+     ======================================================= */
+
+  .about-narrow > p:not(.service-eyebrow) {
+    margin-bottom: 0.9rem;
+  }
+
+  .about-narrow > p:last-child {
+    margin-bottom: 0;
+  }
+
+
+
+  /* =======================================================
+     EYEBROWS
+     ======================================================= */
+
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow {
+
+    display: block;
+    width: fit-content;
+
+    margin: 0 auto 0.5rem !important;
+
+    font-size: 0.72rem !important;
+    letter-spacing: 1.8px !important;
+    line-height: 1.2 !important;
+
+    text-align: center !important;
+  }
+
+
+
+  /* =======================================================
+     VALUE / EXPERIENCE SECTION HEADINGS
+     ======================================================= */
+
+  .about-values .service-section-heading,
+  .about-experience .service-section-heading {
+    margin-bottom: 1.5rem;
+  }
+
+
+
+  /* =======================================================
+     VALUE + EXPERIENCE GRIDS
+     ======================================================= */
+
+  .about-values-grid,
+  .about-experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+
+  /* =======================================================
+     CARDS
+     ======================================================= */
+
+  .about-value-card,
+  .about-experience-step {
+
+    padding: 1.3rem 1.25rem;
+
+    text-align: left;
+
+    border-radius: 12px;
+  }
+
+
+  .about-value-card h3,
+  .about-experience-step h3 {
+
+    margin-top: 0.45rem;
+
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+
+
+  .about-value-card p,
+  .about-experience-step p {
+
+    margin-bottom: 0;
+
+    font-size: 0.89rem;
+    line-height: 1.58;
+  }
+
+
+
+  /* =======================================================
+     MOBILE GROOMING
+     ======================================================= */
+
+  .about-two-column {
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 1.7rem;
+
+    align-items: start;
+  }
+
+
+  .about-mobile-content {
+
+    width: 100%;
+    max-width: 650px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+  }
+
 
   .about-mobile-content .service-eyebrow {
     margin-left: auto !important;
@@ -4719,54 +5021,309 @@ text-align: center !important;
     text-align: center !important;
   }
 
+
   .about-mobile-content p:not(.service-eyebrow) {
     margin-left: auto;
     margin-right: auto;
   }
 
+
+  /* ---------- Highlight card ---------- */
+
   .about-mobile-highlight {
+
+    width: 100%;
     max-width: 520px;
+
     margin: 0 auto;
-    padding: 1.8rem;
+
+    padding: 1.6rem;
+
+    text-align: center;
+
+    border-radius: 12px;
+  }
+
+
+  .about-mobile-highlight h3 {
+    font-size: 1.12rem;
+    line-height: 1.3;
+  }
+
+
+  .about-mobile-highlight p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+
+
+  /* =======================================================
+     PROMISE
+     ======================================================= */
+
+  .about-promise-inner {
     text-align: center;
   }
 
 
-  /* -----------------------------------------
+  .about-promise-inner h2 {
+    max-width: 680px;
+  }
+
+
+  .about-signature {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+
+
+  /* =======================================================
      SERVICES CTA
-     ----------------------------------------- */
+     ======================================================= */
 
   .about-services-link .container {
     max-width: 650px;
   }
 
+
   .about-services-link .btn {
-    margin-top: 0.25rem;
+    margin-top: 0.3rem;
   }
 
 
-  /* -----------------------------------------
+
+  /* =======================================================
      FINAL CTA
-     ----------------------------------------- */
+     ======================================================= */
 
   .service-cta {
-    padding: 3rem 0;
+    padding: 3.1rem 0;
+    text-align: center;
   }
+
+
+  .service-cta .container {
+    max-width: 650px;
+  }
+
 
   .service-cta h2 {
-    font-size: 1.85rem;
+
+    max-width: 620px;
+
+    margin: 0 auto 0.8rem !important;
+
+    font-size: clamp(1.7rem, 6.5vw, 1.95rem);
     line-height: 1.18;
-    margin-bottom: 0.85rem !important;
+
+    text-align: center;
   }
 
+
   .service-cta p:not(.service-eyebrow) {
-    font-size: 0.95rem;
+
+    max-width: 600px;
+
+    margin: 0 auto 1.35rem;
+
+    font-size: 0.94rem;
     line-height: 1.65;
-    margin-bottom: 1.5rem;
+
+    text-align: center;
+  }
+
+
+  .service-cta .service-eyebrow {
+    margin-bottom: 0.5rem !important;
   }
 
 }
 
+
+
+/* =========================================================
+   SMALL PHONE
+   0–480px
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+
+  /* ---------- Hero ---------- */
+
+  .about-page-hero {
+    padding: 2.1rem 0 2.4rem;
+  }
+
+
+  .about-hero-content .service-eyebrow {
+    font-size: 0.68rem !important;
+    letter-spacing: 1.6px !important;
+  }
+
+
+  .about-hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+
+    margin-bottom: 0.8rem !important;
+  }
+
+
+  .about-hero-lead {
+    font-size: 0.94rem;
+    line-height: 1.58;
+  }
+
+
+  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+
+  .about-hero-content .btn {
+    margin-top: 1.1rem;
+  }
+
+
+  .about-hero-image {
+    margin-top: 1.5rem;
+  }
+
+
+
+  /* ---------- Section spacing ---------- */
+
+  .about-approach,
+  .about-values,
+  .about-mobile,
+  .about-experience,
+  .about-services-link {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+
+  .about-promise {
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
+  }
+
+
+
+  /* ---------- Section headings ---------- */
+
+  .about-narrow h2,
+  .about-values .service-section-heading h2,
+  .about-mobile-content h2,
+  .about-experience .service-section-heading h2,
+  .about-promise-inner h2,
+  .about-services-link h2 {
+
+    font-size: 1.62rem;
+    line-height: 1.17;
+
+    margin-bottom: 0.75rem !important;
+  }
+
+
+  /* ---------- Eyebrows ---------- */
+
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow {
+
+    font-size: 0.68rem !important;
+    letter-spacing: 1.55px !important;
+
+    margin-bottom: 0.45rem !important;
+  }
+
+
+  /* ---------- Body text ---------- */
+
+  .about-narrow p:not(.service-eyebrow),
+  .about-values .service-section-heading > p:last-child,
+  .about-mobile-content p:not(.service-eyebrow),
+  .about-experience .service-section-heading > p:last-child,
+  .about-promise-inner > p:not(.service-eyebrow):not(.about-signature),
+  .about-services-link p:not(.service-eyebrow) {
+
+    font-size: 0.9rem;
+    line-height: 1.62;
+  }
+
+
+  /* ---------- Cards ---------- */
+
+  .about-values-grid,
+  .about-experience-grid {
+    gap: 0.8rem;
+  }
+
+
+  .about-value-card,
+  .about-experience-step {
+    padding: 1.2rem;
+  }
+
+
+  .about-value-card h3,
+  .about-experience-step h3 {
+    font-size: 1rem;
+  }
+
+
+  .about-value-card p,
+  .about-experience-step p {
+    font-size: 0.86rem;
+    line-height: 1.56;
+  }
+
+
+  /* ---------- Mobile highlight ---------- */
+
+  .about-mobile-highlight {
+    padding: 1.4rem;
+  }
+
+
+  .about-mobile-highlight h3 {
+    font-size: 1.05rem;
+  }
+
+
+  .about-mobile-highlight p {
+    font-size: 0.87rem;
+  }
+
+
+  /* ---------- Final CTA ---------- */
+
+  .service-cta {
+    padding: 2.7rem 0;
+  }
+
+
+  .service-cta h2 {
+    font-size: 1.62rem;
+    line-height: 1.17;
+  }
+
+
+  .service-cta p:not(.service-eyebrow) {
+    font-size: 0.9rem;
+    line-height: 1.62;
+    margin-bottom: 1.25rem;
+  }
+
+}
 
 /* =========================================================
    ABOUT PAGE — SMALL PHONE
