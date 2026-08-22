@@ -5402,3 +5402,196 @@ text-align: center !important;
   }
 
 }
+/* =========================================================
+   PRECIOUS PETS — DESKTOP FOUNDATION RESET
+   PHASE 1 — WIDTH / HORIZONTAL RHYTHM ONLY
+   769px+
+   MOBILE IS NOT TOUCHED
+   ========================================================= */
+
+@media (min-width: 769px) {
+
+  /* ---------------------------------------------------------
+     GLOBAL DESKTOP BOX MODEL
+     --------------------------------------------------------- */
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+
+  /* ---------------------------------------------------------
+     ONE CONSISTENT DESKTOP CONTAINER
+     --------------------------------------------------------- */
+
+  .container {
+    width: min(1180px, calc(100% - 48px));
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     PREVENT COMMON GRID/FLEX CHILD OVERFLOW
+     --------------------------------------------------------- */
+
+  .container > *,
+  .hero-grid > *,
+  .about-hero-grid > *,
+  .about-two-column > *,
+  .groomer-content > * {
+    min-width: 0;
+  }
+
+
+  /* ---------------------------------------------------------
+     HOMEPAGE GRIDS
+     --------------------------------------------------------- */
+
+  .hero-grid,
+  .cards-grid,
+  .services-grid,
+  .transformations-grid,
+  .groomer-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* ---------------------------------------------------------
+     ABOUT PAGE GRIDS
+     --------------------------------------------------------- */
+
+  .about-hero-grid,
+  .about-two-column,
+  .about-values-grid,
+  .about-experience-grid {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* ---------------------------------------------------------
+     IMAGES — NEVER CREATE DESKTOP OVERFLOW
+     --------------------------------------------------------- */
+
+  img,
+  picture,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+
+
+  /* ---------------------------------------------------------
+     HERO WIDTH CONTROL
+     --------------------------------------------------------- */
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero-grid {
+    width: 100%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     ABOUT HERO WIDTH CONTROL
+     --------------------------------------------------------- */
+
+  .about-page-hero {
+    width: 100%;
+  }
+
+  .about-hero-grid {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     ABOUT CONTENT WIDTH
+     --------------------------------------------------------- */
+
+  .about-approach .container,
+  .about-values .container,
+  .about-mobile .container,
+  .about-experience .container,
+  .about-promise .container,
+  .about-services-link .container {
+    width: min(1180px, calc(100% - 48px));
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     SECTION WIDTH PROTECTION
+     --------------------------------------------------------- */
+
+  .why-choose,
+  .testimonials,
+  .services,
+  .transformations,
+  .meet-groomer,
+  .faq,
+  .contact,
+  .about-approach,
+  .about-values,
+  .about-mobile,
+  .about-experience,
+  .about-promise,
+  .about-services-link,
+  .service-cta {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+
+  /* ---------------------------------------------------------
+     BOOKING FORM
+     --------------------------------------------------------- */
+
+  .booking-form-wrapper {
+    width: min(720px, 100%);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     FOOTER
+     --------------------------------------------------------- */
+
+  footer {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  footer .container {
+    width: min(1180px, calc(100% - 48px));
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
