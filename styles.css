@@ -1713,6 +1713,37 @@ background: linear-gradient(135deg, #f7f4ef 0%, #ffffff 100%);
 padding: 5rem 0;
 text-align: center;
 }
+.gallery-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 0.85fr);
+  align-items: center;
+  gap: 60px;
+  text-align: left;
+}
+
+.gallery-hero-grid .service-hero-content {
+  max-width: 620px;
+}
+.gallery-hero-grid .service-eyebrow {
+  display: block;
+  text-align: left;
+  margin-left: 0;
+}
+
+.gallery-hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-hero-image img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: contain;
+}
 
 .gallery-hero h1 {
 color: #2D5A5A;
@@ -1728,7 +1759,17 @@ margin: 0 auto;
 font-size: 1.1rem;
 line-height: 1.85;
 }
+.gallery-hero-grid .service-hero-lead {
+  max-width: 650px;
+  margin: 0 0 1.5rem;
+}
 
+.gallery-hero-grid .service-hero-content > p:last-child {
+  max-width: 620px;
+  margin: 0;
+  color: #666;
+  line-height: 1.7;
+}
 /* Gallery Intro */
 .gallery-intro {
 padding: 3.5rem 0;
@@ -2196,12 +2237,12 @@ Keeps all page layouts intact
 
 /* Make all eyebrow headings clearly visible and compact */
 .service-eyebrow {
-display: block;
-margin-top: 0;
-margin-bottom: 0.45rem;
-line-height: 1.25;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  line-height: 1.25;
+  text-align: left;
 }
-
 /* Remove any accidental top spacing from the heading immediately after */
 .service-eyebrow + h1,
 .service-eyebrow + h2 {
@@ -2506,7 +2547,7 @@ MOBILE
 
 @media (max-width: 768px) {
 
-.gallery-hero {  
+                                                  
     padding-top: 2rem;  
     padding-bottom: 2.5rem;  
 }  
