@@ -1629,7 +1629,7 @@ background: #f5f5f5;
 .about-hero-image img {
 width: 100%;
 display: block;
-aspect-ratio: 4 / 5;
+aspect-ratio: 1 / 1;
 object-fit: cover;
 object-position: center top;
 }
@@ -3024,308 +3024,7 @@ GALLERY PAGE — SMALL PHONE
 Same as About Page
 ========================================================= */
 
-@media (max-width: 480px) {
-
-.gallery-hero .service-eyebrow,
-.gallery-intro .service-eyebrow {
-
-font-size: 0.88rem !important;  
-letter-spacing: 1.9px !important;  
-line-height: 1.2 !important;  
-
-margin-left: auto !important;  
-margin-right: auto !important;  
-margin-bottom: 0.4rem !important;  
-
-text-align: center !important;
-
-}
-}
-/* =========================================================
-   DESKTOP HOMEPAGE REFINEMENT — DESKTOP ONLY
-   769px AND ABOVE
-   MOBILE CSS IS NOT TOUCHED
-   ========================================================= */
-
-@media (min-width: 769px) {
-
-  /* =========================================================
-     1. GLOBAL DESKTOP SECTION WIDTH & SPACING
-     ========================================================= */
-
-  .container {
-    max-width: 1180px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .why-choose,
-  .testimonials,
-  .services,
-  .transformations,
-  .meet-groomer,
-  .faq,
-  .contact {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-  }
-
-
-  /* =========================================================
-     2. HERO — LESS STRETCHED, BETTER PROPORTION
-     ========================================================= */
-
-  .hero {
-    padding-top: 3.2rem;
-    padding-bottom: 3.2rem;
-  }
-
-  .hero-grid {
-    align-items: center;
-    gap: 3rem;
-  }
-
-  .hero h1 {
-    font-size: 2.65rem;
-    line-height: 1.12;
-    margin-bottom: 1rem;
-    max-width: 600px;
-  }
-
-  .hero p {
-    font-size: 1rem;
-    line-height: 1.6;
-    max-width: 600px;
-    margin-bottom: 1.5rem;
-  }
-
-  .hero-image-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hero-image {
-    max-width: 460px;
-  }
-
-
-  /* =========================================================
-     3. SECTION HEADINGS — REDUCE OVERSIZED APPEARANCE
-     ========================================================= */
-
-  .why-choose .section-title,
-  .testimonials .section-title,
-  .services .section-title,
-  .transformations .section-title,
-  .meet-groomer .section-title,
-  .faq .section-title,
-  .contact h2 {
-    font-size: 2rem;
-    line-height: 1.2;
-    margin-bottom: 0.65rem;
-  }
-
-  .why-choose .section-subtitle,
-  .testimonials .section-subtitle,
-  .services .section-subtitle,
-  .transformations .section-subtitle,
-  .meet-groomer .section-subtitle,
-  .faq .section-subtitle,
-  .contact-intro {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    max-width: 650px;
-    margin-bottom: 1.6rem;
-  }
-
-
-  /* =========================================================
-     4. WHY CHOOSE US — COMPACT CARDS
-     ========================================================= */
-
-  .why-choose .cards-grid {
-    gap: 1.25rem;
-    margin-top: 1rem;
-  }
-
-  .why-choose .card {
-    padding: 1.5rem;
-  }
-
-  .why-choose .card h3 {
-    font-size: 1.1rem;
-    line-height: 1.3;
-    margin-bottom: 0.5rem;
-  }
-
-  .why-choose .card p {
-    font-size: 0.9rem;
-    line-height: 1.55;
-  }
-
-
-  /* =========================================================
-     5. TESTIMONIALS — LESS EMPTY SPACE
-     ========================================================= */
-
-  .testimonials {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .testimonials .testimonial-card {
-    max-width: 700px;
-    margin: 1rem auto 0;
-    padding: 1.7rem 2rem;
-  }
-
-  .quote-mark {
-    font-size: 2.7rem;
-    margin-bottom: 0.35rem;
-  }
-
-  .testimonial-text {
-    font-size: 0.98rem;
-    line-height: 1.6;
-    margin-bottom: 0.8rem;
-  }
-
-  .testimonial-author {
-    font-size: 0.9rem;
-  }
-
-
-  /* =========================================================
-     6. SERVICES — REDUCE CARD HEIGHT
-     ========================================================= */
-
-  .services .services-grid {
-    gap: 1.25rem;
-    margin-top: 1rem;
-  }
-
-  .services .service-card {
-    padding: 1.45rem;
-  }
-
-  .services .service-card h3 {
-    font-size: 1.1rem;
-    line-height: 1.3;
-    margin-bottom: 0.5rem;
-  }
-
-  .services .service-card p {
-    font-size: 0.9rem;
-    line-height: 1.55;
-    margin-bottom: 0.9rem;
-  }
-
-  .services .price {
-    font-size: 1rem;
-    margin-bottom: 0.9rem;
-  }
-
-
-  /* =========================================================
-     7. TRANSFORMATIONS — CONTROL IMAGE/TEXT SPACING
-     ========================================================= */
-
-  .transformations .transformations-grid {
-    gap: 1.25rem;
-    margin-top: 1rem;
-  }
-
-  .transformation > h3 {
-    font-size: 1.05rem;
-    line-height: 1.3;
-    padding-top: 0.9rem;
-    margin-bottom: 0.45rem;
-  }
-
-  .transformation-testimonial {
-    font-size: 0.9rem;
-    line-height: 1.55;
-  }
-
-  .transformation-pet {
-    font-size: 0.8rem;
-  }
-
-
-  /* =========================================================
-     8. MEET THE GROOMER — BALANCED TWO COLUMN
-     ========================================================= */
-
-  .meet-groomer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .groomer-content {
-    align-items: center;
-    gap: 2.5rem;
-  }
-
-  .groomer-text h2 {
-    font-size: 2rem;
-    line-height: 1.2;
-    margin-bottom: 0.8rem;
-  }
-
-  .groomer-text p {
-    font-size: 0.92rem;
-    line-height: 1.6;
-    margin-bottom: 0.9rem;
-  }
-
-  .groomer-benefits {
-    gap: 0.8rem;
-    margin-top: 1.2rem;
-  }
-
-  .benefit {
-    padding: 1rem;
-  }
-
-  .benefit h4 {
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-  }
-
-  .benefit p {
-    font-size: 0.84rem;
-    line-height: 1.5;
-  }
-
-
-  /* =========================================================
-     9. FAQ — CONTROL WIDTH AND VERTICAL GAPS
-     ========================================================= */
-
-  .faq {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .faq-items {
-    max-width: 780px;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 0.55rem;
-  }
-
-  .faq-trigger {
-    padding: 1rem 1.25rem;
-  }
-
-  .faq-content p {
-    padding: 0 1.25rem 1.15rem;
-    font-size: 0.92rem;
-    line-height: 1.6;
-  }
-
-
+@                                                                    
   /* =========================================================
      10. CONTACT / BOOKING — CLEAN CENTERED DESKTOP FORM
      ========================================================= */
@@ -3573,13 +3272,14 @@ text-align: center !important;
     width: 100%;
     max-width: 500px;
     margin-left: auto;
+    transform: translateY(-35px);
   }
 
   .about-hero-image img {
     display: block;
     width: 100%;
     height: auto;
-    max-height: 600px;
+    max-height: 500px;
     object-fit: cover;
     border-radius: 18px;
   }
@@ -5262,7 +4962,7 @@ text-align: center !important;
 
   /* ---------- Cards ---------- */
 
-  .about-values-grid,
+  .about-values-grid,   
   .about-experience-grid {
     gap: 0.8rem;
   }
@@ -5319,7 +5019,7 @@ text-align: center !important;
 
   .service-cta p:not(.service-eyebrow) {
     font-size: 0.9rem;
-    line-height: 1.62;
+    line-height: 1.62;  
     margin-bottom: 1.25rem;
   }
 
@@ -5433,13 +5133,7 @@ text-align: center !important;
      ONE CONSISTENT DESKTOP CONTAINER
      --------------------------------------------------------- */
 
-  .container {
-    width: min(1180px, calc(100% - 48px));
-    max-width: 1180px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+                                                                                                                                                                                                                                                                                                                    
 
   /* ---------------------------------------------------------
      PREVENT COMMON GRID/FLEX CHILD OVERFLOW
@@ -5592,6 +5286,64 @@ text-align: center !important;
     max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+}
+/* =========================================================
+   ABOUT HERO — BACKGROUND + FINAL HEIGHT FIX
+   ========================================================= */
+
+@media (min-width: 769px) {
+
+  .about-page-hero {
+    position: relative !important;                                                                      
+    background-color: #174F50 !important;
+    background-image: none !important;
+    min-height: 0 !important;
+    height: auto !important;
+   padding: 5rem 0 1.8rem !important;
+    overflow: hidden !important;
+  }
+
+  .about-page-hero::before {
+    display: none !important;
+  }
+
+  .about-page-hero .container {
+    position: relative !important;
+    text-align: center !important;
+  }
+
+  .about-page-hero .service-eyebrow {
+    margin: 0 auto 1.45rem !important;
+    text-align: center !important;
+    color: #B8D8C8 !important;
+  }
+
+  .about-page-hero h1 {
+    margin: 0 auto 1.15rem !important;
+    text-align: center !important;
+    color: #F5EFE5 !important;
+  }
+
+  .about-page-hero .about-hero-lead {
+    max-width: 720px !important;
+   margin: 1rem auto 0.8rem !important;
+    text-align: center !important;
+    color: #F1EDE5 !important;
+  }
+
+  .about-page-hero .about-hero-lead + p {
+    max-width: 680px !important;
+   margin: 0 auto 5rem !important;
+    text-align: center !important;
+    color: #E8E3DA !important;
+  }
+
+  .about-page-hero .btn {
+    display: block !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
   }
 
 }
