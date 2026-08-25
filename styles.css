@@ -5375,70 +5375,25 @@ Same as About Page
   }
 
 }
-/* =========================================================
-   ABOUT HERO — BACKGROUND + FINAL HEIGHT FIX
-   ========================================================= */
-
-@media (min-width: 769px) {
-
-  .about-page-hero {
-    position: relative !important;                                                                      
-    background-color: #174F50 !important;
-    background-image: none !important;
-    min-height: 0 !important;
-    height: auto !important;
-   padding: 5rem 0 1.8rem !important;
-    overflow: hidden !important;
-  }
-
-  .about-page-hero::before {
-    display: none !important;
-  }
-
-  .about-page-hero .container {
-    position: relative !important;
-    text-align: center !important;
-  }
-
-  .about-page-hero .service-eyebrow {
-    margin: 0 auto 1.45rem !important;
-    text-align: center !important;
-    color: #B8D8C8 !important;
-  }
-
-  .about-page-hero h1 {
-    margin: 0 auto 1.15rem !important;
-    text-align: center !important;
-    color: #F5EFE5 !important;
-  }
-
-  .about-page-hero .about-hero-lead {
-    max-width: 720px !important;
-   margin: 1rem auto 0.8rem !important;
-    text-align: center !important;
-    color: #F1EDE5 !important;
-  }
-
-  .about-page-hero .about-hero-lead + p {
-    max-width: 680px !important;
-   margin: 0 auto 5rem !important;
-    text-align: center !important;
-    color: #E8E3DA !important;
-  }
-
-  .about-page-hero .btn {
-    display: block !important;
-    width: fit-content !important;
-    margin: 0 auto !important;
-  }
-
-}
 /* ABOUT — MOBILE VALUE CARDS */
 
 @media (max-width: 768px) {
 
   .about-value-card {
     background-color: #2D5A5A !important;
+    color: #ffffff;
+  }
+
+  .about-value-number {
+    color: #D4A574;
+  }
+
+  .about-value-card h3 {
+    color: #ffffff;
+  }
+
+  .about-value-card p {
+    color: #f5eee5;
   }
 
 }
