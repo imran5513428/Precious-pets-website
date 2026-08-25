@@ -5395,5 +5395,9 @@ Same as About Page
   .about-value-card p {
     color: #f5eee5;
   }
-
+.about-value-card > * {
+  position: relative;
+  top: -4px;
+  left: 4px;
+}
 }
