@@ -5401,3 +5401,34 @@ Same as About Page
   left: 4px;
 }
 }
+/* ===========================
+   ABOUT — MOBILE EXPERIENCE CARDS
+=========================== */
+
+@media (max-width: 768px) {
+
+  .about-experience-step {
+    background-color: #2D5A5A !important;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .about-step-number {
+    color: #D4A574;
+  }
+
+  .about-experience-step h3 {
+    color: #ffffff;
+  }
+
+  .about-experience-step p {
+    color: #f5eee5;
+  }
+
+  .about-experience-step > * {
+    position: relative;
+    top: -4px;
+    left: 4px;
+  }
+
+}
