@@ -536,8 +536,8 @@ TRANSFORMATIONS WITH IMAGES
 =========================== */
 
 .transformations {
-padding: 3rem 0;
-background: linear-gradient(to bottom, #f5f5f5 0%, white 50%, #f5f5f5 100%);
+  padding: 3rem 0;
+  background: #2D5A5A;
 }
 
 .transformations-grid {
