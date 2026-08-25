@@ -5432,3 +5432,36 @@ Same as About Page
   }
 
 }
+/* ===========================
+   HOMEPAGE — SELECTED SERVICE CARDS
+=========================== */
+
+.services-grid .service-card:nth-child(1),
+.services-grid .service-card:nth-child(3),
+.services-grid .service-card:nth-child(5) {
+  background-color: #A96F3F;
+}
+
+.services-grid .service-card:nth-child(1) h3,
+.services-grid .service-card:nth-child(3) h3,
+.services-grid .service-card:nth-child(5) h3 {
+  color: #ffffff;
+}
+
+.services-grid .service-card:nth-child(1) p,
+.services-grid .service-card:nth-child(3) p,
+.services-grid .service-card:nth-child(5) p {
+  color: #f8eee7;
+}
+
+.services-grid .service-card:nth-child(1) .price,
+.services-grid .service-card:nth-child(3) .price,
+.services-grid .service-card:nth-child(5) .price {
+  color: #ffffff;
+}
+
+.services-grid .service-card:nth-child(1) .learn-more,
+.services-grid .service-card:nth-child(3) .learn-more,
+.services-grid .service-card:nth-child(5) .learn-more {
+  color: #ffffff;
+}
