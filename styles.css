@@ -5433,3 +5433,12 @@ Same as About Page
   }
 
 }
+/* ABOUT — MOBILE VALUE CARDS */
+
+@media (max-width: 768px) {
+
+  .about-value-card {
+    background-color: #2D5A5A !important;
+  }
+
+}
