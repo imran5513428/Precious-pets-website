@@ -3367,39 +3367,6 @@ Same as About Page
     object-fit: cover;
     border-radius: 18px;
   }
-.about-approach-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-  object-fit: contain;
-}
-
-.about-approach-content {
-  max-width: 560px;
-}
-
-.about-approach-content .service-eyebrow {
-  color: #D4A574;
-  margin-bottom: 1rem;
-}
-
-.about-approach-content h2 {
-  color: #2D5A5A;
-  margin: 12px 0 24px;
-  font-size: clamp(34px, 3vw, 48px);
-  line-height: 1.15;
-}
-
-.about-approach-content p:not(.service-eyebrow) {
-  color: #666;
-  margin-bottom: 18px;
-  line-height: 1.75;
-}
-
-.about-approach-content p:last-child {
-  margin-bottom: 0;
-}
 
   /* ---------------------------------------------------------
      SECTION HEADINGS
@@ -3833,43 +3800,71 @@ Same as About Page
     text-align: center !important;
   }
 
+/* =========================================================
+   3. OUR APPROACH — IMAGE LEFT / TEXT RIGHT
+   ========================================================= */
 
-  /* =========================================================
-     3. OUR APPROACH
-     ========================================================= */
+.about-approach {
 
-  .about-approach {
-    padding: 64px 0;
-    background: #ffffff;
-    text-align: center;
-  }
+  padding: 75px 0;
 
-  .about-narrow {
-    max-width: 760px;
-    margin: 0 auto;
-  }
+  background: #2D5A5A;
 
-  .about-narrow h2 {
-    max-width: 720px;
-    margin: 0 auto 18px !important;
-    color: #2D5A5A;
-    font-size: clamp(32px, 3vw, 44px);
-    line-height: 1.15;
-    letter-spacing: -0.7px;
-  }
+  color: #ffffff;
 
-  .about-narrow p:not(.service-eyebrow) {
-    max-width: 720px;
-    margin: 0 auto 14px;
-    color: #666;
-    font-size: 0.98rem;
-    line-height: 1.72;
-  }
+}
+.about-approach-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: 60px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
 
-  .about-narrow p:last-child {
-    margin-bottom: 0;
-  }
+.about-approach-image {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
 
+.about-approach-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.about-approach-content {
+  width: 100%;
+  max-width: 620px;
+}
+
+.about-approach-content .service-eyebrow {
+  color: #D4A574;
+  margin: 0 0 1rem;
+  text-align: left;
+}
+
+.about-approach-content h2 {
+  color: #2D5A5A;
+  max-width: 620px;
+  margin: 12px 0 24px 12px;
+  font-size: clamp(34px, 3vw, 48px);
+  line-height: 1.15;
+}
+
+.about-approach-content p:not(.service-eyebrow) {
+  color: #333;
+  max-width: 620px;
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.about-approach-content p:last-child {
+  margin-bottom: 0;
+}
 
   /* =========================================================
      4. WHAT MATTERS TO US — VALUES
@@ -4675,7 +4670,61 @@ Same as About Page
     font-size: 0.94rem;
     line-height: 1.65;
   }
+/* =======================================================
+   OUR APPROACH — MOBILE IMAGE + TEXT
+   ======================================================= */
 
+.about-approach-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.about-approach-image {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.about-approach-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.about-approach-content {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-approach-content .service-eyebrow {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: left !important;
+}
+
+.about-approach-content h2 {
+  max-width: 650px;
+  margin: 0 auto 0.8rem !important;
+  font-size: clamp(1.65rem, 6.5vw, 1.9rem);
+  line-height: 1.18;
+  text-align: center;
+}
+
+.about-approach-content p:not(.service-eyebrow) {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.94rem;
+  line-height: 1.65;
+  text-align: center;
+}
 
   /* =======================================================
      APPROACH PARAGRAPH RHYTHM
