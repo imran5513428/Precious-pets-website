@@ -5705,14 +5705,10 @@ Same as About Page
 @media (min-width: 769px) {
 
   .about-approach {
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: transparent;
-  }
-
-  .about-approach::before {
-    background: rgba(45, 90, 90, 0.35);
+    background-color: #3D7A7A;
   }
 
 }
