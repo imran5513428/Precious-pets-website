@@ -5705,7 +5705,10 @@ Same as About Page
 @media (min-width: 769px) {
 
   .about-approach {
-    background-size: 100% 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #3D7A7A;
   }
 
 }
