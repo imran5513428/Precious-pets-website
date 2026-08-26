@@ -1,4 +1,4 @@
-/* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      /* ===========================
 GLOBAL RESET & FOUNDATION
 =========================== */
 
@@ -3398,7 +3398,56 @@ Same as About Page
   .about-narrow p:last-child {
     margin-bottom: 0;
   }
+/* ---------------------------------------------------------
+   OUR APPROACH — IMAGE LEFT / TEXT RIGHT
+   --------------------------------------------------------- */
 
+.about-approach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.about-approach-image {
+  width: 100%;
+}
+
+.about-approach-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.about-approach-content {
+  max-width: 560px;
+}
+
+.about-approach-content .service-eyebrow {
+  color: #D4A574;
+  margin-bottom: 1rem;
+}
+
+.about-approach-content h2 {
+  color: #2D5A5A;
+  margin: 12px 0 24px;
+  font-size: clamp(34px, 3vw, 48px);
+  line-height: 1.15;
+}
+
+.about-approach-content p:not(.service-eyebrow) {
+  color: #666;
+  margin-bottom: 18px;
+  line-height: 1.75;
+}
+
+.about-approach-content p:last-child {
+  margin-bottom: 0;
+}
 
   /* ---------------------------------------------------------
      SECTION HEADINGS
