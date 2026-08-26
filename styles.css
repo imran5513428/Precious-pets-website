@@ -4089,41 +4089,133 @@ Same as About Page
 
 
   /* =========================================================
-     7. LINDSAY'S PROMISE
-     ========================================================= */
+   7. LINDSAY'S PROMISE
+   IMAGE RIGHT / TEXT LEFT
+   ========================================================= */
+
+.about-promise {
+  padding: 75px 0;
+  background: #ffffff;
+}
+
+.about-promise-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 60px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.about-promise-content {
+  max-width: 620px;
+}
+
+.about-promise-content .service-eyebrow {
+  color: #D4A574;
+  margin-bottom: 1rem;
+}
+
+.about-promise-content h2 {
+  max-width: 620px;
+  margin: 12px 0 24px;
+  color: #2D5A5A;
+  font-size: clamp(34px, 3vw, 48px);
+  line-height: 1.15;
+}
+
+.about-promise-content p:not(.service-eyebrow):not(.about-signature) {
+  max-width: 600px;
+  margin-bottom: 18px;
+  color: #333;
+  line-height: 1.7;
+}
+
+.about-promise-content .about-signature {
+  margin-top: 22px;
+  margin-bottom: 0;
+  color: #2D5A5A;
+}
+
+.about-promise-image {
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+}
+
+.about-promise-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+ border: 18px solid #f7f3ee;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   7.1 LINDSAY'S PROMISE — MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
 
   .about-promise {
-    padding: 68px 0;
-    background: #ffffff;
-    text-align: center;
+    padding: 3rem 0;
   }
 
-  .about-promise-inner {
-    max-width: 820px;
+  .about-promise-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 100%;
+    max-width: 650px;
     margin: 0 auto;
   }
 
-  .about-promise-inner h2 {
-    max-width: 780px;
-    margin: 0 auto 18px !important;
-    color: #2D5A5A;
-    font-size: clamp(34px, 3.2vw, 48px);
-    line-height: 1.15;
-    letter-spacing: -0.7px;
+  .about-promise-image {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
-  .about-promise-inner > p:not(.service-eyebrow):not(.about-signature) {
-    max-width: 680px;
-    margin: 0 auto 16px;
-    color: #666;
-    font-size: 0.98rem;
-    line-height: 1.7;
+  .about-promise-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
   }
 
-  .about-signature {
-    margin-top: 22px !important;
+  .about-promise-content {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
   }
 
+  .about-promise-content h2 {
+    max-width: 650px;
+    margin: 0 auto 0.8rem !important;
+    font-size: clamp(1.65rem, 6.5vw, 1.9rem);
+    line-height: 1.18;
+    text-align: center;
+  }
+
+  .about-promise-content p:not(.service-eyebrow):not(.about-signature) {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.94rem;
+    line-height: 1.65;
+    text-align: center;
+  }
+
+  .about-promise-content .about-signature {
+    margin-top: 1rem !important;
+    text-align: center;
+  }
+
+}
 
   /* =========================================================
      8. SERVICES CONNECTION
