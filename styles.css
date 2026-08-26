@@ -5781,52 +5781,46 @@ Same as About Page
 
 }
 /* ===========================
-   MY APPROACH — DESKTOP
+   MY APPROACH — FINAL DESKTOP FIX
    IMAGE LEFT / TEXT RIGHT
 =========================== */
 
 @media (min-width: 769px) {
 
   .about-approach {
-    position: relative;
-    min-height: 560px;
-    background-color: #3D7A7A;
-    background-image: url("Gemini_Generated_Image_y4f4ufy4f4ufy4f4~2.jpeg");
-    background-repeat: no-repeat;
-    background-size: 50% auto;
-    background-position: left center;
-  }
+    position: relative !important;
+    min-height: 560px !important;
 
-  .about-approach::before {
-    display: none;
+    background-color: #3D7A7A !important;
+    background-image: url("Gemini_Generated_Image_y4f4ufy4f4ufy4f4~2.jpeg") !important;
+    background-repeat: no-repeat !important;
+    background-size: 50% auto !important;
+    background-position: left center !important;
   }
 
   .about-approach .about-narrow {
-    position: relative;
-    z-index: 2;
+    width: 50% !important;
+    max-width: 620px !important;
 
-    width: 50%;
-    max-width: 620px;
+    margin-left: 50% !important;
+    margin-right: 0 !important;
 
-    margin-left: 50%;
-    margin-right: 0;
+    padding: 4rem 3.5rem !important;
+    box-sizing: border-box !important;
 
-    padding: 4rem 3.5rem;
-    box-sizing: border-box;
-
-    text-align: left;
+    text-align: left !important;
   }
 
   .about-approach .service-eyebrow {
-    color: #D4A574;
+    color: #D4A574 !important;
   }
 
   .about-approach h2 {
-    color: #ffffff;
+    color: #ffffff !important;
   }
 
   .about-approach p:not(.service-eyebrow) {
-    color: rgba(255, 255, 255, 0.95);
+    color: #ffffff !important;
   }
 
 }
