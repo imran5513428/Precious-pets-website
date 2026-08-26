@@ -5594,3 +5594,36 @@ Same as About Page
   margin-top: 0;
   margin-bottom: 2.5rem;
 }
+/* ===========================
+   TESTIMONIAL CARDS — PREMIUM
+=========================== */
+
+.testimonials .testimonial-card {
+  background: linear-gradient(
+    135deg,
+    #2D5A5A 0%,
+    #3D7A7A 100%
+  );
+  color: white;
+}
+
+/* Review text */
+.testimonials .testimonial-text {
+  color: #ffffff;
+}
+
+/* Customer & pet names */
+.testimonials .testimonial-author {
+  color: #D4A574;
+  font-weight: 700;
+}
+
+/* Quote mark */
+.testimonials .quote-mark {
+  color: #D4A574;
+}
+
+/* Stars */
+.testimonials .stars {
+  color: #D4A574;
+}
