@@ -5577,3 +5577,20 @@ Same as About Page
 .transformations {
   background: #2D5A5A !important;
 }
+/* ===========================
+   REVIEWS SECTION HEADING
+=========================== */
+
+.transformations .section-title {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.transformations .section-subtitle {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.08rem;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
