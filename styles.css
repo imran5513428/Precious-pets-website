@@ -5627,3 +5627,11 @@ Same as About Page
 .testimonials .stars {
   color: #D4A574;
 }
+/* ===========================
+   CONTACT — PHONE & EMAIL
+=========================== */
+
+.contact-method a[href^="tel:"],
+.contact-method a[href^="mailto:"] {
+  color: #ffffff;
+}
