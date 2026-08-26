@@ -5687,16 +5687,7 @@ Same as About Page
 /* ===========================
    ABOUT — MY APPROACH
    BACKGROUND IMAGE
-=========================== */
-
-.about-approach {
-  position: relative;
-  background-image: url("Gemini_Generated_Image_y4f4ufy4f4ufy4f4~2.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-}
+===========================                                                         
 
 /* Dark overlay for text readability */
 
@@ -5837,14 +5828,14 @@ Same as About Page
 @media (min-width: 769px) {
 
   .about-approach {
-    position: relative;
-    background-color: #3D7A7A;
-    background-image: url("Gemini_Generated_Image_y4f4ufy4f4ufy4f4~2.jpeg");
-    background-repeat: no-repeat;
-    background-size: 50% auto;
-    background-position: left center;
-    min-height: 560px;
-  }
+
+  position: relative;
+
+  background: #ffffff;
+
+  color: #333;
+
+}
 
   .about-approach .about-narrow {
     width: 50%;
