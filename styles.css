@@ -5699,16 +5699,20 @@ Same as About Page
 
 }
 /* ===========================
-   MY APPROACH — DESKTOP IMAGE
+   MY APPROACH — DESKTOP
 =========================== */
 
 @media (min-width: 769px) {
 
   .about-approach {
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #3D7A7A;
+    background-color: transparent;
+  }
+
+  .about-approach::before {
+    background: rgba(45, 90, 90, 0.35);
   }
 
 }
