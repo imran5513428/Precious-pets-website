@@ -5781,12 +5781,59 @@ Same as About Page
 
 }
 /* ===========================
-   ABOUT — MY APPROACH IMAGE
+   MY APPROACH — DESKTOP
+   LEFT IMAGE / RIGHT TEXT
 =========================== */
 
-.about-approach {
-  background-image: url("Gemini_Generated_Image_y4f4ufy4f4ufy4f4~2.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@media (min-width: 769px) {
+
+  .about-approach {
+    position: relative;
+    min-height: 560px;
+    background-color: #3D7A7A;
+    background-image: url("Gemini_Generated_Image_y4f4ufy4f4ufy4f4~2.jpeg");
+    background-repeat: no-repeat;
+
+    /* Image occupies the left half */
+    background-size: 50% auto;
+    background-position: left center;
+  }
+
+  .about-approach::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+
+    background: rgba(45, 90, 90, 0.12);
+  }
+
+  .about-approach .about-narrow {
+    position: relative;
+    z-index: 2;
+
+    width: 50%;
+    max-width: 620px;
+
+    margin-left: 50%;
+    padding: 4rem 3.5rem;
+    box-sizing: border-box;
+
+    text-align: left;
+  }
+
+  .about-approach .service-eyebrow {
+    color: #D4A574;
+  }
+
+  .about-approach h2 {
+    color: #ffffff;
+  }
+
+  .about-approach p:not(.service-eyebrow) {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
 }
