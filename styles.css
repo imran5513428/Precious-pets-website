@@ -5937,3 +5937,20 @@ Same as About Page
   }
 
 }
+/* =========================================================
+   OUR APPROACH — REMOVE MOBILE IMAGE OVERLAY
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .about-approach::before,
+  .about-approach::after,
+  .about-approach-image::before,
+  .about-approach-image::after {
+    background: none !important;
+    background-color: transparent !important;
+    opacity: 0 !important;
+    content: none !important;
+  }
+
+}
