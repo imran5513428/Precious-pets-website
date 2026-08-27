@@ -5831,3 +5831,88 @@ Same as About Page
   }
 
 }
+/* =========================================================
+   ABOUT PAGE — MOBILE WIDTH FIX
+   Isolated mobile override
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .about-page-hero,
+  .about-approach,
+  .about-values,
+  .about-mobile,
+  .about-experience,
+  .about-promise,
+  .about-services-link,
+  .service-cta {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-page-hero > .container,
+  .about-approach > .container,
+  .about-values > .container,
+  .about-mobile > .container,
+  .about-experience > .container,
+  .about-promise > .container,
+  .about-services-link > .container,
+  .service-cta > .container {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  .about-hero-grid,
+  .about-approach-grid,
+  .about-two-column,
+  .about-values-grid,
+  .about-experience-grid,
+  .about-promise-grid {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .about-hero-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-approach-grid,
+  .about-promise-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-content,
+  .about-hero-image,
+  .about-approach-image,
+  .about-approach-content,
+  .about-promise-content,
+  .about-promise-image {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .about-hero-image img,
+  .about-approach-image img,
+  .about-promise-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+/* ABOUT HERO — REMOVE UNWANTED MOBILE OVERLAY */
+@media (max-width: 768px) {
+
+  .about-page-hero::before,
+  .about-page-hero::after {
+    display: none !important;
+    content: none !important;
+  }
+
+}
