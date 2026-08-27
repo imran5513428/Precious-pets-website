@@ -5910,14 +5910,29 @@ Same as About Page
 /* ABOUT HERO — REMOVE UNWANTED MOBILE OVERLAY */
 @media (max-width: 768px) {
 
-  .about-page-hero::before,
-  .about-page-hero::after {
-    display: none !important;
-    content: none !important;
+  .about-approach-content {
+    width: 100%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
-}
-@media (max-width: 768px) {
+  .about-approach-content h2 {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+
+    margin: 0 auto 0.8rem !important;
+
+    color: #2D5A5A !important;
+    font-size: clamp(1.65rem, 6.5vw, 1.9rem) !important;
+    line-height: 1.18 !important;
+    text-align: center !important;
+  }
 
   .about-approach-content p {
     display: block !important;
@@ -5926,7 +5941,18 @@ Same as About Page
     height: auto !important;
     max-height: none !important;
     overflow: visible !important;
+
+    max-width: 650px;
+    margin: 0 auto 0.9rem !important;
+
     color: #666 !important;
+    font-size: 0.94rem !important;
+    line-height: 1.65 !important;
+    text-align: center !important;
+  }
+
+  .about-approach-content p:last-child {
+    margin-bottom: 0 !important;
   }
 
 }
