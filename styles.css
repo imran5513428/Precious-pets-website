@@ -5916,3 +5916,16 @@ Same as About Page
   }
 
 }
+@media (max-width: 768px) {
+
+  .about-approach-content p {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    color: #666 !important;
+  }
+
+}
