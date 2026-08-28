@@ -5808,7 +5808,7 @@ Same as About Page
 .about-approach p:not(.service-eyebrow) {
   color: rgba(255, 255, 255, 0.94);
 }
- =========================================================
+/* =========================================================
    ABOUT PAGE — MOBILE WIDTH FIX
    Isolated mobile override
    ========================================================= */
