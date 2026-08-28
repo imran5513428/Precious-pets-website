@@ -5777,10 +5777,9 @@ Same as About Page
 /* ===========================
    ABOUT — MY APPROACH
    BACKGROUND IMAGE
-===========================                                                         
+=========================== */
 
 /* Dark overlay for text readability */
-
 .about-approach::before {
   content: "";
   position: absolute;
