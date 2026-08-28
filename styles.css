@@ -5779,17 +5779,6 @@ Same as About Page
    BACKGROUND IMAGE
 =========================== */
 
-/* Dark overlay for text readability */
-.about-approach::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(45, 90, 90, 0.35);
-  z-index: 0;
-}
-
-/* Keep content above the overlay */
-
 .about-approach .container {
   position: relative;
   z-index: 1;
