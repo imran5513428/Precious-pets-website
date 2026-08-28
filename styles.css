@@ -473,7 +473,9 @@ SERVICES
 padding: 3rem 0;
 background: white;
 }
-
+.service-eyebrow {
+  text-align: center;
+}
 .services-grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
