@@ -625,8 +625,9 @@ align-items: center;
 }
 
 .groomer-text h2 {
-color: #2D5A5A;
-margin-bottom: 1.5rem;
+  color: #2D5A5A;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .groomer-text p {
