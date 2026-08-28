@@ -475,6 +475,7 @@ background: white;
 }
 .service-eyebrow {
   text-align: center;
+  width: 100%;
 }
 .services-grid {
 display: grid;
