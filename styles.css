@@ -1720,10 +1720,6 @@ text-align: center;
   justify-content: center;
   align-items: center;
 }
-                                                                                                                                                                                   
-  margin: 0 0 1.5rem;
-}
-
 .gallery-hero-grid .service-hero-content > p:last-child {
   max-width: 620px;
   margin: 0;
