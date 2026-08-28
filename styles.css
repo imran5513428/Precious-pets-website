@@ -473,11 +473,11 @@ SERVICES
 padding: 3rem 0;
 background: white;
 }
-.service-eyebrow {
-  text-align: center;
-  width: 100%;
+.services .service-eyebrow {
   display: block;
-  margin: 0 0 0.5rem;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 0.5rem;
 }
 .services-grid {
 display: grid;
