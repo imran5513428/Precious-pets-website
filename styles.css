@@ -6046,7 +6046,10 @@ Same as About Page
   object-fit: cover;
   object-position: center;
 }
-
+/* Sara & Teddy — keep full head visible */
+.testimonials .testimonial-card:first-child .testimonial-image-wrap img {
+  object-position: center top;
+}
 
 /* =========================================================
    CARD CONTENT
