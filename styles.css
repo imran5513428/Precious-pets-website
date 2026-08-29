@@ -472,7 +472,35 @@ SERVICES
 padding: 3rem 0;
 background: white;
 }
+.services-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
+.services-heading .service-eyebrow {
+  color: #D4A574;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  margin: 0 0 0.7rem;
+  text-transform: uppercase;
+}
+
+.services-heading h2 {
+  color: #2D5A5A;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin: 0 0 0.65rem;
+}
+
+.services-heading .section-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
 .services-grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -1718,11 +1746,8 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-                                                                                                                                                                                   
   margin: 0 0 1.5rem;
 }
-
 .gallery-hero-grid .service-hero-content > p:last-child {
   max-width: 620px;
   margin: 0;
@@ -5915,4 +5940,4 @@ Same as About Page
     content: none !important;
   }
 
-}
+}          
