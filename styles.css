@@ -1,4 +1,5 @@
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      /* ===========================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                                                                  /* ===========================
 GLOBAL RESET & FOUNDATION
 =========================== */
 
@@ -469,37 +470,75 @@ SERVICES
 =========================== */
 
 .services {
-padding: 3rem 0;
-background: white;
+
+  padding: 3rem 0;
+
+  background: white;
+
 }
+
 .services-heading {
+
   text-align: center;
+
   margin-bottom: 2rem;
+
 }
 
 .services-heading .service-eyebrow {
+
   color: #D4A574;
+
   font-size: 0.85rem;
+
   font-weight: 800;
+
   letter-spacing: 2px;
+
   line-height: 1.4;
+
   margin: 0 0 0.7rem;
+
   text-transform: uppercase;
+
 }
 
 .services-heading h2 {
+
   color: #2D5A5A;
+
   font-size: 2.8rem;
+
   line-height: 1.2;
+
   margin: 0 0 0.65rem;
+
 }
 
 .services-heading .section-subtitle {
+
   color: #666;
+
   font-size: 1.1rem;
+
   line-height: 1.7;
+
   max-width: 700px;
+
   margin: 0 auto;
+
+}
+
+.services .service-eyebrow {
+
+  display: block;
+
+  width: 100%;
+
+  text-align: center;
+
+  margin: 0 auto 0.5rem;
+
 }
 .services-grid {
 display: grid;
@@ -647,8 +686,9 @@ align-items: center;
 }
 
 .groomer-text h2 {
-color: #2D5A5A;
-margin-bottom: 1.5rem;
+  color: #2D5A5A;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .groomer-text p {
@@ -5805,7 +5845,7 @@ Same as About Page
 /* ===========================
    ABOUT — MY APPROACH
    BACKGROUND IMAGE
-===========================                                                         
+=========================== */
 
 /* Dark overlay for text readability */
 
@@ -5836,25 +5876,6 @@ Same as About Page
 
 .about-approach p:not(.service-eyebrow) {
   color: rgba(255, 255, 255, 0.94);
-}
-/* ===========================
-   MY APPROACH — MOBILE TEXT
-=========================== */
-
-@media (max-width: 768px) {
-
-  .about-approach::before {
-    background: rgba(45, 90, 90, 0.45);
-  }
-
-  .about-approach .about-narrow {
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
-  }
-
-  .about-approach p:not(.service-eyebrow) {
-    color: #ffffff;
-  }
-
 }
 /* =========================================================
    ABOUT PAGE — MOBILE WIDTH FIX
@@ -5931,13 +5952,466 @@ Same as About Page
   }
 
 }
-/* ABOUT HERO — REMOVE UNWANTED MOBILE OVERLAY */
+/* ABOUT PAGE — FIX OUR APPROACH MOBILE TEXT */
+@media (max-width: 768px) {
+
+  .about-approach-content {
+    width: 100%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .about-approach-content h2 {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+
+    margin: 0 auto 0.8rem !important;
+
+    color: #2D5A5A !important;
+    font-size: clamp(1.65rem, 6.5vw, 1.9rem) !important;
+    line-height: 1.18 !important;
+    text-align: center !important;
+  }
+
+  .about-approach-content p {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+
+    max-width: 650px;
+    margin: 0 auto 0.9rem !important;
+
+    color: #666 !important;
+    font-size: 0.94rem !important;
+    line-height: 1.65 !important;
+    text-align: center !important;
+  }
+
+  .about-approach-content p:last-child {
+    margin-bottom: 0 !important;
+  }
+
+}
+/* =========================================================
+   PRECIOUS PETS — TESTIMONIALS REDESIGN
+   ISOLATED SECTION ONLY
+   Desktop + Mobile
+   ========================================================= */
+
+
+/* =========================================================
+   TESTIMONIAL SECTION
+   ========================================================= */
+
+.testimonials {
+  width: 100%;
+  padding: 72px 0;
+  background: #2D5A5A;
+  overflow: hidden;
+}
+
+.testimonials .container {
+  width: min(1180px, calc(100% - 48px));
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.testimonials-heading {
+  max-width: 760px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.testimonials-eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  color: #D4A574;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.testimonials .section-title {
+  margin: 0 auto 12px;
+  color: #ffffff;
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  line-height: 1.15;
+}
+
+.testimonials .section-subtitle {
+  max-width: 680px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   THREE-CARD GRID
+   ========================================================= */
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   TESTIMONIAL CARD
+   ========================================================= */
+
+.testimonials .testimonial-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+
+  color: #333;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.testimonials .testimonial-image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #f7f3ee;
+}
+
+.testimonials .testimonial-image-wrap::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  height: 4px;
+  background: #D4A574;
+  border-radius: 4px 4px 0 0;
+}
+
+.testimonials .testimonial-image-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* Sara & Teddy — keep full head visible */
+.testimonials .testimonial-card:first-child .testimonial-image-wrap img {
+  object-position: center top;
+}
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.testimonials .testimonial-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  padding: 28px 26px 24px;
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   QUOTE
+   ========================================================= */
+
+.testimonials .quote-mark {
+  position: absolute;
+  top: 16px;
+  right: 22px;
+
+  color: #D4A574;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 0.8;
+  opacity: 0.9;
+}
+
+
+/* =========================================================
+   REVIEW TEXT
+   ========================================================= */
+
+.testimonials .testimonial-text {
+  max-width: 100%;
+  margin: 0 0 24px;
+
+  color: #444;
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   CUSTOMER + STARS
+   ========================================================= */
+
+.testimonials .testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  margin-top: auto;
+  padding-top: 16px;
+
+  border-top: 1px solid #eee;
+}
+
+.testimonials .testimonial-author {
+  margin: 0;
+  color: #2D5A5A;
+  font-size: 0.94rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.testimonials .testimonial-author span {
+  color: #D4A574;
+}
+
+.testimonials .stars {
+  flex-shrink: 0;
+  color: #D4A574;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+
+/* =========================================================
+   SUBTLE DESKTOP HOVER
+   ========================================================= */
+
+@media (min-width: 769px) {
+
+  .testimonials .testimonial-card {
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+  .testimonials .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+  }
+
+  .testimonials .testimonial-image-wrap img {
+    transition: transform 0.35s ease;
+  }
+
+  .testimonials .testimonial-card:hover
+  .testimonial-image-wrap img {
+    transform: scale(1.025);
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (min-width: 769px) and (max-width: 1050px) {
+
+  .testimonials {
+    padding: 58px 0;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .testimonials .testimonial-card:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 10px);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 768px) {
 
   .about-page-hero::before,
   .about-page-hero::after {
     display: none !important;
     content: none !important;
+  }
+
+  .testimonials {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .testimonials-heading {
+    max-width: 650px;
+    margin-bottom: 28px;
+  }
+
+  .testimonials-eyebrow {
+    margin-bottom: 8px;
+    font-size: 0.7rem;
+    letter-spacing: 1.7px;
+  }
+
+  .testimonials .section-title {
+    font-size: clamp(1.65rem, 6.5vw, 1.95rem);
+    line-height: 1.18;
+  }
+
+  .testimonials .section-subtitle {
+    font-size: 0.92rem;
+    line-height: 1.62;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 100%;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testimonials .testimonial-card {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 14px;
+  }
+
+  .testimonials .testimonial-image-wrap {
+    aspect-ratio: 4 / 3;
+  }
+
+  .testimonials .testimonial-content {
+    padding: 24px 22px 21px;
+  }
+
+  .testimonials .quote-mark {
+    top: 13px;
+    right: 18px;
+    font-size: 3.3rem;
+  }
+
+  .testimonials .testimonial-text {
+    font-size: 0.91rem;
+    line-height: 1.64;
+    margin-bottom: 20px;
+    padding-right: 18px;
+  }
+
+  .testimonials .testimonial-footer {
+    padding-top: 14px;
+  }
+
+  .testimonials .testimonial-author {
+    font-size: 0.9rem;
+  }
+
+  .testimonials .stars {
+    font-size: 0.82rem;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .testimonials {
+    padding: 42px 0;
+  }
+
+  .testimonials .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .testimonials-heading {
+    margin-bottom: 24px;
+  }
+
+  .testimonials .section-title {
+    font-size: 1.65rem;
+  }
+
+  .testimonials .section-subtitle {
+    font-size: 0.88rem;
+  }
+
+  .testimonials-grid {
+    gap: 16px;
+  }
+
+  .testimonials .testimonial-content {
+    padding: 22px 19px 19px;
+  }
+
+  .testimonials .testimonial-text {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  .testimonials .testimonial-footer {
+    gap: 8px;
+  } 
+
+  .testimonials .testimonial-author {
+    font-size: 0.87rem;
+  }
+
+  .testimonials .stars {
+    font-size: 0.76rem;
+    letter-spacing: 0.7px;
   }
 
 }          
