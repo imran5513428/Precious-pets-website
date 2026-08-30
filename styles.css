@@ -8235,12 +8235,6 @@ margin-top: 0 !important;
 MOBILE
 =========================== */
 
-@media (max-width: 768px) {
-
-                                                  
-    padding-top: 2rem;  
-    padding-bottom: 2.5rem;  
-}  
 
 .gallery-hero .service-eyebrow {  
     margin-bottom: 0.1rem;  
@@ -8754,8 +8748,8 @@ text-align: center !important;
 GALLERY PAGE — SMALL PHONE
 Same as About Page
 ========================================================= */
-
-@                                                                    
+  
+ @media (min-width: 769px) {                                                              
   /* =========================================================
      10. CONTACT / BOOKING — CLEAN CENTERED DESKTOP FORM
      ========================================================= */
