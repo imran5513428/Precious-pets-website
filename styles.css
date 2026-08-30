@@ -6414,4 +6414,12 @@ Same as About Page
     letter-spacing: 0.7px;
   }
 
-}          
+}  
+/* FINAL FIX — REMOVE ABOUT HERO OVERLAY */
+@media (max-width: 768px) {
+  .about-page-hero::before,
+  .about-page-hero::after {
+    display: none !important;
+    content: none !important;
+  }
+}    
