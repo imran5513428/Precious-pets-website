@@ -11064,15 +11064,16 @@ Same as About Page
     max-width: 100%;
     height: auto;
   }
-
+                        
 }                          
+
 /* FINAL FIX — REMOVE ABOUT HERO OVERLAY */
 @media (max-width: 768px) {
   .about-page-hero::before,
   .about-page-hero::after {
     display: none !important;
     content: none !important;
-  }
+  
 }
 /* FINAL FIX — REMOVE ABOUT HERO OVERLAY */        
 @media (max-width: 768px) {
