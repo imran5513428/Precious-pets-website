@@ -1,5 +1,4 @@
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-                                                                                  /* ===========================
+/* ===========================
 GLOBAL RESET & FOUNDATION
 =========================== */
 
@@ -470,76 +469,10 @@ SERVICES
 =========================== */
 
 .services {
-
-  padding: 3rem 0;
-
-  background: white;
-
+padding: 3rem 0;
+background: white;
 }
 
-.services-heading {
-
-  text-align: center;
-
-  margin-bottom: 2rem;
-
-}
-
-.services-heading .service-eyebrow {
-
-  color: #D4A574;
-
-  font-size: 0.85rem;
-
-  font-weight: 800;
-
-  letter-spacing: 2px;
-
-  line-height: 1.4;
-
-  margin: 0 0 0.7rem;
-
-  text-transform: uppercase;
-
-}
-
-.services-heading h2 {
-
-  color: #2D5A5A;
-
-  font-size: 2.8rem;
-
-  line-height: 1.2;
-
-  margin: 0 0 0.65rem;
-
-}
-
-.services-heading .section-subtitle {
-
-  color: #666;
-
-  font-size: 1.1rem;
-
-  line-height: 1.7;
-
-  max-width: 700px;
-
-  margin: 0 auto;
-
-}
-
-.services .service-eyebrow {
-
-  display: block;
-
-  width: 100%;
-
-  text-align: center;
-
-  margin: 0 auto 0.5rem;
-
-}
 .services-grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -603,8 +536,8 @@ TRANSFORMATIONS WITH IMAGES
 =========================== */
 
 .transformations {
-  padding: 3rem 0;
-  background: #2D5A5A;
+padding: 3rem 0;
+background: linear-gradient(to bottom, #f5f5f5 0%, white 50%, #f5f5f5 100%);
 }
 
 .transformations-grid {
@@ -686,9 +619,8 @@ align-items: center;
 }
 
 .groomer-text h2 {
-  color: #2D5A5A;
-  margin-bottom: 1.5rem;
-  text-align: center;
+color: #2D5A5A;
+margin-bottom: 1.5rem;
 }
 
 .groomer-text p {
@@ -1165,7 +1097,7 @@ max-width: 560px;
 .service-eyebrow {
 color: #D4A574;
 font-size: 0.85rem;
-font-weight: 700;
+font-weight: 800;
 letter-spacing: 2px;
 line-height: 1.4;
 margin-bottom: 1rem;
@@ -1786,8 +1718,11 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+                                                                                                                                                                                   
   margin: 0 0 1.5rem;
 }
+
 .gallery-hero-grid .service-hero-content > p:last-child {
   max-width: 620px;
   margin: 0;
@@ -2030,7 +1965,7 @@ padding: 3rem 0;
   }
 
   .gallery-hero .service-hero-lead {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .gallery-intro {
@@ -3433,6 +3368,38 @@ Same as About Page
     border-radius: 18px;
   }
 
+
+  /* ---------------------------------------------------------
+     OUR APPROACH
+     --------------------------------------------------------- */
+
+  .about-approach {
+    padding: 85px 0;
+  }
+
+  .about-narrow {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .about-narrow h2 {
+    max-width: 720px;
+    margin: 12px 0 24px;
+    font-size: clamp(34px, 3vw, 48px);
+    line-height: 1.15;
+  }
+
+  .about-narrow p:not(.service-eyebrow) {
+    max-width: 740px;
+    margin-bottom: 18px;
+    line-height: 1.75;
+  }
+
+  .about-narrow p:last-child {
+    margin-bottom: 0;
+  }
+
+
   /* ---------------------------------------------------------
      SECTION HEADINGS
      --------------------------------------------------------- */
@@ -3443,7 +3410,7 @@ Same as About Page
     margin: 0 auto 48px;
   }
 
-  .about-values .service-section-heading h2,
+  .about-values .service-section-heading h2,                      
   .about-experience .service-section-heading h2 {
     margin: 12px 0 16px;
     font-size: clamp(34px, 3vw, 48px);
@@ -3865,71 +3832,43 @@ Same as About Page
     text-align: center !important;
   }
 
-/* =========================================================
-   3. OUR APPROACH — IMAGE LEFT / TEXT RIGHT
-   ========================================================= */
 
-.about-approach {
+  /* =========================================================
+     3. OUR APPROACH
+     ========================================================= */
 
-  padding: 75px 0;
+  .about-approach {
+    padding: 64px 0;
+    background: #ffffff;
+    text-align: center;
+  }
 
-  background: #2D5A5A;
+  .about-narrow {
+    max-width: 760px;
+    margin: 0 auto;
+  }
 
-  color: #ffffff;
+  .about-narrow h2 {
+    max-width: 720px;
+    margin: 0 auto 18px !important;
+    color: #2D5A5A;
+    font-size: clamp(32px, 3vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.7px;
+  }
 
-}
-.about-approach-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
-  align-items: center;
-  gap: 60px;
-  max-width: 1180px;
-  margin: 0 auto;
-}
+  .about-narrow p:not(.service-eyebrow) {
+    max-width: 720px;
+    margin: 0 auto 14px;
+    color: #666;
+    font-size: 0.98rem;
+    line-height: 1.72;
+  }
 
-.about-approach-image {
-  width: 100%;
-  max-width: 540px;
-  margin: 0 auto;
-}
+  .about-narrow p:last-child {
+    margin-bottom: 0;
+  }
 
-.about-approach-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-  object-fit: contain;
-}
-
-.about-approach-content {
-  width: 100%;
-  max-width: 620px;
-}
-
-.about-approach-content .service-eyebrow {
-  color: #D4A574;
-  margin: 0 0 1rem;
-  text-align: left;
-}
-
-.about-approach-content h2 {
-  color: #2D5A5A;
-  max-width: 620px;
-  margin: 12px 0 24px 12px;
-  font-size: clamp(34px, 3vw, 48px);
-  line-height: 1.15;
-}
-
-.about-approach-content p:not(.service-eyebrow) {
-  color: #333;
-  max-width: 620px;
-  margin-bottom: 18px;
-  line-height: 1.7;
-}
-
-.about-approach-content p:last-child {
-  margin-bottom: 0;
-}
 
   /* =========================================================
      4. WHAT MATTERS TO US — VALUES
@@ -4154,133 +4093,41 @@ Same as About Page
 
 
   /* =========================================================
-   7. LINDSAY'S PROMISE
-   IMAGE RIGHT / TEXT LEFT
-   ========================================================= */
-
-.about-promise {
-  padding: 75px 0;
-  background: #ffffff;
-}
-
-.about-promise-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-  align-items: center;
-  gap: 60px;
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-.about-promise-content {
-  max-width: 620px;
-}
-
-.about-promise-content .service-eyebrow {
-  color: #D4A574;
-  margin-bottom: 1rem;
-}
-
-.about-promise-content h2 {
-  max-width: 620px;
-  margin: 12px 0 24px;
-  color: #2D5A5A;
-  font-size: clamp(34px, 3vw, 48px);
-  line-height: 1.15;
-}
-
-.about-promise-content p:not(.service-eyebrow):not(.about-signature) {
-  max-width: 600px;
-  margin-bottom: 18px;
-  color: #333;
-  line-height: 1.7;
-}
-
-.about-promise-content .about-signature {
-  margin-top: 22px;
-  margin-bottom: 0;
-  color: #2D5A5A;
-}
-
-.about-promise-image {
-  width: 100%;
-  max-width: 500px;
-  margin-left: auto;
-}
-
-.about-promise-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
- border: 18px solid #f7f3ee;
-  box-sizing: border-box;
-  object-fit: contain;
-}
-
-
-/* =========================================================
-   7.1 LINDSAY'S PROMISE — MOBILE
-   ========================================================= */
-
-@media (max-width: 768px) {
+     7. LINDSAY'S PROMISE
+     ========================================================= */
 
   .about-promise {
-    padding: 3rem 0;
+    padding: 68px 0;
+    background: #ffffff;
+    text-align: center;
   }
 
-  .about-promise-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    width: 100%;
-    max-width: 650px;
+  .about-promise-inner {
+    max-width: 820px;
     margin: 0 auto;
   }
 
-  .about-promise-image {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+  .about-promise-inner h2 {
+    max-width: 780px;
+    margin: 0 auto 18px !important;
+    color: #2D5A5A;
+    font-size: clamp(34px, 3.2vw, 48px);
+    line-height: 1.15;
+    letter-spacing: -0.7px;
   }
 
-  .about-promise-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
+  .about-promise-inner > p:not(.service-eyebrow):not(.about-signature) {
+    max-width: 680px;
+    margin: 0 auto 16px;
+    color: #666;
+    font-size: 0.98rem;
+    line-height: 1.7;
   }
 
-  .about-promise-content {
-    width: 100%;
-    max-width: 650px;
-    margin: 0 auto;
-    text-align: center;
+  .about-signature {
+    margin-top: 22px !important;
   }
 
-  .about-promise-content h2 {
-    max-width: 650px;
-    margin: 0 auto 0.8rem !important;
-    font-size: clamp(1.65rem, 6.5vw, 1.9rem);
-    line-height: 1.18;
-    text-align: center;
-  }
-
-  .about-promise-content p:not(.service-eyebrow):not(.about-signature) {
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0.94rem;
-    line-height: 1.65;
-    text-align: center;
-  }
-
-  .about-promise-content .about-signature {
-    margin-top: 1rem !important;
-    text-align: center;
-  }
-
-}
 
   /* =========================================================
      8. SERVICES CONNECTION
@@ -4403,7 +4250,7 @@ Same as About Page
 
 /* =========================================================
    MEDIUM DESKTOP / TABLET
-   769px–1050px
+   769px–1050px 
    ========================================================= */
 
 @media (min-width: 769px) and (max-width: 1050px) {
@@ -4597,8 +4444,6 @@ Same as About Page
 
 }
 
-
-
 /* =========================================================
    LARGE DESKTOP
    1100px+
@@ -4621,9 +4466,7 @@ Same as About Page
   }
 
 }
-
-
-
+                                                    
 /* =========================================================
    MOBILE
    0–768px
@@ -4739,7 +4582,7 @@ Same as About Page
 
 
   /* =======================================================
-     SECTION SPACING
+     SECTION SPACING    
      ======================================================= */
 
   .about-approach {
@@ -4827,61 +4670,7 @@ Same as About Page
     font-size: 0.94rem;
     line-height: 1.65;
   }
-/* =======================================================
-   OUR APPROACH — MOBILE IMAGE + TEXT
-   ======================================================= */
 
-.about-approach-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  width: 100%;
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-.about-approach-image {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.about-approach-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-}
-
-.about-approach-content {
-  width: 100%;
-  max-width: 650px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.about-approach-content .service-eyebrow {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  text-align: left !important;
-}
-
-.about-approach-content h2 {
-  max-width: 650px;
-  margin: 0 auto 0.8rem !important;
-  font-size: clamp(1.65rem, 6.5vw, 1.9rem);
-  line-height: 1.18;
-  text-align: center;
-}
-
-.about-approach-content p:not(.service-eyebrow) {
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 0.94rem;
-  line-height: 1.65;
-  text-align: center;
-}
 
   /* =======================================================
      APPROACH PARAGRAPH RHYTHM
@@ -5582,7 +5371,67 @@ Same as About Page
   }
 
 }
-/* ABOUT — MOBILE VALUE CARDS */
+/* =========================================================
+   ABOUT HERO — BACKGROUND + FINAL HEIGHT FIX
+   ========================================================= */
+
+@media (min-width: 769px) {
+
+  .about-page-hero {
+    position: relative !important;                                                                      
+    background-color: #174F50 !important;
+    background-image: none !important;
+    min-height: 0 !important;
+    height: auto !important;
+   padding: 5rem 0 1.8rem !important;
+    overflow: hidden !important;
+  }
+
+  .about-page-hero::before {
+    display: none !important;
+  }
+
+  .about-page-hero .container {
+    position: relative !important;
+    text-align: center !important;
+  }
+
+  .about-page-hero .service-eyebrow {
+    margin: 0 auto 1.45rem !important;
+    text-align: center !important;
+    color: #B8D8C8 !important;
+  }
+
+  .about-page-hero h1 {
+    margin: 0 auto 1.15rem !important;
+    text-align: center !important;
+    color: #F5EFE5 !important;
+  }
+
+  .about-page-hero .about-hero-lead {
+    max-width: 720px !important;
+   margin: 1rem auto 0.8rem !important;
+    text-align: center !important;
+    color: #F1EDE5 !important;
+  }
+
+  .about-page-hero .about-hero-lead + p {
+    max-width: 680px !important;
+   margin: 0 auto 5rem !important;
+    text-align: center !important;
+    color: #E8E3DA !important;
+  }
+
+  .about-page-hero .btn {
+    display: block !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+  }
+
+}
+/* ===========================
+   ABOUT MOBILE — CARD STYLING
+=========================== */
 
 @media (max-width: 768px) {
 
@@ -5602,280 +5451,7 @@ Same as About Page
   .about-value-card p {
     color: #f5eee5;
   }
-.about-value-card > * {
-  position: relative;
-  top: -4px;
-  left: 4px;
-}
-}
-/* ===========================
-   ABOUT — MOBILE EXPERIENCE CARDS
-=========================== */
 
-@media (max-width: 768px) {
-
-  .about-experience-step {
-    background-color: #2D5A5A !important;
-    color: #ffffff;
-    text-align: left;
-  }
-
-  .about-step-number {
-    color: #D4A574;
-  }
-
-  .about-experience-step h3 {
-    color: #ffffff;
-  }
-
-  .about-experience-step p {
-    color: #f5eee5;
-  }
-
-  .about-experience-step > * {
-    position: relative;
-    top: -4px;
-    left: 4px;
-  }
-
-}
-/* ===========================
-   HOMEPAGE — SERVICES CARD DESIGN
-=========================== */
-
-/* ===========================
-   GOLD CARDS — 1, 3, 5
-=========================== */
-
-.services-grid .service-card:nth-child(1),
-.services-grid .service-card:nth-child(3),
-.services-grid .service-card:nth-child(5) {
-  background-color: #D4A574;
-}
-
-.services-grid .service-card:nth-child(1) h3,
-.services-grid .service-card:nth-child(3) h3,
-.services-grid .service-card:nth-child(5) h3 {
-  color: #2D5A5A;
-  font-weight: 700;
-}
-
-.services-grid .service-card:nth-child(1) p,
-.services-grid .service-card:nth-child(3) p,
-.services-grid .service-card:nth-child(5) p {
-  color: #222222;
-}
-
-.services-grid .service-card:nth-child(1) .price,
-.services-grid .service-card:nth-child(3) .price,
-.services-grid .service-card:nth-child(5) .price {
-  color: #2D5A5A;
-  font-weight: 800;
-}
-
-.services-grid .service-card:nth-child(1) .learn-more,
-.services-grid .service-card:nth-child(3) .learn-more,
-.services-grid .service-card:nth-child(5) .learn-more {
-  color: #2D5A5A;
-  font-weight: 700;
-}
-
-
-/* ===========================
-   IMAGE CARDS — 2, 4, 6
-=========================== */
-
-.services-grid .service-card:nth-child(2),
-.services-grid .service-card:nth-child(4),
-.services-grid .service-card:nth-child(6) {
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-}
-
-
-/* Wash & Tidy */
-
-.services-grid .service-card:nth-child(2) {
-  background-image: url("wash and tidy.png");
-}
-
-
-/* Puppy Grooming */
-
-.services-grid .service-card:nth-child(4) {
-  background-image: url("puppy grooming.png");
-}
-
-
-/* Hand Stripping */
-
-.services-grid .service-card:nth-child(6) {
-  background-image: url("hand stripping.png");
-}
-
-
-/* Image overlay */
-
-.services-grid .service-card:nth-child(2)::before,
-.services-grid .service-card:nth-child(4)::before,
-.services-grid .service-card:nth-child(6)::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.42);
-  z-index: 0;
-}
-
-
-/* Keep image-card content above overlay */
-
-.services-grid .service-card:nth-child(2) > *,
-.services-grid .service-card:nth-child(4) > *,
-.services-grid .service-card:nth-child(6) > * {
-  position: relative;
-  z-index: 1;
-}
-
-
-/* Image-card text */
-
-.services-grid .service-card:nth-child(2) h3,
-.services-grid .service-card:nth-child(4) h3,
-.services-grid .service-card:nth-child(6) h3 {
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.services-grid .service-card:nth-child(2) p,
-.services-grid .service-card:nth-child(4) p,
-.services-grid .service-card:nth-child(6) p {
-  color: #ffffff;
-}
-
-.services-grid .service-card:nth-child(2) .price,
-.services-grid .service-card:nth-child(4) .price,
-.services-grid .service-card:nth-child(6) .price {
-  color: #D4A574;
-  font-weight: 800;
-}
-
-.services-grid .service-card:nth-child(2) .learn-more,
-.services-grid .service-card:nth-child(4) .learn-more,
-.services-grid .service-card:nth-child(6) .learn-more {
-  color: #ffffff;
-  font-weight: 700;
-}
-
-
-/* Preserve photographic background on hover */
-
-.services-grid .service-card:nth-child(2):hover,
-.services-grid .service-card:nth-child(4):hover,
-.services-grid .service-card:nth-child(6):hover {
-  background-color: transparent;
-}
-/* ===========================
-   REVIEWS SECTION — BRAND BACKGROUND
-=========================== */
-
-.transformations {
-  background: #2D5A5A !important;
-}
-/* ===========================
-   REVIEWS SECTION HEADING
-=========================== */
-
-.transformations .section-title {
-  color: #ffffff;
-  font-size: 2.2rem;
-  margin-bottom: 0.7rem;
-}
-
-.transformations .section-subtitle {
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 1.08rem;
-  line-height: 1.6;
-  margin-top: 0;
-  margin-bottom: 2.5rem;
-}
-/* ===========================
-   TESTIMONIAL CARDS — PREMIUM
-=========================== */
-
-.testimonials .testimonial-card {
-  background: linear-gradient(
-    135deg,
-    #2D5A5A 0%,
-    #3D7A7A 100%
-  );
-  color: white;
-}
-
-/* Review text */
-.testimonials .testimonial-text {
-  color: #ffffff;
-}
-
-/* Customer & pet names */
-.testimonials .testimonial-author {
-  color: #D4A574;
-  font-weight: 700;
-}
-
-/* Quote mark */
-.testimonials .quote-mark {
-  color: #D4A574;
-}
-
-/* Stars */
-.testimonials .stars {
-  color: #D4A574;
-}
-/* ===========================
-   CONTACT — PHONE & EMAIL
-=========================== */
-
-.contact-method a[href^="tel:"],
-.contact-method a[href^="mailto:"] {
-  color: #ffffff;
-}
-/* ===========================
-   ABOUT — MY APPROACH
-   BACKGROUND IMAGE
-=========================== */
-
-/* Dark overlay for text readability */
-
-.about-approach::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(45, 90, 90, 0.35);
-  z-index: 0;
-}
-
-/* Keep content above the overlay */
-
-.about-approach .container {
-  position: relative;
-  z-index: 1;
-}
-
-/* Text colours */
-
-.about-approach .service-eyebrow {
-  color: #D4A574;
-}
-
-.about-approach h2 {
-  color: #ffffff;
-}
-
-.about-approach p:not(.service-eyebrow) {
-  color: rgba(255, 255, 255, 0.94);
 }
 /* =========================================================
    ABOUT PAGE — MOBILE WIDTH FIX
@@ -5951,467 +5527,5565 @@ Same as About Page
     height: auto;
   }
 
-}
-/* ABOUT PAGE — FIX OUR APPROACH MOBILE TEXT */
+}                          
+/* FINAL FIX — REMOVE ABOUT HERO OVERLAY */
 @media (max-width: 768px) {
-
-  .about-approach-content {
-    width: 100%;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .about-approach-content h2 {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    height: auto !important;
-    max-height: none !important;
-    overflow: visible !important;
-
-    margin: 0 auto 0.8rem !important;
-
-    color: #2D5A5A !important;
-    font-size: clamp(1.65rem, 6.5vw, 1.9rem) !important;
-    line-height: 1.18 !important;
-    text-align: center !important;
-  }
-
-  .about-approach-content p {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    height: auto !important;
-    max-height: none !important;
-    overflow: visible !important;
-
-    max-width: 650px;
-    margin: 0 auto 0.9rem !important;
-
-    color: #666 !important;
-    font-size: 0.94rem !important;
-    line-height: 1.65 !important;
-    text-align: center !important;
-  }
-
-  .about-approach-content p:last-child {
-    margin-bottom: 0 !important;
-  }
-
-}
-/* =========================================================
-   PRECIOUS PETS — TESTIMONIALS REDESIGN
-   ISOLATED SECTION ONLY
-   Desktop + Mobile
-   ========================================================= */
-
-
-/* =========================================================
-   TESTIMONIAL SECTION
-   ========================================================= */
-
-.testimonials {
-  width: 100%;
-  padding: 72px 0;
-  background: #2D5A5A;
-  overflow: hidden;
-}
-
-.testimonials .container {
-  width: min(1180px, calc(100% - 48px));
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/* =========================================================
-   HEADING
-   ========================================================= */
-
-.testimonials-heading {
-  max-width: 760px;
-  margin: 0 auto 42px;
-  text-align: center;
-}
-
-.testimonials-eyebrow {
-  display: block;
-  margin-bottom: 10px;
-  color: #D4A574;
-  font-size: 0.78rem;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 2px;
-}
-
-.testimonials .section-title {
-  margin: 0 auto 12px;
-  color: #ffffff;
-  font-size: clamp(2rem, 3vw, 2.5rem);
-  line-height: 1.15;
-}
-
-.testimonials .section-subtitle {
-  max-width: 680px;
-  margin: 0 auto;
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 1rem;
-  line-height: 1.65;
-}
-
-
-/* =========================================================
-   THREE-CARD GRID
-   ========================================================= */
-
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-  align-items: stretch;
-}
-
-
-/* =========================================================
-   TESTIMONIAL CARD
-   ========================================================= */
-
-.testimonials .testimonial-card {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  height: 100%;
-  overflow: hidden;
-
-  background: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 18px;
-
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
-
-  color: #333;
-}
-
-
-/* =========================================================
-   IMAGE
-   ========================================================= */
-
-.testimonials .testimonial-image-wrap {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  background: #f7f3ee;
-}
-
-.testimonials .testimonial-image-wrap::after {
-  content: "";
-  position: absolute;
-  left: 16px;
-  right: 16px;
-  bottom: 0;
-  height: 4px;
-  background: #D4A574;
-  border-radius: 4px 4px 0 0;
-}
-
-.testimonials .testimonial-image-wrap img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-/* Sara & Teddy — keep full head visible */
-.testimonials .testimonial-card:first-child .testimonial-image-wrap img {
-  object-position: center top;
-}
-
-/* =========================================================
-   CARD CONTENT
-   ========================================================= */
-
-.testimonials .testimonial-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-
-  padding: 28px 26px 24px;
-  background: #ffffff;
-}
-
-
-/* =========================================================
-   QUOTE
-   ========================================================= */
-
-.testimonials .quote-mark {
-  position: absolute;
-  top: 16px;
-  right: 22px;
-
-  color: #D4A574;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 3.8rem;
-  font-weight: 700;
-  line-height: 0.8;
-  opacity: 0.9;
-}
-
-
-/* =========================================================
-   REVIEW TEXT
-   ========================================================= */
-
-.testimonials .testimonial-text {
-  max-width: 100%;
-  margin: 0 0 24px;
-
-  color: #444;
-  font-size: 0.94rem;
-  line-height: 1.7;
-}
-
-
-/* =========================================================
-   CUSTOMER + STARS
-   ========================================================= */
-
-.testimonials .testimonial-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-
-  margin-top: auto;
-  padding-top: 16px;
-
-  border-top: 1px solid #eee;
-}
-
-.testimonials .testimonial-author {
-  margin: 0;
-  color: #2D5A5A;
-  font-size: 0.94rem;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.testimonials .testimonial-author span {
-  color: #D4A574;
-}
-
-.testimonials .stars {
-  flex-shrink: 0;
-  color: #D4A574;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  line-height: 1;
-}
-
-
-/* =========================================================
-   SUBTLE DESKTOP HOVER
-   ========================================================= */
-
-@media (min-width: 769px) {
-
-  .testimonials .testimonial-card {
-    transition:
-      transform 0.25s ease,
-      box-shadow 0.25s ease;
-  }
-
-  .testimonials .testimonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
-  }
-
-  .testimonials .testimonial-image-wrap img {
-    transition: transform 0.35s ease;
-  }
-
-  .testimonials .testimonial-card:hover
-  .testimonial-image-wrap img {
-    transform: scale(1.025);
-  }
-
-}
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (min-width: 769px) and (max-width: 1050px) {
-
-  .testimonials {
-    padding: 58px 0;
-  }
-
-  .testimonials-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-  }
-
-  .testimonials .testimonial-card:last-child {
-    grid-column: 1 / -1;
-    max-width: calc(50% - 10px);
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 768px) {
-
   .about-page-hero::before,
   .about-page-hero::after {
     display: none !important;
     content: none !important;
   }
+}
+/* ===========================
+GLOBAL RESET & FOUNDATION
+=========================== */
 
-  .testimonials {
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 70px;
+width: 100%;
+}
+
+body {
+font-family: 'Calibri', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+line-height: 1.7;
+color: #333;
+background: #fff;
+overflow-x: hidden;
+width: 100%;
+min-width: 0;
+}
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+@media (max-width: 768px) {
+.container {
+width: 100%;
+max-width: 100%;
+padding-left: 16px;
+padding-right: 16px;
+}
+}
+
+/* ===========================
+TYPOGRAPHY
+=========================== */
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Georgia', serif;
+font-weight: 700;
+letter-spacing: -0.5px;
+}
+
+h1 {
+font-size: 3.2rem;
+line-height: 1.2;
+margin-bottom: 1.5rem;
+}
+
+h2 {
+font-size: 2.5rem;
+line-height: 1.2;
+margin-bottom: 1rem;
+}
+
+h3 {
+font-size: 1.35rem;
+margin-bottom: 0.8rem;
+}
+
+h4 {
+font-size: 1.1rem;
+margin-bottom: 0.5rem;
+}
+
+p {
+font-size: 1rem;
+line-height: 1.8;
+color: #555;
+}
+
+a {
+color: #2D5A5A;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+a:hover {
+color: #D4A574;
+}
+
+/* ===========================
+NAVBAR - PREMIUM STICKY
+=========================== */
+
+.navbar {
+background: #2D5A5A;
+color: white;
+padding: 0.9rem 0;
+position: sticky;
+top: 0;
+z-index: 1000;
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+transition: padding 0.3s ease;
+}
+
+.navbar .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 2rem;
+}
+
+.logo {
+font-family: 'Georgia', serif;
+font-size: 1.4rem;
+font-weight: 700;
+letter-spacing: 0.5px;
+white-space: nowrap;
+}
+
+.nav-links {
+display: flex;
+list-style: none;
+gap: 2rem;
+align-items: center;
+}
+
+.nav-links a {
+color: white;
+font-size: 0.95rem;
+font-weight: 500;
+transition: color 0.3s ease;
+position: relative;
+}
+
+.nav-links a::after {
+content: '';
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 0;
+height: 2px;
+background: #D4A574;
+transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+width: 100%;
+}
+
+.nav-links .cta-link {
+background: #D4A574;
+color: white;
+padding: 0.6rem 1.5rem;
+border-radius: 5px;
+font-weight: 600;
+transition: all 0.3s ease;
+}
+
+.nav-links .cta-link:hover {
+background: white;
+color: #2D5A5A;
+}
+
+/* ===========================
+HAMBURGER MENU - PREMIUM
+=========================== */
+
+.hamburger {
+display: none;
+flex-direction: column;
+cursor: pointer;
+background: none;
+border: none;
+gap: 5px;
+padding: 0;
+transition: all 0.3s ease;
+}
+
+.hamburger span {
+width: 26px;
+height: 3px;
+background: white;
+border-radius: 2px;
+transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger.active span:nth-child(1) {
+transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+opacity: 0;
+transform: translateX(-10px);
+}
+
+.hamburger.active span:nth-child(3) {
+transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* ===========================
+SLIDEDOWN ANIMATION
+=========================== */
+
+@keyframes slideDown {
+from {
+opacity: 0;
+transform: translateY(-15px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* ===========================
+HERO SECTION - PREMIUM IMPACT WITH IMAGE
+=========================== */
+
+.hero {
+background-size: cover;
+background-position: center 50%;
+background-attachment: scroll;
+background-repeat: no-repeat;
+color: white;
+padding: 5rem 0 4rem;
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+
+.hero::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(135deg, rgba(45, 90, 90, 0.65) 0%, rgba(61, 122, 122, 0.65) 100%);
+pointer-events: none;
+z-index: 1;
+}
+
+.hero-grid {
+position: relative;
+z-index: 2;
+display: grid;
+grid-template-columns: 1.1fr 0.9fr;
+align-items: start;
+gap: 40px;
+}
+
+.hero-text {
+text-align: left;
+}
+
+.hero h1 {
+color: white;
+margin-bottom: 1.5rem;
+text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+color: rgba(255, 255, 255, 0.95);
+font-size: 1.2rem;
+max-width: 700px;
+margin-bottom: 3rem;
+margin-left: 0;
+line-height: 1.8;
+text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-buttons {
+display: flex;
+gap: 1.5rem;
+justify-content: flex-start;
+flex-wrap: wrap;
+}
+
+.hero-image-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 0;
+}
+
+.hero-image {
+width: 100%;
+max-width: 450px;
+height: auto;
+border-radius: 12px;
+object-fit: cover;
+display: block;
+}
+
+/* ===========================
+BUTTONS - PREMIUM
+=========================== */
+
+.btn {
+padding: 1.1rem 2.8rem;
+border: none;
+border-radius: 6px;
+font-size: 1rem;
+cursor: pointer;
+transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+text-decoration: none;
+display: inline-block;
+font-weight: 600;
+letter-spacing: 0.3px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+background: white;
+color: #2D5A5A;
+}
+
+.btn-primary:hover {
+background: #D4A574;
+color: white;
+transform: translateY(-3px);
+box-shadow: 0 8px 28px rgba(212, 165, 116, 0.4);
+}
+
+.btn-secondary {
+background: transparent;
+color: white;
+border: 2px solid white;
+}
+
+.btn-secondary:hover {
+background: #D4A574;
+border-color: #D4A574;
+color: white;
+transform: translateY(-3px);
+box-shadow: 0 8px 28px rgba(212, 165, 116, 0.4);
+}
+
+.btn-large {
+padding: 1.3rem 3.5rem;
+font-size: 1.05rem;
+}
+
+/* ===========================
+ANIMATIONS
+=========================== */
+
+@keyframes fadeUp {
+from {
+opacity: 0;
+transform: translateY(30px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.fade-up {
+opacity: 0;
+animation: fadeUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.fade-up.visible {
+animation: fadeUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+/* ===========================
+SECTIONS - SPACING
+=========================== */
+
+.section-title {
+text-align: center;
+color: #2D5A5A;
+font-size: 2.8rem;
+margin-bottom: 0.8rem;
+line-height: 1.2;
+}
+
+.section-subtitle {
+text-align: center;
+color: #666;
+font-size: 1.1rem;
+line-height: 1.7;
+max-width: 700px;
+margin: 0 auto 2rem;
+}
+
+/* ===========================
+WHY CHOOSE US
+=========================== */
+
+.why-choose {
+padding: 3.5rem 0;
+background: white;
+}
+
+.cards-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 1.5rem;
+}
+
+.card {
+background: white;
+padding: 2.2rem;
+border-radius: 8px;
+border-left: 5px solid #D4A574;
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+color: #2D5A5A;
+margin-bottom: 1rem;
+}
+
+.card p {
+color: #666;
+line-height: 1.8;
+}
+
+/* ===========================
+TESTIMONIALS
+=========================== */
+
+.testimonials {
+padding: 3.5rem 0;
+background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+}
+
+.testimonial-card {
+max-width: 600px;
+margin: 0 auto;
+background: white;
+padding: 2.2rem;
+border-radius: 8px;
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.quote-mark {
+font-size: 4rem;
+color: #D4A574;
+line-height: 1;
+margin-bottom: 1rem;
+}
+
+.testimonial-text {
+font-size: 1.15rem;
+color: #333;
+margin-bottom: 1.5rem;
+line-height: 1.8;
+font-weight: 500;
+}
+
+.testimonial-author {
+color: #2D5A5A;
+font-weight: 600;
+margin-bottom: 0.5rem;
+}
+
+.stars {
+color: #D4A574;
+font-size: 1.1rem;
+letter-spacing: 2px;
+}
+
+/* ===========================
+SERVICES
+=========================== */
+
+.services {
+padding: 3rem 0;
+background: white;
+}
+
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+gap: 2rem;
+}
+
+.service-card {
+background: #f9f9f9;
+padding: 2rem;
+border-radius: 8px;
+border-top: 4px solid #D4A574;
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+display: flex;
+flex-direction: column;
+}
+
+.service-card:hover {
+transform: translateY(-12px);
+background: white;
+box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.service-card h3 {
+color: #2D5A5A;
+margin-bottom: 1rem;
+}
+
+.service-card p {
+color: #666;
+margin-bottom: 1.5rem;
+flex-grow: 1;
+}
+
+.price {
+color: #D4A574;
+font-weight: 700;
+font-size: 1.2rem;
+margin-bottom: 1.5rem;
+}
+
+.learn-more {
+color: #2D5A5A;
+font-weight: 600;
+transition: all 0.3s ease;
+display: inline-block;
+}
+
+.learn-more:hover {
+color: #D4A574;
+transform: translateX(5px);
+}
+
+/* ===========================
+TRANSFORMATIONS WITH IMAGES
+=========================== */
+
+.transformations {
+padding: 3rem 0;
+background: linear-gradient(to bottom, #f5f5f5 0%, white 50%, #f5f5f5 100%);
+}
+
+.transformations-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+}
+
+.transformation {
+background: white;
+padding: 0;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.transformation:hover {
+transform: translateY(-10px);
+box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.transformation-image {
+width: 100%;
+aspect-ratio: 16 / 9;
+height: auto;
+object-fit: contain;
+object-position: center center;
+display: block;
+background: #f5f5f5;
+}
+
+.transformation > h3,
+.transformation > p,
+.transformation > .stars {
+padding: 0 1.5rem;
+}
+
+.transformation > h3 {
+padding-top: 1.5rem;
+color: #2D5A5A;
+margin-bottom: 0.8rem;
+}
+
+.transformation-testimonial {
+color: #333;
+font-size: 1.05rem;
+font-weight: 500;
+margin-bottom: 0.5rem;
+line-height: 1.6;
+padding: 0 1.5rem;
+}
+
+.transformation-pet {
+color: #999;
+font-size: 0.9rem;
+margin-bottom: 0.8rem;
+padding: 0 1.5rem;
+}
+
+.transformation > .stars {
+padding-bottom: 1.5rem;
+}
+
+/* ===========================
+MEET THE GROOMER WITH IMAGE
+=========================== */
+
+.meet-groomer {
+padding: 3rem 0 1.5rem;
+background: white;
+}
+
+.groomer-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+align-items: center;
+}
+
+.groomer-text h2 {
+color: #2D5A5A;
+margin-bottom: 1.5rem;
+}
+
+.groomer-text p {
+color: #666;
+margin-bottom: 1.5rem;
+line-height: 1.8;
+}
+
+.groomer-text strong {
+color: #2D5A5A;
+font-weight: 700;
+}
+
+.groomer-benefits {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1.5rem;
+margin-top: 2rem;
+}
+
+.benefit {
+padding: 1.5rem;
+background: #f9f9f9;
+border-radius: 6px;
+transition: all 0.3s ease;
+}
+
+.benefit:hover {
+background: #f0f0f0;
+transform: translateY(-3px);
+}
+
+.benefit h4 {
+color: #2D5A5A;
+margin-bottom: 0.5rem;
+font-size: 1rem;
+}
+
+.benefit p {
+color: #666;
+font-size: 0.9rem;
+line-height: 1.6;
+}
+
+.groomer-image {
+width: 100%;
+max-width: 500px;
+margin: 0 auto;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.lindsay-photo {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 8px;
+}
+
+/* ===========================
+FAQ SECTION
+=========================== */
+
+.faq {
+padding: 1.5rem 0 4rem;
+background: linear-gradient(to bottom, white 0%, #f9f9f9 100%);
+}
+
+.faq-items {
+max-width: 900px;
+margin: 0 auto;
+display: grid;
+gap: 1rem;
+}
+
+.faq-item {
+background: white;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+transition: all 0.3s ease;
+}
+
+.faq-item.active {
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.faq-trigger {
+width: 100%;
+padding: 1.8rem;
+background: white;
+border: none;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: all 0.3s ease;
+font-size: 1rem;
+font-weight: 600;
+color: #2D5A5A;
+}
+
+.faq-trigger:hover {
+background: #f9f9f9;
+}
+
+.faq-item.active .faq-trigger {
+background: #f0f8f8;
+color: #2D5A5A;
+}
+
+.faq-question {
+text-align: left;
+flex: 1;
+}
+
+.faq-icon {
+font-size: 1.5rem;
+color: #D4A574;
+transition: transform 0.3s ease;
+margin-left: 1rem;
+}
+
+.faq-item.active .faq-icon {
+transform: rotate(45deg);
+}
+
+.faq-content {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.faq-item.active .faq-content {
+max-height: 500px;
+}
+
+.faq-content p {
+padding: 0 1.8rem 1.8rem;
+color: #666;
+line-height: 1.8;
+}
+
+/* ===========================
+CONTACT SECTION
+=========================== */
+
+.contact {
+padding: 3rem 0;
+background: linear-gradient(135deg, #2D5A5A 0%, #3d7a7a 100%);
+color: white;
+text-align: center;
+}
+
+.contact h2 {
+color: white;
+margin-bottom: 1rem;
+}
+
+.contact-intro {
+color: rgba(255, 255, 255, 0.9);
+font-size: 1.1rem;
+margin-bottom: 3rem;
+}
+
+.contact-methods {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 1.5rem;
+margin-bottom: 3rem;
+}
+
+.contact-method {
+background: rgba(255, 255, 255, 0.1);
+padding: 2rem;
+border-radius: 8px;
+backdrop-filter: blur(10px);
+}
+
+.contact-method h4 {
+color: #D4A574;
+margin-bottom: 1rem;
+}
+
+.contact-method p {
+color: white;
+margin-bottom: 0.5rem;
+}
+
+.contact-method a {
+color: #D4A574;
+font-weight: 600;
+transition: color 0.3s ease;
+}
+
+.contact-method a:hover {
+color: white;
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer {
+background: #1a3a3a;
+color: white;
+padding: 3rem 0 1.5rem;
+}
+
+.footer-content {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+color: #D4A574;
+margin-bottom: 1rem;
+}
+
+.footer-section p, .footer-section a {
+color: rgba(255, 255, 255, 0.8);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+
+.footer-section ul {
+list-style: none;
+}
+
+.footer-section li {
+margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+text-align: center;
+padding-top: 2rem;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+color: rgba(255, 255, 255, 0.6);
+font-size: 0.9rem;
+}
+
+/* ===========================
+MOBILE RESPONSIVE - TABLET (768px)
+=========================== */
+
+@media (max-width: 768px) {
+.hamburger {
+display: flex;
+}
+
+.nav-links {
+position: absolute !important;
+top: 100% !important;
+left: 0 !important;
+right: 0 !important;
+background: #2D5A5A !important;
+flex-direction: column !important;
+gap: 0 !important;
+display: none !important;
+padding: 0 !important;
+margin: 0 !important;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+animation: slideDown 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav-links.active {
+display: flex !important;
+}
+
+.nav-links li {
+padding: 1rem 20px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+transition: background 0.2s ease;
+}
+
+.nav-links li:hover {
+background: rgba(255, 255, 255, 0.08);
+}
+
+.nav-links li:last-child {
+border-bottom: none;
+}
+
+.nav-links a {
+display: block;
+color: white;
+}
+
+h1 {
+font-size: 2.5rem;
+}
+
+h2 {
+font-size: 2rem;
+}
+
+.hero {
+padding: 5rem 0 3rem;
+}
+
+.hero h1 {
+margin-bottom: 1.2rem;
+}
+
+.hero p {
+font-size: 1rem;
+margin-bottom: 2rem;
+margin-left: 0;
+max-width: 90%;
+line-height: 1.9;
+}
+
+.hero-buttons {
+flex-direction: column;
+gap: 1rem;
+}
+
+.hero-grid {
+grid-template-columns: 1fr;
+gap: 30px;
+}
+
+.hero-image {
+max-width: 360px;
+margin: auto;
+}
+
+.btn {
+width: 100%;
+}
+
+.why-choose,
+.services,
+.transformations,
+.meet-groomer,
+.faq,
+.contact {
+padding: 2.5rem 0;
+}
+
+.groomer-content {
+grid-template-columns: 1fr;
+gap: 2rem;
+}
+
+.groomer-image {
+height: auto;
+}
+
+.groomer-benefits {
+grid-template-columns: 1fr;
+}
+
+.cards-grid,
+.services-grid,
+.transformations-grid {
+grid-template-columns: 1fr;
+}
+
+.section-title {
+font-size: 2rem;
+}
+
+.contact-methods {
+grid-template-columns: 1fr;
+}
+
+.footer-content {
+grid-template-columns: 1fr;
+gap: 2rem;
+}
+
+.transformation-image {
+width: 100%;
+height: auto;
+aspect-ratio: 16 / 9;
+object-fit: contain;
+object-position: center center;
+display: block;
+}
+}
+
+/* ===========================
+MOBILE RESPONSIVE - PHONE (480px)
+=========================== */
+
+/* ===========================
+MOBILE RESPONSIVE - PHONE (480px)
+=========================== */
+
+@media (max-width: 480px) {
+.navbar {
+padding: 0.8rem 0;
+}
+
+.logo {
+font-size: 1.2rem;
+}
+
+.nav-links .cta-link {
+display: none;
+}
+
+h1 {
+font-size: 1.9rem;
+}
+
+h2 {
+font-size: 1.6rem;
+}
+
+.hero {
+padding: 4rem 0 3rem;
+}
+
+.hero h1 {
+margin-bottom: 1rem;
+}
+
+.btn {
+padding: 0.9rem 1.8rem;
+font-size: 0.95rem;
+}
+
+.btn-large {
+padding: 1rem 2rem;
+}
+
+.section-title {
+font-size: 1.6rem;
+margin-bottom: 1rem;
+}
+
+.card,
+.service-card,
+.faq-item {
+padding: 1.5rem;
+}
+
+.groomer-benefits {
+gap: 1rem;
+}
+}
+
+/* =========================================================
+SERVICE PAGES — PREMIUM SERVICE DETAIL LAYOUT
+Wash & Go + future service pages
+========================================================= */
+
+/* ===========================
+SERVICE HERO
+=========================== */
+
+.service-page-hero {
+background: linear-gradient(135deg, #f7f4ef 0%, #ffffff 100%);
+padding: 4.5rem 0;
+overflow: hidden;
+}
+
+.service-hero-grid {
+display: grid;
+grid-template-columns: 0.9fr 1.1fr;
+align-items: center;
+gap: 4rem;
+}
+
+.service-hero-content {
+max-width: 560px;
+}
+
+.service-eyebrow {
+color: #D4A574;
+font-size: 0.85rem;
+font-weight: 800;
+letter-spacing: 2px;
+line-height: 1.4;
+margin-bottom: 1rem;
+text-transform: uppercase;
+}
+
+.service-hero-content h1 {
+color: #2D5A5A;
+font-size: 3.4rem;
+margin-bottom: 1.2rem;
+}
+
+.service-hero-content h2 {
+color: #333;
+font-family: 'Calibri', 'Segoe UI', sans-serif;
+font-size: 1.35rem;
+font-weight: 600;
+line-height: 1.6;
+letter-spacing: 0;
+margin-bottom: 1.3rem;
+}
+
+.service-hero-content > p:not(.service-eyebrow) {
+color: #666;
+font-size: 1.05rem;
+line-height: 1.85;
+margin-bottom: 2rem;
+}
+
+.service-hero-image {
+width: 100%;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+background: #f5f5f5;
+}
+
+.service-hero-image img {
+width: 100%;
+aspect-ratio: 16 / 9;
+object-fit: cover;
+object-position: center;
+display: block;
+}
+
+/* ===========================
+SERVICE INTRODUCTION
+=========================== */
+
+.service-introduction {
+padding: 3.5rem 0;
+background: white;
+text-align: center;
+}
+
+.service-narrow {
+max-width: 820px;
+}
+
+.service-narrow h2 {
+color: #2D5A5A;
+margin-bottom: 1.2rem;
+}
+
+.service-narrow > p:not(.service-eyebrow) {
+color: #666;
+font-size: 1.05rem;
+line-height: 1.85;
+}
+
+/* ===========================
+SECTION HEADINGS
+=========================== */
+
+.service-section-heading {
+max-width: 760px;
+margin: 0 auto 2.8rem;
+text-align: center;
+}
+
+.service-section-heading h2 {
+color: #2D5A5A;
+margin-bottom: 1rem;
+}
+
+.service-section-heading > p:last-child {
+color: #666;
+line-height: 1.8;
+}
+
+/* ===========================
+WHAT'S INCLUDED
+=========================== */
+
+.service-details {
+padding: 4rem 0;
+background: #f7f7f7;
+}
+
+.service-included-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.5rem;
+}
+
+.service-included-card {
+position: relative;
+background: white;
+padding: 2rem;
+min-height: 190px;
+border-radius: 8px;
+border-top: 3px solid #D4A574;
+box-shadow: 0 3px 14px rgba(0, 0, 0, 0.06);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-included-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-number {
+display: block;
+color: #D4A574;
+font-size: 0.8rem;
+font-weight: 700;
+letter-spacing: 1.5px;
+margin-bottom: 1rem;
+}
+
+.service-included-card h3 {
+color: #2D5A5A;
+margin-bottom: 0.7rem;
+}
+
+.service-included-card p {
+color: #666;
+font-size: 0.95rem;
+line-height: 1.7;
+}
+
+/* ===========================
+SERVICE SUITABILITY
+=========================== */
+
+.service-suitability {
+padding: 4rem 0;
+background: white;
+}
+
+.service-two-column {
+display: grid;
+grid-template-columns: 1.1fr 0.9fr;
+gap: 4rem;
+align-items: center;
+}
+
+.service-suitability-content h2 {
+color: #2D5A5A;
+margin-bottom: 1.8rem;
+}
+
+.service-check-list {
+list-style: none;
+display: grid;
+gap: 1rem;
+}
+
+.service-check-list li {
+position: relative;
+padding: 1rem 1rem 1rem 3rem;
+background: #f8f8f8;
+border-radius: 6px;
+color: #555;
+line-height: 1.6;
+}
+
+.service-check-list li::before {
+content: '✓';
+position: absolute;
+left: 1rem;
+top: 50%;
+transform: translateY(-50%);
+color: #D4A574;
+font-weight: 700;
+font-size: 1.1rem;
+}
+
+.service-highlight-box {
+background: #2D5A5A;
+color: white;
+padding: 3rem;
+border-radius: 10px;
+box-shadow: 0 10px 28px rgba(45, 90, 90, 0.18);
+}
+
+.highlight-icon {
+display: block;
+color: #D4A574;
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.service-highlight-box h3 {
+color: white;
+margin-bottom: 1rem;
+}
+
+.service-highlight-box p {
+color: rgba(255, 255, 255, 0.88);
+line-height: 1.8;
+}
+
+/* ===========================
+WHAT TO EXPECT / RESULT
+=========================== */
+
+.service-result {
+padding: 4rem 0;
+background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+text-align: center;
+}
+
+.service-result-inner {
+max-width: 760px;
+}
+
+.service-result h2 {
+color: #2D5A5A;
+margin-bottom: 1rem;
+}
+
+.service-result p:last-child {
+color: #666;
+font-size: 1.1rem;
+line-height: 1.85;
+}
+
+/* ===========================
+PRICING
+=========================== */
+
+.service-pricing {
+padding: 4rem 0;
+background: white;
+}
+
+.pricing-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.5rem;
+max-width: 950px;
+margin: 0 auto;
+}
+
+.pricing-card {
+padding: 2.2rem 1.5rem;
+background: #f8f8f8;
+border-radius: 8px;
+text-align: center;
+border: 1px solid #eeeeee;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-card.featured {
+background: #f0f8f8;
+border: 2px solid #D4A574;
+transform: translateY(-5px);
+}
+
+.pricing-card.featured:hover {
+transform: translateY(-8px);
+}
+
+.pricing-size {
+display: block;
+color: #2D5A5A;
+font-size: 0.78rem;
+font-weight: 700;
+letter-spacing: 1.3px;
+margin-bottom: 1rem;
+}
+
+.pricing-card strong {
+display: block;
+color: #D4A574;
+font-family: 'Georgia', serif;
+font-size: 1.8rem;
+}
+
+/* ===========================
+FINAL SERVICE CTA
+=========================== */
+
+.service-cta {
+padding: 4rem 0;
+background: linear-gradient(135deg, #2D5A5A 0%, #3d7a7a 100%);
+color: white;
+text-align: center;
+}
+
+.service-cta .service-eyebrow {
+color: #D4A574;
+}
+
+.service-cta h2 {
+color: white;
+max-width: 800px;
+margin: 0 auto 1rem;
+}
+
+.service-cta p:not(.service-eyebrow) {
+color: rgba(255, 255, 255, 0.9);
+max-width: 700px;
+margin: 0 auto 2rem;
+font-size: 1.05rem;
+line-height: 1.8;
+}
+
+/* ===========================
+SERVICE PAGE — TABLET
+=========================== */
+
+@media (max-width: 900px) {
+
+.service-hero-grid {
+grid-template-columns: 1fr;
+gap: 2.5rem;
+}
+
+.service-hero-content {
+max-width: 760px;
+text-align: center;
+margin: 0 auto;
+}
+
+.service-hero-image {
+max-width: 760px;
+margin: 0 auto;
+}
+
+.service-included-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.service-two-column {
+grid-template-columns: 1fr;
+gap: 2.5rem;
+}
+
+.service-suitability-content {
+max-width: 760px;
+margin: 0 auto;
+}
+
+.service-highlight-box {
+max-width: 760px;
+margin: 0 auto;
+}
+
+.pricing-grid {
+max-width: 760px;
+}
+}
+
+/* ===========================
+SERVICE PAGE — MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+.service-page-hero {
+padding: 3.5rem 0;
+}
+
+.service-hero-content h1 {
+font-size: 2.5rem;
+}
+
+.service-hero-content h2 {
+font-size: 1.15rem;
+}
+
+.service-hero-content > p:not(.service-eyebrow) {
+font-size: 1rem;
+}
+
+.service-hero-image img {
+aspect-ratio: 4 / 3;
+}
+
+.service-introduction,
+.service-details,
+.service-suitability,
+.service-result,
+.service-pricing,
+.service-cta {
+padding: 3.5rem 0;
+}
+
+.service-included-grid {
+grid-template-columns: 1fr;
+}
+
+.service-included-card {
+min-height: auto;
+}
+
+.pricing-grid {
+grid-template-columns: 1fr;
+max-width: 420px;
+}
+
+.pricing-card.featured {
+transform: none;
+}
+
+.pricing-card.featured:hover {
+transform: translateY(-5px);
+}
+
+.service-highlight-box {
+padding: 2.2rem;
+}
+}
+
+/* ===========================
+SERVICE PAGE — SMALL PHONE
+=========================== */
+
+@media (max-width: 480px) {
+
+.service-page-hero {
+padding: 3rem 0;
+}
+
+.service-hero-content h1 {
+font-size: 2.1rem;
+}
+
+.service-hero-content h2 {
+font-size: 1.05rem;
+}
+
+.service-eyebrow {
+font-size: 0.7rem;
+letter-spacing: 1.5px;
+}
+
+.service-hero-image img {
+aspect-ratio: 4 / 3;
+}
+
+.service-section-heading h2,
+.service-narrow h2,
+.service-suitability-content h2,
+.service-result h2,
+.service-cta h2 {
+font-size: 1.7rem;
+}
+
+.service-included-card {
+padding: 1.6rem;
+}
+
+.service-check-list li {
+padding-left: 2.7rem;
+}
+
+.service-highlight-box {
+padding: 1.8rem;
+}
+}
+
+/* ===========================
+ABOUT PAGE — HERO
+=========================== */
+
+.about-page-hero {
+background: linear-gradient(135deg, #f7f4ef 0%, #ffffff 100%);
+padding: 4.5rem 0;
+overflow: hidden;
+}
+
+.about-hero-grid {
+display: grid;
+grid-template-columns: 0.9fr 1.1fr;
+align-items: center;
+}
+
+.about-hero-content {
+    max-width: 560px;
+    transform: translateY(-45px);
+}
+
+.about-hero-content h1 {
+color: #2D5A5A;
+font-size: 3.4rem;
+line-height: 1.2;
+margin-bottom: 1.4rem;
+}
+
+.about-hero-lead {
+color: #555;
+font-size: 1.15rem;
+line-height: 1.85;
+margin-bottom: 1.2rem;
+}
+
+.about-hero-content > p:not(.service-eyebrow) {
+color: #666;
+line-height: 1.85;
+margin-bottom: 2rem;
+}
+
+.about-hero-image {
+width: 100%;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+background: #f5f5f5;
+}
+
+.about-hero-image img {
+width: 100%;
+display: block;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+object-position: center top;
+}
+
+/* ===========================
+ABOUT HERO — TABLET
+=========================== */
+
+@media (max-width: 900px) {
+
+.about-hero-grid {
+grid-template-columns: 1fr;
+gap: 2.5rem;
+}
+
+.about-hero-content {
+max-width: 760px;
+text-align: center;
+margin: 0 auto;
+}
+
+.about-hero-image {
+max-width: 650px;
+margin: 0 auto;
+}
+}
+
+/* ===========================
+ABOUT HERO — MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+.about-page-hero {                        
+padding: 3.5rem 0;
+}
+
+.about-hero-content h1 {
+font-size: 2.5rem;
+}
+
+.about-hero-lead {
+font-size: 1.05rem;
+}
+
+.about-hero-image img {
+aspect-ratio: 4 / 5;
+}
+}
+
+/* ===========================
+ABOUT HERO — SMALL PHONE
+=========================== */
+
+@media (max-width: 480px) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+
+.about-page-hero {
+padding: 3rem 0;
+}
+
+.about-hero-content h1 {
+font-size: 2.1rem;
+}
+
+.about-hero-lead {
+font-size: 1rem;
+}
+}
+
+/* =========================================================
+GALLERY PAGE — CONSOLIDATED & CLEAN
+========================================================= */
+
+.gallery-page {
+background: #ffffff;
+}
+
+/* Gallery Hero */
+.gallery-hero {
+background: linear-gradient(135deg, #f7f4ef 0%, #ffffff 100%);
+padding: 5rem 0;
+text-align: center;
+}
+
+.gallery-hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+                                                                                                                                                                                   
+  margin: 0 0 1.5rem;
+}
+
+.gallery-hero-grid .service-hero-content > p:last-child {
+  max-width: 620px;
+  margin: 0;
+  color: #666;
+  line-height: 1.7;
+}
+/* Gallery Intro */
+.gallery-intro {
+padding: 3.5rem 0;
+background: #ffffff;
+text-align: center;
+}
+
+.gallery-intro h2 {
+color: #2D5A5A;
+margin-bottom: 1.2rem;
+}
+
+.gallery-intro p:last-child {
+color: #666;
+max-width: 760px;
+margin: 0 auto;
+font-size: 1.05rem;
+line-height: 1.85;
+}
+
+/* Gallery Main Section */
+.gallery-section {
+padding: 4rem 0;
+background: linear-gradient(to bottom, #f5f5f5 0%, #ffffff 100%);
+}
+
+/* Gallery Grid */
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.8rem;
+}
+
+/* Gallery Card */
+.gallery-item {
+background: white;
+border-radius: 10px;
+overflow: visible;
+box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.gallery-item:hover {
+transform: translateY(-7px);
+box-shadow: 0 12px 28px rgba(0, 0, 0, 0.13);
+}
+
+/* Gallery Images — show complete original PNG composition */
+.gallery-item img {
+width: 100%;
+height: auto !important;
+aspect-ratio: auto !important;
+object-fit: contain !important;
+object-position: center;
+display: block;
+background: #f5f5f5;
+transition: none;
+}
+
+.gallery-item:hover img {
+transform: none;
+}
+/* Gallery Text */
+.gallery-item-content {
+padding: 1.4rem 1.5rem 1.5rem;
+}
+
+.gallery-item h3 {
+color: #2D5A5A;
+font-size: 1.25rem;
+margin-bottom: 0.4rem;
+}
+
+.gallery-item p {
+color: #777;
+font-size: 0.92rem;
+line-height: 1.6;
+}
+
+/* Gallery CTA */
+.gallery-cta {
+padding: 4rem 0;
+background: linear-gradient(135deg, #2D5A5A 0%, #3d7a7a 100%);
+color: white;
+text-align: center;
+}
+
+.gallery-cta h2 {
+color: white;
+margin-bottom: 1rem;
+}
+
+.gallery-cta p {
+color: rgba(255, 255, 255, 0.9);
+max-width: 650px;
+margin: 0 auto 2rem;
+font-size: 1.05rem;
+line-height: 1.8;
+}
+
+/* Gallery CTA Button */
+.gallery-cta .btn-primary {
+background: white;
+color: #2D5A5A;
+}
+
+.gallery-cta .btn-primary:hover {
+background: #D4A574;
+color: white;
+}
+
+/* ===========================
+GALLERY TABLET
+=========================== */
+
+@media (max-width: 900px) {
+
+.gallery-hero {
+padding: 4.5rem 0;
+}
+
+.gallery-hero h1 {
+font-size: 3rem;
+}
+
+.gallery-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-item img {
+height: 280px;
+}
+
+.gallery-intro {
+padding: 3rem 0;
+}
+}
+/* ===========================
+   GALLERY HERO — BACKGROUND IMAGE
+=========================== */
+
+.gallery-hero {
+  position: relative;
+  min-height: 441px;
+  background-image: url("gallary image4.png");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gallery-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.gallery-hero .container {
+  position: relative;
+  z-index: 1;
+}
+.gallery-hero .service-hero-content {
+  max-width: 650px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+.gallery-hero .service-eyebrow,
+.gallery-hero h1,
+.gallery-hero .service-hero-lead,
+.gallery-hero .service-hero-content > p:not(.service-eyebrow) {
+  color: #ffffff;
+}
+.gallery-hero .service-eyebrow {
+  color: #F0C28A;
+  font-weight: 700;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
+}
+.gallery-hero-grid .gallery-hero-image {
+  display: none !important;
+}
+
+/* ===========================
+   GALLERY MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+ .gallery-hero {
+  padding: 5rem 0;
+  background-image: url('gallary%20image4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.gallery-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.gallery-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+  .gallery-hero-grid {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .gallery-hero-grid .service-hero-content {
     width: 100%;
     max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0 0 30px;
   }
 
-  .testimonials-heading {
-    max-width: 650px;
-    margin-bottom: 28px;
+  .gallery-hero-grid .gallery-hero-image {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  position: static;
+}
+
+ .gallery-hero-grid .gallery-hero-image {
+  display: none !important;
+}
+  .gallery-hero h1 {
+    font-size: 2.5rem;
   }
 
-  .testimonials-eyebrow {
-    margin-bottom: 8px;
-    font-size: 0.7rem;
-    letter-spacing: 1.7px;
+  .gallery-hero .service-hero-lead {
+    font-size: 1rem;
   }
 
-  .testimonials .section-title {
-    font-size: clamp(1.65rem, 6.5vw, 1.95rem);
-    line-height: 1.18;
+  .gallery-intro {
+    padding: 3rem 0;
   }
 
-  .testimonials .section-subtitle {
-    font-size: 0.92rem;
-    line-height: 1.62;
+  .gallery-intro h2 {
+    font-size: 2rem;
   }
 
-  .testimonials-grid {
+  .gallery-intro p:last-child {
+    font-size: 1rem;
+  }
+
+  .gallery-section {
+    padding: 3rem 0;
+  }
+
+  .gallery-grid {
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 1.5rem;
+  }
+
+  .gallery-item img {
+    height: 300px;
+  }
+
+  .gallery-cta {
+    padding: 3.5rem 0;
+  }
+
+}
+
+/* ===========================
+   GALLERY SMALL PHONE
+=========================== */
+
+@media (max-width: 480px) {
+
+  .gallery-hero {
+    padding: 3rem 0;
+  }
+
+  .gallery-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .gallery-intro {
+    padding: 2.5rem 0;
+  }
+
+  .gallery-intro h2 {
+    font-size: 1.7rem;
+  }
+
+  .gallery-section {
+    padding: 2.5rem 0;
+  }
+
+  .gallery-item img {
+    height: 240px;
+  }
+
+  .gallery-item-content {
+    padding: 1.2rem;
+  }
+
+  .gallery-cta {
+    padding: 3rem 0;
+  }
+
+}                                           
+/* =========================================================
+HOMEPAGE — FINAL UX/UI SPACING & POLISH
+Controlled override — does not change page structure
+========================================================= */
+
+/* ---------------------------
+HOMEPAGE SECTION SPACING
+--------------------------- */
+
+.why-choose {
+padding: 2.5rem 0 3rem;
+}
+
+.testimonials {
+padding: 2.5rem 0 3rem;
+}
+
+.services {
+padding: 2.5rem 0 3rem;
+}
+
+.transformations {
+padding: 2.5rem 0 3rem;
+}
+
+.meet-groomer {
+padding: 2.5rem 0 2rem;
+}
+
+.faq {
+padding: 2rem 0 3.5rem;
+}
+
+.contact {
+padding: 2.8rem 0;
+}
+/* ---------------------------
+HOMEPAGE SECTION HEADINGS
+--------------------------- */
+
+.why-choose .section-title,
+.testimonials .section-title,
+.services .section-title,
+.transformations .section-title,
+.meet-groomer .section-title,
+.faq .section-title {
+margin-top: 0;
+margin-bottom: 0.65rem;
+}
+
+.why-choose .section-subtitle,
+.testimonials .section-subtitle,
+.services .section-subtitle,
+.transformations .section-subtitle,
+.meet-groomer .section-subtitle,
+.faq .section-subtitle {
+margin-top: 0;
+margin-bottom: 1.5rem;
+}
+
+/* ---------------------------
+HOMEPAGE CARD SPACING
+--------------------------- */
+
+.why-choose {
+padding: 2rem 0 2rem;
+}
+
+.testimonials {
+padding: 2rem 0 2.5rem;
+}
+
+.services .service-card {
+padding: 1.8rem;
+}
+
+/* ---------------------------
+BETTER VISUAL RHYTHM
+--------------------------- */
+
+.why-choose .cards-grid,
+.services .services-grid,
+.transformations .transformations-grid {
+margin-top: 1.5rem;
+}
+
+.testimonials .testimonial-card {
+margin-top: 1.5rem;
+}
+
+/* =========================================================
+MOBILE HOMEPAGE POLISH
+========================================================= */
+
+@media (max-width: 768px) {
+
+.why-choose,
+.testimonials,
+.services,
+.transformations {
+padding: 2rem 0 2.5rem;
+}
+
+.meet-groomer {
+padding: 2rem 0 1.5rem;
+}
+
+.faq {
+padding: 1.5rem 0 3rem;
+}
+
+.contact {
+padding: 2.3rem 0;
+}
+
+.why-choose .section-title,
+.testimonials .section-title,
+.services .section-title,
+.transformations .section-title,
+.meet-groomer .section-title,
+.faq .section-title {
+margin-bottom: 0.6rem;
+}
+
+.why-choose .section-subtitle,
+.testimonials .section-subtitle,
+.services .section-subtitle,
+.transformations .section-subtitle,
+.meet-groomer .section-subtitle,
+.faq .section-subtitle {
+margin-bottom: 1.25rem;
+}
+
+.why-choose .cards-grid,
+.services .services-grid,
+.transformations .transformations-grid {
+margin-top: 1.25rem;
+}
+
+.testimonials .testimonial-card {
+margin-top: 1.25rem;
+}
+
+.why-choose .card,
+.services .service-card {
+padding: 1.5rem;
+}
+
+.testimonials .testimonial-card {
+padding: 1.6rem;
+}
+}
+
+/* =========================================================
+ABOUT PAGE — EYEBROW HEADINGS
+Improved visibility — typography only
+Does not affect layout or page width
+========================================================= */
+
+.about-page-hero .service-eyebrow,
+.about-approach .service-eyebrow,
+.about-values .service-eyebrow,
+.about-mobile .service-eyebrow,
+.about-experience .service-eyebrow,
+.about-promise .service-eyebrow,
+.about-services-link .service-eyebrow,
+.about-page-hero .service-cta .service-eyebrow,
+.service-cta .service-eyebrow {
+color: #A96F3F;
+font-size: 0.86rem;
+font-weight: 800;
+letter-spacing: 2px;
+line-height: 1.4;
+margin-bottom: 1rem;
+text-transform: uppercase;
+}
+
+/* About page eyebrow headings on smaller screens */
+
+@media (max-width: 480px) {
+
+.about-page-hero .service-eyebrow,
+.about-approach .service-eyebrow,
+.about-values .service-eyebrow,
+.about-mobile .service-eyebrow,
+.about-experience .service-eyebrow,
+.about-promise .service-eyebrow,
+.about-services-link .service-eyebrow,
+.service-cta .service-eyebrow {
+color: #A96F3F;
+font-size: 0.78rem;
+letter-spacing: 1.8px;
+font-weight: 800;
+}
+
+}
+
+/* =========================================================
+SERVICE PAGES — EYEBROW HEADINGS
+Improved visibility — typography only
+========================================================= */
+
+.service-page-hero .service-eyebrow,
+.service-introduction .service-eyebrow,
+.service-details .service-eyebrow,
+.service-suitability .service-eyebrow,
+.service-result .service-eyebrow,
+.service-pricing .service-eyebrow,
+.service-cta .service-eyebrow {
+color: #A96F3F;
+font-size: 0.86rem;
+font-weight: 800;
+letter-spacing: 2px;
+line-height: 1.4;
+margin-bottom: 1rem;
+text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+
+.service-page-hero .service-eyebrow,
+.service-introduction .service-eyebrow,
+.service-details .service-eyebrow,
+.service-suitability .service-eyebrow,
+.service-result .service-eyebrow,
+.service-pricing .service-eyebrow,
+.service-cta .service-eyebrow {
+color: #A96F3F;
+font-size: 0.78rem;
+letter-spacing: 1.8px;
+font-weight: 800;
+}
+
+}
+
+/* =========================================================
+EYEBROW HEADINGS — FINAL GLOBAL SPACING POLISH
+Keeps all page layouts intact
+========================================================= */
+
+/* Make all eyebrow headings clearly visible and compact */
+.service-eyebrow {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  line-height: 1.25;
+  text-align: left;
+}
+/* Remove any accidental top spacing from the heading immediately after */
+.service-eyebrow + h1,
+.service-eyebrow + h2 {
+margin-top: 0;
+}
+
+/* Keep eyebrow + main heading visually connected */
+.service-hero-content .service-eyebrow,
+.about-hero-content .service-eyebrow,
+.service-section-heading .service-eyebrow,
+.service-narrow .service-eyebrow,
+.service-cta .service-eyebrow {
+margin-top: 0;
+margin-bottom: 0.45rem;
+}
+
+/* Mobile: make the relationship even tighter */
+@media (max-width: 768px) {
+.service-eyebrow {
+margin-bottom: 0.35rem;
+line-height: 1.2;
+}
+
+.service-eyebrow + h1,  
+.service-eyebrow + h2 {  
+    margin-top: 0;  
+}
+
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+.service-eyebrow {
+margin-bottom: 0.3rem;
+}
+}
+
+/* =========================================================
+FINAL EYEBROW SYSTEM — ALL PAGES
+Use this block LAST in the CSS file.
+Controls eyebrow size, width, and spacing only.
+Does NOT alter main headings, containers, grids or zoom layout.
+========================================================= */
+
+/* ---------- GLOBAL EYEBROW ---------- */
+
+.service-eyebrow {
+display: block;
+width: fit-content;
+
+color: #A96F3F !important;  
+font-family: 'Calibri', 'Segoe UI', sans-serif;  
+font-size: 0.86rem !important;  
+font-weight: 800 !important;  
+letter-spacing: 2.2px !important;  
+line-height: 1.25 !important;  
+text-transform: uppercase;  
+
+margin-top: 0 !important;  
+margin-bottom: 0.5rem !important;  
+padding: 0 !important;
+
+}
+
+/* ---------- EYEBROW → MAIN HEADING ---------- */
+
+.service-eyebrow + h1,
+.service-eyebrow + h2,
+.service-eyebrow + h3 {
+margin-top: 0 !important;
+}
+
+/* ---------- ABOUT PAGE ---------- */
+
+.about-page-hero .service-eyebrow,
+.about-approach .service-eyebrow,
+.about-values .service-eyebrow,
+.about-mobile .service-eyebrow,
+.about-experience .service-eyebrow,
+.about-promise .service-eyebrow,
+.about-services-link .service-eyebrow {
+margin-top: 0 !important;
+margin-bottom: 0.5rem !important;
+}
+
+/* ---------- SERVICE PAGES ---------- */
+
+.service-page-hero .service-eyebrow,
+.service-introduction .service-eyebrow,
+.service-details .service-eyebrow,
+.service-suitability .service-eyebrow,
+.service-result .service-eyebrow,
+.service-pricing .service-eyebrow {
+margin-top: 0 !important;
+margin-bottom: 0.5rem !important;
+}
+
+/* ---------- SERVICE SECTION HEADING ---------- */
+
+.service-section-heading .service-eyebrow,
+.service-narrow .service-eyebrow {
+margin-top: 0 !important;
+margin-bottom: 0.5rem !important;
+}
+
+/* ---------- CTA EYEBROWS ---------- */
+
+.service-cta .service-eyebrow,
+.about-page-hero .service-cta .service-eyebrow {
+margin-top: 0 !important;
+margin-bottom: 0.5rem !important;
+}
+
+/* =========================================================
+REDUCE SPACE ABOVE EYEBROW
+Only affects sections that actually contain an eyebrow.
+Does NOT change general section spacing.
+========================================================= */
+
+.service-page-hero:has(.service-eyebrow),
+.service-introduction:has(.service-eyebrow),
+.service-details:has(.service-eyebrow),
+.service-suitability:has(.service-eyebrow),
+.service-result:has(.service-eyebrow),
+.service-pricing:has(.service-eyebrow),
+.service-cta:has(.service-eyebrow),
+.about-page-hero:has(.service-eyebrow),
+.about-approach:has(.service-eyebrow),
+.about-values:has(.service-eyebrow),
+.about-mobile:has(.service-eyebrow),
+.about-experience:has(.service-eyebrow),
+.about-promise:has(.service-eyebrow),
+.about-services-link:has(.service-eyebrow) {
+/* Do not change section padding here.
+The eyebrow itself is controlled instead. */
+}
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+.service-eyebrow {  
+    font-size: 0.82rem !important;  
+    letter-spacing: 2px !important;  
+    line-height: 1.2 !important;  
+    margin-top: 0 !important;  
+    margin-bottom: 0.4rem !important;  
+}  
+
+.service-eyebrow + h1,  
+.service-eyebrow + h2,  
+.service-eyebrow + h3 {  
+    margin-top: 0 !important;  
+}
+
+}
+
+/* =========================================================
+FINAL EYEBROW SPACING FIX — MOBILE ONLY
+Does not affect desktop / zoom-out layouts
+========================================================= */
+
+@media (max-width: 768px) {
+
+/* ---------------------------------
+1. SERVICE HERO — space above eyebrow
+--------------------------------- */
+
+.service-page-hero {
+padding-top: 2.2rem !important;
+}
+
+/* ---------------------------------
+2. EYEBROW → MAIN HEADING
+--------------------------------- */
+
+.service-eyebrow {
+margin-top: 0 !important;
+margin-bottom: 0.45rem !important;
+line-height: 1.2 !important;
+}
+
+.service-eyebrow + h1,
+.service-eyebrow + h2 {
+margin-top: 0 !important;
+}
+
+/* ---------------------------------
+3. CORE SERVICE / OTHER SECTIONS
+Space above their eyebrow
+--------------------------------- */
+
+.service-introduction,
+.service-details,
+.service-suitability,
+.service-result,
+.service-pricing {
+padding-top: 2.5rem !important;
+}
+
+/* Eyebrow inside section heading */
+.service-section-heading .service-eyebrow,
+.service-narrow .service-eyebrow {
+margin-top: 0 !important;
+margin-bottom: 0.45rem !important;
+}
+
+/* ---------------------------------
+4. CTA EYEBROW
+--------------------------------- */
+
+.service-cta {
+padding-top: 2.5rem !important;
+}
+
+.service-cta .service-eyebrow {
+margin-top: 0 !important;
+margin-bottom: 0.45rem !important;
+}
+}
+
+/* =========================================================
+SMALL PHONES — 480px
+Slightly tighter, but still comfortable
+========================================================= */
+
+@media (max-width: 480px) {
+
+.service-page-hero {
+padding-top: 2rem !important;
+}
+
+.service-eyebrow {
+margin-bottom: 0.4rem !important;
+line-height: 1.2 !important;
+}
+
+.service-eyebrow + h1,
+.service-eyebrow + h2 {
+margin-top: 0 !important;
+}
+
+.service-introduction,
+.service-details,
+.service-suitability,
+.service-result,
+.service-pricing,
+.service-cta {
+padding-top: 2.2rem !important;
+}
+}
+
+/* =========================================================
+GALLERY EYEBROW — FINAL SPACING FIX
+DO NOT AFFECT ABOUT / SERVICE PAGES
+========================================================= */
+
+.gallery-hero {
+padding-top: 2rem;
+padding-bottom: 3rem;
+}
+
+/* Eyebrow itself */
+.gallery-hero .service-eyebrow {
+display: block;
+margin: 0 0 0.15rem 0;
+padding: 0;
+line-height: 1.1;
+}
+
+/* Main Gallery heading */
+.gallery-hero h1 {
+margin-top: 0 !important;
+margin-bottom: 1.2rem;
+line-height: 1.15;
+}
+
+/* ===========================
+GALLERY — SECOND EYEBROW
+=========================== */
+
+.gallery-intro {
+padding-top: 2.5rem;
+}
+
+.gallery-intro .service-eyebrow {
+display: block;
+margin: 0 0 0.15rem 0;
+padding: 0;
+line-height: 1.1;
+}
+
+.gallery-intro h2 {
+margin-top: 0 !important;
+}
+
+/* ===========================
+MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+                                                  
+    padding-top: 2rem;  
+    padding-bottom: 2.5rem;  
+}  
+
+.gallery-hero .service-eyebrow {  
+    margin-bottom: 0.1rem;  
+    line-height: 1.1;  
+}  
+
+.gallery-hero h1 {  
+    margin-top: 0 !important;  
+}  
+
+.gallery-intro {  
+    padding-top: 2rem;  
+}  
+
+.gallery-intro .service-eyebrow {  
+    margin-bottom: 0.1rem;  
+}  
+
+.gallery-intro h2 {  
+    margin-top: 0 !important;  
+}
+
+}
+
+/* ===========================
+SMALL PHONE
+=========================== */
+
+@media (max-width: 480px) {
+
+.gallery-hero {  
+    padding-top: 1.7rem;  
+    padding-bottom: 2.3rem;  
+}  
+
+.gallery-hero .service-eyebrow {  
+    font-size: 0.78rem;  
+    letter-spacing: 1.8px;  
+    line-height: 1;  
+    margin-bottom: 0.05rem;  
+}  
+
+.gallery-hero h1 {  
+    margin-top: 0 !important;  
+}  
+
+.gallery-intro {  
+    padding-top: 1.8rem;  
+}  
+
+.gallery-intro .service-eyebrow {  
+    font-size: 0.78rem;  
+    letter-spacing: 1.8px;  
+    line-height: 1;  
+    margin-bottom: 0.05rem;  
+}  
+
+.gallery-intro h2 {  
+    margin-top: 0 !important;  
+}
+
+}
+/* =========================================================
+BOOKING FORM — PRECIOUS PETS
+Added separately so existing website styling is untouched
+========================================================= */
+
+.booking-form-wrapper {
+max-width: 760px;
+margin: 50px auto 0;
+padding: 35px;
+background: #ffffff;
+border-radius: 16px;
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+text-align: left;
+}
+
+.booking-form-wrapper h3 {
+margin: 0 0 10px;
+text-align: center;
+font-size: 2rem;
+}
+
+.booking-form-intro {
+margin: 0 auto 30px;
+max-width: 600px;
+text-align: center;
+line-height: 1.6;
+}
+
+.booking-form {
+width: 100%;
+}
+
+.booking-form .form-group {
+margin-bottom: 20px;
+}
+
+.booking-form label {
+display: block;
+margin-bottom: 8px;
+font-weight: 600;
+line-height: 1.4;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+width: 100%;
+box-sizing: border-box;
+padding: 13px 15px;
+border: 1px solid #d8d8d8;
+border-radius: 8px;
+background: #ffffff;
+font-family: inherit;
+font-size: 1rem;
+color: inherit;
+transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking-form input,
+.booking-form select {
+min-height: 48px;
+}
+
+.booking-form textarea {
+min-height: 130px;
+resize: vertical;
+line-height: 1.5;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+opacity: 0.65;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+outline: none;
+border-color: #999;
+box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
+.booking-form select {
+cursor: pointer;
+}
+
+.booking-form button {
+display: block;
+width: 100%;
+margin-top: 10px;
+border: none;
+cursor: pointer;
+}
+
+/* Mobile booking form */
+@media (max-width: 600px) {
+
+.booking-form-wrapper {
+margin-top: 35px;
+padding: 25px 18px;
+border-radius: 12px;
+}
+
+.booking-form-wrapper h3 {
+font-size: 1.6rem;
+}
+
+.booking-form-intro {
+font-size: 0.95rem;
+margin-bottom: 25px;
+}
+
+.booking-form .form-group {
+margin-bottom: 17px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+font-size: 16px;
+}
+
+.booking-form textarea {
+min-height: 120px;
+}
+
+}
+/* =========================================================
+BOOKING FORM — TEXT VISIBILITY FIX
+Overrides existing Contact section text styles
+========================================================= */
+
+.booking-form-wrapper {
+color: #333333;
+}
+
+.booking-form-wrapper h3 {
+color: #333333 !important;
+opacity: 1 !important;
+visibility: visible !important;
+}
+
+.booking-form-intro {
+color: #555555 !important;
+opacity: 1 !important;
+visibility: visible !important;
+}
+
+.booking-form label {
+display: block;
+color: #333333 !important;
+opacity: 1 !important;
+visibility: visible !important;
+font-weight: 600;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+color: #333333 !important;
+background-color: #ffffff !important;
+opacity: 1 !important;
+visibility: visible !important;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+color: #777777 !important;
+opacity: 1 !important;
+}
+
+.booking-form select {
+color: #333333 !important;
+}
+
+.booking-form select option {
+color: #333333 !important;
+background-color: #ffffff !important;
+}
+
+.booking-form button {
+opacity: 1 !important;
+visibility: visible !important;
+}
+
+/* =========================================================
+FINAL ABOUT PAGE EYEBROW POLISH
+MOBILE READABILITY + CENTER ALIGNMENT
+TYPOGRAPHY ONLY — NO WIDTH / ZOOM / LAYOUT CHANGES
+========================================================= */
+
+@media (max-width: 768px) {
+
+.about-page-hero .service-eyebrow,
+.about-approach .service-eyebrow,
+.about-values .service-eyebrow,
+.about-mobile .service-eyebrow,
+.about-experience .service-eyebrow,
+.about-promise .service-eyebrow,
+.about-services-link .service-eyebrow {
+
+display: block;  
+width: fit-content;  
+
+margin-left: auto !important;  
+margin-right: auto !important;  
+margin-top: 0 !important;  
+margin-bottom: 0.45rem !important;  
+
+color: #A96F3F !important;  
+font-size: 0.92rem !important;  
+font-weight: 800 !important;  
+letter-spacing: 2px !important;  
+line-height: 1.2 !important;  
+
+text-align: center !important;
+
+}
+
+.about-page-hero .service-eyebrow + h1,
+.about-page-hero .service-eyebrow + h2,
+.about-approach .service-eyebrow + h2,
+.about-values .service-eyebrow + h2,
+.about-mobile .service-eyebrow + h2,
+.about-experience .service-eyebrow + h2,
+.about-promise .service-eyebrow + h2,
+.about-services-link .service-eyebrow + h2 {
+margin-top: 0 !important;
+}
+}
+
+/* =========================================================
+ABOUT PAGE EYEBROW — SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+.about-page-hero .service-eyebrow,
+.about-approach .service-eyebrow,
+.about-values .service-eyebrow,
+.about-mobile .service-eyebrow,
+.about-experience .service-eyebrow,
+.about-promise .service-eyebrow,
+.about-services-link .service-eyebrow {
+
+font-size: 0.88rem !important;  
+letter-spacing: 1.9px !important;  
+line-height: 1.2 !important;  
+
+margin-left: auto !important;  
+margin-right: auto !important;  
+margin-bottom: 0.4rem !important;  
+
+text-align: center !important;
+
+}
+}
+
+/* =========================================================
+FOOTER EYEBROW — READY WHEN YOU ARE
+MOBILE READABILITY + CENTER ALIGNMENT
+========================================================= */
+
+footer .service-eyebrow,
+.footer-section .service-eyebrow {
+
+display: block;
+width: fit-content;
+
+color: #FFFFFF !important;
+font-size: 0.9rem !important;
+font-weight: 800 !important;
+letter-spacing: 2px !important;
+line-height: 1.25 !important;
+
+margin-top: 0 !important;
+margin-bottom: 0.5rem !important;
+
+opacity: 1 !important;
+visibility: visible !important;
+}
+
+@media (max-width: 768px) {
+
+footer .service-eyebrow,
+.footer-section .service-eyebrow {
+
+margin-left: auto !important;  
+margin-right: auto !important;  
+
+font-size: 0.9rem !important;  
+letter-spacing: 1.9px !important;  
+line-height: 1.2 !important;  
+
+text-align: center !important;
+
+}
+}
+
+@media (max-width: 480px) {
+
+footer .service-eyebrow,
+.footer-section .service-eyebrow {
+
+font-size: 0.88rem !important;  
+letter-spacing: 1.8px !important;  
+line-height: 1.2 !important;  
+
+margin-left: auto !important;  
+margin-right: auto !important;  
+
+text-align: center !important;
+
+}
+}
+/* =========================================================
+ABOUT PAGE — EXPLORE GROOMING SERVICES CTA
+FINAL BUTTON VISIBILITY FIX
+Does NOT affect viewport, width, zoom or page layout
+========================================================= */
+
+.about-services-link {
+text-align: center;
+}
+
+.about-services-link .btn {
+display: inline-block;
+width: auto;
+min-width: 220px;
+padding: 1rem 2.2rem;
+margin-top: 0.8rem;
+
+background: #D4A574;
+color: #ffffff !important;
+
+border: 2px solid #D4A574;
+border-radius: 6px;
+
+font-size: 1rem;
+font-weight: 600;
+line-height: 1.2;
+text-align: center;
+
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.about-services-link .btn:hover {
+background: #2D5A5A;
+border-color: #2D5A5A;
+color: #ffffff !important;
+transform: translateY(-2px);
+}
+
+/* ---------------------------------------------------------
+MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+.about-services-link .btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+
+width: auto;  
+min-width: 220px;  
+
+padding: 0.95rem 1.8rem;  
+margin-top: 0.7rem;  
+
+font-size: 1rem;  
+line-height: 1.2;  
+text-align: center;
+
+}
+}
+/* =========================================================
+ABOUT PAGE — CTA BOTTOM GAP ONLY
+Creates clear separation before the next section.
+NO width / viewport / zoom / layout changes.
+========================================================= */
+
+.about-services-link {
+padding-bottom: 3rem !important;
+}
+
+/* ---------------------------------------------------------
+MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 768px) {
+.about-services-link {
+padding-bottom: 2.8rem !important;
+}
+}
+
+/* ---------------------------------------------------------
+SMALL PHONE
+--------------------------------------------------------- */
+
+@media (max-width: 480px) {
+.about-services-link {
+padding-bottom: 2.5rem !important;
+}
+}
+
+/* ---------------------------------------------------------
+SMALL PHONE
+--------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+.about-services-link .btn {
+min-width: 210px;
+padding: 0.9rem 1.6rem;
+font-size: 0.95rem;
+}
+}
+/* =========================================================
+GALLERY PAGE — FINAL EYEBROW TYPOGRAPHY
+Matches About Page exactly
+Center aligned + same size + same style
+NO WIDTH / ZOOM / LAYOUT CHANGES
+========================================================= */
+
+.gallery-hero .service-eyebrow,
+.gallery-intro .service-eyebrow {
+
+display: block;
+width: fit-content;
+
+margin-left: auto !important;
+margin-right: auto !important;
+margin-top: 0 !important;
+margin-bottom: 0.45rem !important;
+
+color: #A96F3F !important;
+font-family: 'Calibri', 'Segoe UI', sans-serif;
+font-size: 0.92rem !important;
+font-weight: 800 !important;
+letter-spacing: 2px !important;
+line-height: 1.2 !important;
+
+text-transform: uppercase;
+text-align: center !important;
+}
+
+/* =========================================================
+GALLERY PAGE — SMALL PHONE
+Same as About Page
+========================================================= */
+
+@                                                                    
+  /* =========================================================
+     10. CONTACT / BOOKING — CLEAN CENTERED DESKTOP FORM
+     ========================================================= */
+
+  .contact {
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .contact-intro {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-methods {
+    gap: 1rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .contact-method {
+    padding: 1.25rem;
+  }
+
+  .booking-form-wrapper {
     width: 100%;
-    max-width: 620px;
+    max-width: 720px;
+    margin: 1.5rem auto 0;
+    padding: 1.8rem 2rem;
+    text-align: left;
+  }
+
+  .booking-form-wrapper h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .booking-form-intro {
+    max-width: 560px;
+    margin: 0 auto 1.4rem;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .booking-form .form-group {
+    margin-bottom: 0.85rem;
+  }
+
+  .booking-form label {
+    margin-bottom: 0.35rem;
+  }
+
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea {
+    width: 100%;
+  }
+
+  .booking-form textarea {
+    min-height: 110px;
+  }
+
+
+  /* =========================================================
+     11. FOOTER — SMALLER, CLEANER DESKTOP FOOTER
+     ========================================================= */
+
+  footer {
+    padding-top: 2.2rem;
+    padding-bottom: 1.1rem;
+  }
+
+  .footer-content {
+    gap: 1.5rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 0.55rem;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+
+  .footer-section li {
+    margin-bottom: 0.25rem;
+  }
+
+  .footer-bottom {
+    padding-top: 1.1rem;
+    font-size: 0.8rem;
+  }
+
+}
+/* =========================================================
+   FINAL BOOKING FORM ALIGNMENT
+   Controlled fix — protects existing mobile layout
+   ========================================================= */
+
+.booking-form-wrapper {
+    width: 100%;
+    max-width: 760px;
     margin-left: auto;
     margin-right: auto;
-  }
+    box-sizing: border-box;
+}
 
-  .testimonials .testimonial-card {
+.booking-form-wrapper *,
+.booking-form-wrapper *::before,
+.booking-form-wrapper *::after {
+    box-sizing: border-box;
+}
+
+.booking-form {
     width: 100%;
     max-width: 100%;
-    border-radius: 14px;
+    margin: 0;
+}
+
+.booking-form .form-group {
+    width: 100%;
+    max-width: 100%;
+}
+
+.booking-form label {
+    width: 100%;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.booking-form button {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* ---------- PHONE ---------- */
+
+@media (max-width: 768px) {
+
+    .booking-form-wrapper {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .booking-form {
+        width: 100%;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea,
+    .booking-form button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+/* ---------- SMALL PHONE ---------- */
+
+@media (max-width: 480px) {
+
+    .booking-form-wrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+}
+/* =========================================================
+   PRECIOUS PETS — ABOUT PAGE DESKTOP POLISH
+   About-page specific only
+   Mobile layout remains protected
+   ========================================================= */
+
+@media (min-width: 769px) {
+
+  /* ---------------------------------------------------------
+     ABOUT HERO
+     --------------------------------------------------------- */
+
+  .about-page-hero {
+    padding: 70px 0 80px;
   }
 
-  .testimonials .testimonial-image-wrap {
-    aspect-ratio: 4 / 3;
+  .about-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(380px, 0.82fr);
+    align-items: center;
+    gap: 70px;
+    max-width: 1180px;
+    margin: 0 auto;
   }
 
-  .testimonials .testimonial-content {
-    padding: 24px 22px 21px;
+  .about-hero-content {
+    max-width: 600px;
   }
 
-  .testimonials .quote-mark {
-    top: 13px;
-    right: 18px;
-    font-size: 3.3rem;
+  .about-hero-content h1 {
+    max-width: 600px;
+    margin: 12px 0 20px;
+    font-size: clamp(42px, 4vw, 62px);
+    line-height: 1.08;
   }
 
-  .testimonials .testimonial-text {
-    font-size: 0.91rem;
-    line-height: 1.64;
-    margin-bottom: 20px;
-    padding-right: 18px;
+  .about-hero-lead {
+    max-width: 560px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 1.6;
   }
 
-  .testimonials .testimonial-footer {
-    padding-top: 14px;
+  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
+    max-width: 540px;
+    line-height: 1.7;
   }
 
-  .testimonials .testimonial-author {
-    font-size: 0.9rem;
+  .about-hero-image {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    transform: translateY(-35px);
   }
 
-  .testimonials .stars {
-    font-size: 0.82rem;
+  .about-hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+
+
+  /* ---------------------------------------------------------
+     OUR APPROACH
+     --------------------------------------------------------- */
+
+  .about-approach {
+    padding: 85px 0;
+  }
+
+  .about-narrow {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .about-narrow h2 {
+    max-width: 720px;
+    margin: 12px 0 24px;
+    font-size: clamp(34px, 3vw, 48px);
+    line-height: 1.15;
+  }
+
+  .about-narrow p:not(.service-eyebrow) {
+    max-width: 740px;
+    margin-bottom: 18px;
+    line-height: 1.75;
+  }
+
+  .about-narrow p:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* ---------------------------------------------------------
+     SECTION HEADINGS
+     --------------------------------------------------------- */
+
+  .about-values .service-section-heading,
+  .about-experience .service-section-heading {
+    max-width: 760px;
+    margin: 0 auto 48px;
+  }
+
+  .about-values .service-section-heading h2,                      
+  .about-experience .service-section-heading h2 {
+    margin: 12px 0 16px;
+    font-size: clamp(34px, 3vw, 48px);
+    line-height: 1.15;
+  }
+
+  .about-values .service-section-heading > p:last-child,
+  .about-experience .service-section-heading > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.65;
+  }
+
+
+  /* ---------------------------------------------------------
+     WHAT MATTERS TO US — VALUE CARDS
+     --------------------------------------------------------- */
+
+  .about-values {
+    padding: 85px 0;
+  }
+
+  .about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+  }
+
+  .about-value-card {
+  height: 100%;
+  padding: 30px 26px;
+  box-sizing: border-box;
+  background: #f7f3ee;
+}
+
+  .about-value-card h3 {
+    margin: 14px 0 12px;
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+  .about-value-card p {
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  .about-value-number {
+    display: block;
+    line-height: 1;
+  }
+
+
+  /* ---------------------------------------------------------
+     WHY MOBILE GROOMING
+     --------------------------------------------------------- */
+
+  .about-mobile {
+    padding: 90px 0;
+  }
+
+  .about-two-column {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.75fr);
+    align-items: center;
+    gap: 75px;
+  }
+
+  .about-mobile-content {
+    max-width: 680px;
+  }
+
+  .about-mobile-content h2 {
+    max-width: 650px;
+    margin: 12px 0 24px;
+    font-size: clamp(34px, 3vw, 48px);
+    line-height: 1.15;
+  }
+
+  .about-mobile-content p:not(.service-eyebrow) {
+    max-width: 650px;
+    margin-bottom: 18px;
+    line-height: 1.7;
+  }
+
+  .about-mobile-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-mobile-highlight {
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+    padding: 42px 38px;
+    box-sizing: border-box;
+  }
+
+  .about-mobile-highlight h3 {
+    margin: 18px 0 14px;
+    font-size: 25px;
+    line-height: 1.3;
+  }
+
+  .about-mobile-highlight p {
+    margin: 0;
+    line-height: 1.65;
+  }
+
+
+  /* ---------------------------------------------------------
+     WHAT YOU CAN EXPECT
+     --------------------------------------------------------- */
+
+  .about-experience {
+    padding: 85px 0;
+  }
+
+  .about-experience-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+  }
+
+  .about-experience-step {
+    height: 100%;
+    padding: 30px 25px;
+    box-sizing: border-box;
+  }
+
+  .about-experience-step h3 {
+    margin: 16px 0 12px;
+    font-size: 21px;
+    line-height: 1.3;
+  }
+
+  .about-experience-step p {
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  .about-step-number {
+    display: block;
+    line-height: 1;
+  }
+
+
+  /* ---------------------------------------------------------
+     LINDSAY'S PROMISE
+     --------------------------------------------------------- */
+
+  .about-promise {
+    padding: 90px 0;
+  }
+
+  .about-promise-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-promise-inner h2 {
+    max-width: 850px;
+    margin: 14px auto 24px;
+    font-size: clamp(36px, 3.2vw, 52px);
+    line-height: 1.15;
+  }
+
+  .about-promise-inner > p:not(.service-eyebrow):not(.about-signature) {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.7;
+  }
+
+  .about-signature {
+    margin-top: 26px !important;
+  }
+
+
+  /* ---------------------------------------------------------
+     SERVICES CONNECTION
+     --------------------------------------------------------- */
+
+  .about-services-link {
+    padding: 80px 0;
+  }
+
+  .about-services-link .container {
+    max-width: 820px;
+    text-align: center;
+  }
+
+  .about-services-link h2 {
+    max-width: 760px;
+    margin: 12px auto 18px;
+    font-size: clamp(34px, 3vw, 48px);
+    line-height: 1.15;
+  }
+
+  .about-services-link p:not(.service-eyebrow) {
+    max-width: 680px;
+    margin: 0 auto 28px;
+    line-height: 1.7;
+  }
+
+
+  /* ---------------------------------------------------------
+     FINAL CTA
+     --------------------------------------------------------- */
+
+  .about-page-hero + .about-approach,
+  .about-services-link + .service-cta {
+    margin-top: 0;
+  }
+
+  .service-cta {
+    padding: 90px 0;
+  }
+
+  .service-cta .container {
+    max-width: 850px;
+    text-align: center;
+  }
+
+  .service-cta h2 {
+    max-width: 800px;
+    margin: 12px auto 20px;
+    font-size: clamp(36px, 3.2vw, 52px);
+    line-height: 1.15;
+  }
+
+  .service-cta p:not(.service-eyebrow) {
+    max-width: 680px;
+    margin: 0 auto 28px;
+    line-height: 1.7;
+  }
+
+
+  /* ---------------------------------------------------------
+     FOOTER
+     --------------------------------------------------------- */
+
+  footer {
+    padding-top: 65px;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1.35fr 0.8fr 0.9fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .footer-section {
+    min-width: 0;
+  }
+
+  .footer-section h4 {
+    margin-bottom: 15px;
+  }
+
+  .footer-section p {
+    line-height: 1.65;
+  }
+
+  .footer-section ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-bottom {
+    margin-top: 45px;
   }
 
 }
 
 
 /* =========================================================
+   PRECIOUS PETS — FINAL ABOUT PAGE SYSTEM
+   =========================================================
+   PURPOSE:
+   - One coherent visual rhythm across the About page
+   - Consistent centered section headings
+   - Controlled eyebrow → heading relationship
+   - Balanced desktop spacing
+   - Controlled paragraph widths
+   - Consistent card proportions
+   - Refined hero proportions
+   - Clean CTA transitions
+   - Protects homepage, services and gallery
+   - Does NOT change HTML or JavaScript
+   ========================================================= */
+
+
+/* =========================================================
+   ABOUT PAGE — DESKTOP FOUNDATION
+   ========================================================= */
+
+@media (min-width: 769px) {
+
+  /* ---------------------------------------------------------
+     1. ABOUT HERO
+     --------------------------------------------------------- */
+
+  .about-page-hero {
+    padding: 58px 0 64px;
+  }
+
+  .about-page-hero .container {
+    max-width: 1180px;
+  }
+
+  .about-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
+    align-items: center;
+    gap: 64px;
+  }
+
+  .about-hero-content {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+  }
+
+  .about-hero-content .service-eyebrow {
+    margin-bottom: 0.55rem !important;
+  }
+
+  .about-hero-content h1 {
+    max-width: 600px;
+    margin: 0 0 18px !important;
+    color: #2D5A5A;
+    font-size: clamp(40px, 4vw, 56px);
+    line-height: 1.08;
+    letter-spacing: -1px;
+  }
+
+  .about-hero-lead {
+    max-width: 560px;
+    margin: 0 0 14px;
+    color: #555;
+    font-size: 1.08rem;
+    line-height: 1.65;
+  }
+
+  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
+    max-width: 540px;
+    margin-bottom: 0;
+    color: #666;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .about-hero-image {
+    width: 100%;
+    max-width: 470px;
+    margin-left: auto;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .about-hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 14px;
+  }
+
+
+  /* =========================================================
+     2. SHARED ABOUT SECTION HEADING SYSTEM
+     ========================================================= */
+
+  .about-approach,
+  .about-values,
+  .about-mobile,
+  .about-experience,
+  .about-promise,
+  .about-services-link {
+    position: relative;
+  }
+
+  .about-approach .container,
+  .about-values .container,
+  .about-mobile .container,
+  .about-experience .container,
+  .about-promise .container,
+  .about-services-link .container {
+    max-width: 1180px;
+  }
+
+  /*
+     All major About-page section headings use the
+     same centered visual language.
+  */
+
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow {
+    display: block;
+    width: fit-content;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+
+    color: #A96F3F !important;
+    font-size: 0.86rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 2px !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+  }
+
+
+  /* =========================================================
+     3. OUR APPROACH
+     ========================================================= */
+
+  .about-approach {
+    padding: 64px 0;
+    background: #ffffff;
+    text-align: center;
+  }
+
+  .about-narrow {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .about-narrow h2 {
+    max-width: 720px;
+    margin: 0 auto 18px !important;
+    color: #2D5A5A;
+    font-size: clamp(32px, 3vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.7px;
+  }
+
+  .about-narrow p:not(.service-eyebrow) {
+    max-width: 720px;
+    margin: 0 auto 14px;
+    color: #666;
+    font-size: 0.98rem;
+    line-height: 1.72;
+  }
+
+  .about-narrow p:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* =========================================================
+     4. WHAT MATTERS TO US — VALUES
+     ========================================================= */
+
+  .about-values {
+    padding: 64px 0;
+    background: #f7f7f7;
+    text-align: center;
+  }
+
+  .about-values .service-section-heading {
+    max-width: 720px;
+    margin: 0 auto 34px;
+    text-align: center;
+  }
+
+  .about-values .service-section-heading h2 {
+    max-width: 700px;
+    margin: 0 auto 16px !important;
+    color: #2D5A5A;
+    font-size: clamp(32px, 3vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.7px;
+  }
+
+  .about-values .service-section-heading > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    align-items: stretch;
+  }
+
+  .about-value-card {
+  height: 100%;
+  min-width: 0;
+  padding: 24px 22px;
+  background-color: #2D5A5A !important;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: left;
+  color: white;
+}
+
+  .about-value-number {
+    display: block;
+    margin-bottom: 12px;
+    color: #D4A574;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1.5px;
+  }
+
+  .about-value-card h3 {
+    margin: 0 0 9px;
+    color: #ffffff;
+    font-size: 1.15rem;
+    line-height: 1.3;
+  }
+
+  .about-value-card p {
+    margin: 0;
+    color: #f5eee5;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+
+  /* =========================================================
+     5. WHY MOBILE GROOMING
+     ========================================================= */
+
+  .about-mobile {
+    padding: 68px 0;
+    background: #ffffff;
+  }
+
+  .about-two-column {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.75fr);
+    align-items: center;
+    gap: 64px;
+  }
+
+  .about-mobile-content {
+    max-width: 660px;
+  }
+
+  .about-mobile-content .service-eyebrow {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+  }
+
+  .about-mobile-content h2 {
+    max-width: 650px;
+    margin: 0 0 18px !important;
+    color: #2D5A5A;
+    font-size: clamp(32px, 3vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.7px;
+  }
+
+  .about-mobile-content p:not(.service-eyebrow) {
+    max-width: 650px;
+    margin: 0 0 14px;
+    color: #666;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .about-mobile-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-mobile-highlight {
+    width: 100%;
+    max-width: 390px;
+    margin-left: auto;
+    padding: 34px 30px;
+    background: #2D5A5A;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  .about-mobile-highlight h3 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 1.35rem;
+    line-height: 1.3;
+  }
+
+  .about-mobile-highlight p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+
+
+  /* =========================================================
+     6. WHAT YOU CAN EXPECT
+     ========================================================= */
+
+  .about-experience {
+    padding: 64px 0;
+    background: #f7f7f7;
+    text-align: center;
+  }
+
+  .about-experience .service-section-heading {
+    max-width: 720px;
+    margin: 0 auto 34px;
+  }
+
+  .about-experience .service-section-heading h2 {
+    max-width: 700px;
+    margin: 0 auto 16px !important;
+    color: #2D5A5A;
+    font-size: clamp(32px, 3vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.7px;
+  }
+
+  .about-experience .service-section-heading > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .about-experience-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    align-items: stretch;
+  }
+
+  .about-experience-step {
+    height: 100%;
+    min-width: 0;
+    padding: 24px 22px;
+    background: #2D5A5A;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .about-step-number {
+    display: block;
+    margin-bottom: 12px;
+    color: #D4A574;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1.5px;
+  }
+
+  .about-experience-step h3 {
+    margin: 0 0 9px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .about-experience-step p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+
+  /* =========================================================
+     7. LINDSAY'S PROMISE
+     ========================================================= */
+
+  .about-promise {
+    padding: 68px 0;
+    background: #ffffff;
+    text-align: center;
+  }
+
+  .about-promise-inner {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .about-promise-inner h2 {
+    max-width: 780px;
+    margin: 0 auto 18px !important;
+    color: #2D5A5A;
+    font-size: clamp(34px, 3.2vw, 48px);
+    line-height: 1.15;
+    letter-spacing: -0.7px;
+  }
+
+  .about-promise-inner > p:not(.service-eyebrow):not(.about-signature) {
+    max-width: 680px;
+    margin: 0 auto 16px;
+    color: #666;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .about-signature {
+    margin-top: 22px !important;
+  }
+
+
+  /* =========================================================
+     8. SERVICES CONNECTION
+     ========================================================= */
+
+  .about-services-link {
+    padding: 64px 0;
+    background: #f7f7f7;
+    text-align: center;
+  }
+
+  .about-services-link .container {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .about-services-link h2 {
+    max-width: 760px;
+    margin: 0 auto 16px !important;
+    color: #2D5A5A;
+    font-size: clamp(32px, 3vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.7px;
+  }
+
+  .about-services-link p:not(.service-eyebrow) {
+    max-width: 660px;
+    margin: 0 auto 22px;
+    color: #666;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .about-services-link .btn {
+    margin-top: 0;
+  }
+
+
+  /* =========================================================
+     9. FINAL CTA
+     ========================================================= */
+
+  .about-services-link + .service-cta {
+    margin-top: 0;
+  }
+
+  .about-services-link + .service-cta,
+  .about-page-hero + .about-approach {
+    border-top: none;
+  }
+
+  .service-cta {
+    padding: 68px 0;
+  }
+
+  .service-cta .container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .service-cta h2 {
+    max-width: 780px;
+    margin: 0 auto 16px !important;
+    font-size: clamp(34px, 3.2vw, 48px);
+    line-height: 1.15;
+  }
+
+  .service-cta p:not(.service-eyebrow) {
+    max-width: 660px;
+    margin: 0 auto 22px;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+
+  /* =========================================================
+     10. ABOUT FOOTER
+     ========================================================= */
+
+  footer {
+    padding-top: 48px;
+    padding-bottom: 20px;
+  }
+
+  footer .footer-content {
+    gap: 42px;
+    margin-bottom: 24px;
+  }
+
+  footer .footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  footer .footer-section p,
+  footer .footer-section a {
+    font-size: 0.86rem;
+    line-height: 1.55;
+  }
+
+  footer .footer-section li {
+    margin-bottom: 0.25rem;
+  }
+
+  footer .footer-bottom {
+    padding-top: 18px;
+    margin-top: 0;
+    font-size: 0.8rem;
+  }
+
+}
+
+
+/* =========================================================
+   ABOUT PAGE — RESPONSIVE SYSTEM
+   Tablet + Mobile
+   ========================================================= */
+
+
+/* =========================================================
+   MEDIUM DESKTOP / TABLET
+   769px–1050px 
+   ========================================================= */
+
+@media (min-width: 769px) and (max-width: 1050px) {
+
+  /* ---------- HERO ---------- */
+
+  .about-page-hero {
+    padding: 3.2rem 0 3.8rem;
+  }
+
+  .about-hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.82fr);
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .about-hero-content {
+    max-width: 620px;
+  }
+
+  .about-hero-content h1 {
+    font-size: clamp(2.35rem, 4.5vw, 3rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  .about-hero-lead {
+    font-size: 1rem;
+    line-height: 1.65;
+    max-width: 570px;
+  }
+
+  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    max-width: 560px;
+  }
+
+  .about-hero-image {
+    max-width: 480px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .about-hero-image img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+  }
+
+
+  /* ---------- GENERAL SECTIONS ---------- */
+
+  .about-approach,
+  .about-values,
+  .about-mobile,
+  .about-experience,
+  .about-promise,
+  .about-services-link {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .about-narrow {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------- HEADINGS ---------- */
+
+  .about-narrow h2,
+  .about-values .service-section-heading h2,
+  .about-mobile-content h2,
+  .about-experience .service-section-heading h2,
+  .about-promise-inner h2,
+  .about-services-link h2 {
+    font-size: clamp(1.9rem, 3.2vw, 2.35rem);
+    line-height: 1.16;
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+  }
+
+
+  /* ---------- EYEBROWS ---------- */
+
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow {
+    margin-bottom: 0.5rem;
+    font-size: 0.76rem;
+    letter-spacing: 1.8px;
+  }
+
+
+  /* ---------- VALUE / EXPERIENCE CARDS ---------- */
+
+  .about-values .service-section-heading,
+  .about-experience .service-section-heading {
+    margin-bottom: 1.8rem;
+  }
+
+  .about-values-grid,
+  .about-experience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.15rem;
+  }
+
+  .about-value-card,
+  .about-experience-step {
+    padding: 1.5rem;
+  }
+
+  .about-value-card h3,
+  .about-experience-step h3 {
+    font-size: 1.08rem;
+    line-height: 1.3;
+  }
+
+  .about-value-card p,
+  .about-experience-step p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+
+  /* ---------- MOBILE GROOMING ---------- */
+
+  .about-two-column {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.7fr);
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .about-mobile-content {
+    max-width: 650px;
+  }
+
+  .about-mobile-highlight {
+    max-width: 340px;
+    margin-left: auto;
+    padding: 1.7rem;
+  }
+
+
+  /* ---------- PROMISE ---------- */
+
+  .about-promise-inner {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------- SERVICES CTA ---------- */
+
+  .about-services-link .container {
+    max-width: 760px;
+  }
+
+
+  /* ---------- FINAL CTA ---------- */
+
+  .service-cta {
+    padding: 3.6rem 0;
+  }
+
+  .service-cta h2 {
+    font-size: 2.15rem;
+    line-height: 1.17;
+    margin-bottom: 0.9rem;
+  }
+
+  .service-cta p:not(.service-eyebrow) {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.65;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  footer .footer-content {
+    gap: 2rem;
+  }
+
+}
+
+/* =========================================================
+   LARGE DESKTOP
+   1100px+
+   ========================================================= */
+
+@media (min-width: 1100px) {
+
+  .about-page-hero {
+    padding-top: 4rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .about-hero-grid {
+    gap: 4.5rem;
+  }
+
+  .about-values-grid,
+  .about-experience-grid {
+    gap: 1.25rem;
+  }
+
+}
+                                                    
+/* =========================================================
+   MOBILE
+   0–768px
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+
+  /* =======================================================
+     HERO
+     ======================================================= */
+
+  .about-page-hero {
+    padding: 2.5rem 0 2.8rem;
+  }
+
+  .about-hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about-hero-content {
+    width: 100%;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+
+  /* ---------- Hero eyebrow ---------- */
+
+  .about-hero-content .service-eyebrow {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 0.55rem !important;
+
+    font-size: 0.72rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: 1.8px !important;
+
+    text-align: center !important;
+  }
+
+
+  /* ---------- Hero heading ---------- */
+
+  .about-hero-content h1 {
+    max-width: 600px;
+
+    margin: 0 auto 0.9rem !important;
+
+    font-size: clamp(2rem, 8vw, 2.35rem);
+    line-height: 1.1;
+
+    text-align: center;
+  }
+
+
+  /* ---------- Hero lead ---------- */
+
+  .about-hero-lead {
+    max-width: 580px;
+
+    margin: 0 auto 0.8rem;
+
+    font-size: 0.98rem;
+    line-height: 1.6;
+
+    text-align: center;
+  }
+
+
+  /* ---------- Hero supporting paragraph ---------- */
+
+  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
+    max-width: 560px;
+
+    margin: 0 auto;
+
+    font-size: 0.9rem;
+    line-height: 1.62;
+
+    text-align: center;
+  }
+
+
+  /* ---------- Hero button ---------- */
+
+  .about-hero-content .btn {
+    margin-top: 1.25rem;
+  }
+
+
+  /* ---------- Hero image ---------- */
+
+  .about-hero-image {
+    width: 100%;
+    max-width: 520px;
+
+    margin: 1.8rem auto 0;
+  }
+
+  .about-hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    border-radius: 12px;
+  }
+
+
+
+  /* =======================================================
+     SECTION SPACING    
+     ======================================================= */
+
+  .about-approach {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .about-values {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .about-mobile {
+    padding: 3rem 0;
+  }
+
+  .about-experience {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .about-promise {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .about-services-link {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+
+
+  /* =======================================================
+     SECTION CONTAINERS
+     ======================================================= */
+
+  .about-narrow,
+  .about-promise-inner {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  /* =======================================================
+     SHARED SECTION HEADINGS
+     ======================================================= */
+
+  .about-narrow h2,
+  .about-values .service-section-heading h2,
+  .about-mobile-content h2,
+  .about-experience .service-section-heading h2,
+  .about-promise-inner h2,
+  .about-services-link h2 {
+
+    max-width: 650px;
+
+    margin: 0 auto 0.8rem !important;
+
+    font-size: clamp(1.65rem, 6.5vw, 1.9rem);
+    line-height: 1.18;
+
+    text-align: center;
+  }
+
+
+  /* =======================================================
+     SHARED BODY TEXT
+     ======================================================= */
+
+  .about-narrow p:not(.service-eyebrow),
+  .about-values .service-section-heading > p:last-child,
+  .about-mobile-content p:not(.service-eyebrow),
+  .about-experience .service-section-heading > p:last-child,
+  .about-promise-inner > p:not(.service-eyebrow):not(.about-signature),
+  .about-services-link p:not(.service-eyebrow) {
+
+    max-width: 650px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 0.94rem;
+    line-height: 1.65;
+  }
+
+
+  /* =======================================================
+     APPROACH PARAGRAPH RHYTHM
+     ======================================================= */
+
+  .about-narrow > p:not(.service-eyebrow) {
+    margin-bottom: 0.9rem;
+  }
+
+  .about-narrow > p:last-child {
+    margin-bottom: 0;
+  }
+
+
+
+  /* =======================================================
+     EYEBROWS
+     ======================================================= */
+
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow {
+
+    display: block;
+    width: fit-content;
+
+    margin: 0 auto 0.5rem !important;
+
+    font-size: 0.72rem !important;
+    letter-spacing: 1.8px !important;
+    line-height: 1.2 !important;
+
+    text-align: center !important;
+  }
+
+
+
+  /* =======================================================
+     VALUE / EXPERIENCE SECTION HEADINGS
+     ======================================================= */
+
+  .about-values .service-section-heading,
+  .about-experience .service-section-heading {
+    margin-bottom: 1.5rem;
+  }
+
+
+
+  /* =======================================================
+     VALUE + EXPERIENCE GRIDS
+     ======================================================= */
+
+  .about-values-grid,
+  .about-experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+
+  /* =======================================================
+     CARDS
+     ======================================================= */
+
+  .about-value-card,
+  .about-experience-step {
+
+    padding: 1.3rem 1.25rem;
+
+    text-align: left;
+
+    border-radius: 12px;
+  }
+
+
+  .about-value-card h3,
+  .about-experience-step h3 {
+
+    margin-top: 0.45rem;
+
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+
+
+  .about-value-card p,
+  .about-experience-step p {
+
+    margin-bottom: 0;
+
+    font-size: 0.89rem;
+    line-height: 1.58;
+  }
+
+
+
+  /* =======================================================
+     MOBILE GROOMING
+     ======================================================= */
+
+  .about-two-column {
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 1.7rem;
+
+    align-items: start;
+  }
+
+
+  .about-mobile-content {
+
+    width: 100%;
+    max-width: 650px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+  }
+
+
+  .about-mobile-content .service-eyebrow {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+
+  .about-mobile-content p:not(.service-eyebrow) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------- Highlight card ---------- */
+
+  .about-mobile-highlight {
+
+    width: 100%;
+    max-width: 520px;
+
+    margin: 0 auto;
+
+    padding: 1.6rem;
+
+    text-align: center;
+
+    border-radius: 12px;
+  }
+
+
+  .about-mobile-highlight h3 {
+    font-size: 1.12rem;
+    line-height: 1.3;
+  }
+
+
+  .about-mobile-highlight p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+
+
+  /* =======================================================
+     PROMISE
+     ======================================================= */
+
+  .about-promise-inner {
+    text-align: center;
+  }
+
+
+  .about-promise-inner h2 {
+    max-width: 680px;
+  }
+
+
+  .about-signature {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+
+
+  /* =======================================================
+     SERVICES CTA
+     ======================================================= */
+
+  .about-services-link .container {
+    max-width: 650px;
+  }
+
+
+  .about-services-link .btn {
+    margin-top: 0.3rem;
+  }
+
+
+
+  /* =======================================================
+     FINAL CTA
+     ======================================================= */
+
+  .service-cta {
+    padding: 3.1rem 0;
+    text-align: center;
+  }
+
+
+  .service-cta .container {
+    max-width: 650px;
+  }
+
+
+  .service-cta h2 {
+
+    max-width: 620px;
+
+    margin: 0 auto 0.8rem !important;
+
+    font-size: clamp(1.7rem, 6.5vw, 1.95rem);
+    line-height: 1.18;
+
+    text-align: center;
+  }
+
+
+  .service-cta p:not(.service-eyebrow) {
+
+    max-width: 600px;
+
+    margin: 0 auto 1.35rem;
+
+    font-size: 0.94rem;
+    line-height: 1.65;
+
+    text-align: center;
+  }
+
+
+  .service-cta .service-eyebrow {
+    margin-bottom: 0.5rem !important;
+  }
+
+}
+
+
+
+/* =========================================================
    SMALL PHONE
+   0–480px
    ========================================================= */
 
 @media (max-width: 480px) {
 
-  .testimonials {
-    padding: 42px 0;
+
+  /* ---------- Hero ---------- */
+
+  .about-page-hero {
+    padding: 2.1rem 0 2.4rem;
   }
 
-  .testimonials .container {
-    padding-left: 16px;
-    padding-right: 16px;
+
+  .about-hero-content .service-eyebrow {
+    font-size: 0.68rem !important;
+    letter-spacing: 1.6px !important;
   }
 
-  .testimonials-heading {
-    margin-bottom: 24px;
+
+  .about-hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+
+    margin-bottom: 0.8rem !important;
   }
 
-  .testimonials .section-title {
-    font-size: 1.65rem;
+
+  .about-hero-lead {
+    font-size: 0.94rem;
+    line-height: 1.58;
   }
 
-  .testimonials .section-subtitle {
-    font-size: 0.88rem;
-  }
 
-  .testimonials-grid {
-    gap: 16px;
-  }
-
-  .testimonials .testimonial-content {
-    padding: 22px 19px 19px;
-  }
-
-  .testimonials .testimonial-text {
+  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
     font-size: 0.88rem;
     line-height: 1.6;
   }
 
-  .testimonials .testimonial-footer {
-    gap: 8px;
-  } 
 
-  .testimonials .testimonial-author {
+  .about-hero-content .btn {
+    margin-top: 1.1rem;
+  }
+
+
+  .about-hero-image {
+    margin-top: 1.5rem;
+  }
+
+
+
+  /* ---------- Section spacing ---------- */
+
+  .about-approach,
+  .about-values,
+  .about-mobile,
+  .about-experience,
+  .about-services-link {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+
+  .about-promise {
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
+  }
+
+
+
+  /* ---------- Section headings ---------- */
+
+  .about-narrow h2,
+  .about-values .service-section-heading h2,
+  .about-mobile-content h2,
+  .about-experience .service-section-heading h2,
+  .about-promise-inner h2,
+  .about-services-link h2 {
+
+    font-size: 1.62rem;
+    line-height: 1.17;
+
+    margin-bottom: 0.75rem !important;
+  }
+
+
+  /* ---------- Eyebrows ---------- */
+
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow {
+
+    font-size: 0.68rem !important;
+    letter-spacing: 1.55px !important;
+
+    margin-bottom: 0.45rem !important;
+  }
+
+
+  /* ---------- Body text ---------- */
+
+  .about-narrow p:not(.service-eyebrow),
+  .about-values .service-section-heading > p:last-child,
+  .about-mobile-content p:not(.service-eyebrow),
+  .about-experience .service-section-heading > p:last-child,
+  .about-promise-inner > p:not(.service-eyebrow):not(.about-signature),
+  .about-services-link p:not(.service-eyebrow) {
+
+    font-size: 0.9rem;
+    line-height: 1.62;
+  }
+
+
+  /* ---------- Cards ---------- */
+
+  .about-values-grid,   
+  .about-experience-grid {
+    gap: 0.8rem;
+  }
+
+
+  .about-value-card,
+  .about-experience-step {
+    padding: 1.2rem;
+  }
+
+
+  .about-value-card h3,
+  .about-experience-step h3 {
+    font-size: 1rem;
+  }
+
+
+  .about-value-card p,
+  .about-experience-step p {
+    font-size: 0.86rem;
+    line-height: 1.56;
+  }
+
+
+  /* ---------- Mobile highlight ---------- */
+
+  .about-mobile-highlight {
+    padding: 1.4rem;
+  }
+
+
+  .about-mobile-highlight h3 {
+    font-size: 1.05rem;
+  }
+
+
+  .about-mobile-highlight p {
     font-size: 0.87rem;
   }
 
-  .testimonials .stars {
-    font-size: 0.76rem;
-    letter-spacing: 0.7px;
+
+  /* ---------- Final CTA ---------- */
+
+  .service-cta {
+    padding: 2.7rem 0;
   }
 
-}          
+
+  .service-cta h2 {
+    font-size: 1.62rem;
+    line-height: 1.17;
+  }
+
+
+  .service-cta p:not(.service-eyebrow) {
+    font-size: 0.9rem;
+    line-height: 1.62;  
+    margin-bottom: 1.25rem;
+  }
+
+}
+
+/* =========================================================
+   ABOUT PAGE — SMALL PHONE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .about-page-hero {
+    padding: 2rem 0 2.4rem;
+  }
+
+  .about-hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.12;
+  }
+
+  .about-hero-lead {
+    font-size: 0.96rem;
+  }
+
+  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
+    font-size: 0.9rem;
+  }
+
+  .about-hero-image {
+    margin-top: 1.5rem;
+  }
+
+  .about-approach,
+  .about-values,
+  .about-experience,
+  .about-services-link {
+    padding: 2.4rem 0;
+  }
+
+  .about-mobile,
+  .about-promise {
+    padding: 2.6rem 0;
+  }
+
+  .about-narrow h2,
+  .about-values .service-section-heading h2,
+  .about-mobile-content h2,
+  .about-experience .service-section-heading h2,
+  .about-promise-inner h2,
+  .about-services-link h2 {
+    font-size: 1.65rem;
+    line-height: 1.18;
+  }
+
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow {
+    font-size: 0.78rem !important;
+    letter-spacing: 1.7px !important;
+  }
+
+  .about-value-card,
+  .about-experience-step {
+    padding: 1.25rem;
+  }
+
+  .about-mobile-highlight {
+    padding: 1.5rem;
+  }
+
+  .service-cta {
+    padding: 2.6rem 0;
+  }
+
+  .service-cta h2 {
+    font-size: 1.7rem;
+  }
+
+}
+/* =========================================================
+   PRECIOUS PETS — DESKTOP FOUNDATION RESET
+   PHASE 1 — WIDTH / HORIZONTAL RHYTHM ONLY
+   769px+
+   MOBILE IS NOT TOUCHED
+   ========================================================= */
+
+@media (min-width: 769px) {
+
+  /* ---------------------------------------------------------
+     GLOBAL DESKTOP BOX MODEL
+     --------------------------------------------------------- */
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+
+  /* ---------------------------------------------------------
+     ONE CONSISTENT DESKTOP CONTAINER
+     --------------------------------------------------------- */
+
+                                                                                                                                                                                                                                                                                                                    
+
+  /* ---------------------------------------------------------
+     PREVENT COMMON GRID/FLEX CHILD OVERFLOW
+     --------------------------------------------------------- */
+
+  .container > *,
+  .hero-grid > *,
+  .about-hero-grid > *,
+  .about-two-column > *,
+  .groomer-content > * {
+    min-width: 0;
+  }
+
+
+  /* ---------------------------------------------------------
+     HOMEPAGE GRIDS
+     --------------------------------------------------------- */
+
+  .hero-grid,
+  .cards-grid,
+  .services-grid,
+  .transformations-grid,
+  .groomer-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* ---------------------------------------------------------
+     ABOUT PAGE GRIDS
+     --------------------------------------------------------- */
+
+  .about-hero-grid,
+  .about-two-column,
+  .about-values-grid,
+  .about-experience-grid {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* ---------------------------------------------------------
+     IMAGES — NEVER CREATE DESKTOP OVERFLOW
+     --------------------------------------------------------- */
+
+  img,
+  picture,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+
+
+  /* ---------------------------------------------------------
+     HERO WIDTH CONTROL
+     --------------------------------------------------------- */
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero-grid {
+    width: 100%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     ABOUT HERO WIDTH CONTROL
+     --------------------------------------------------------- */
+
+  .about-page-hero {
+    width: 100%;
+  }
+
+  .about-hero-grid {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     ABOUT CONTENT WIDTH
+     --------------------------------------------------------- */
+
+  .about-approach .container,
+  .about-values .container,
+  .about-mobile .container,
+  .about-experience .container,
+  .about-promise .container,
+  .about-services-link .container {
+    width: min(1180px, calc(100% - 48px));
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     SECTION WIDTH PROTECTION
+     --------------------------------------------------------- */
+
+  .why-choose,
+  .testimonials,
+  .services,
+  .transformations,
+  .meet-groomer,
+  .faq,
+  .contact,
+  .about-approach,
+  .about-values,
+  .about-mobile,
+  .about-experience,
+  .about-promise,
+  .about-services-link,
+  .service-cta {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+
+  /* ---------------------------------------------------------
+     BOOKING FORM
+     --------------------------------------------------------- */
+
+  .booking-form-wrapper {
+    width: min(720px, 100%);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     FOOTER
+     --------------------------------------------------------- */
+
+  footer {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  footer .container {
+    width: min(1180px, calc(100% - 48px));
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+/* =========================================================
+   ABOUT HERO — BACKGROUND + FINAL HEIGHT FIX
+   ========================================================= */
+
+@media (min-width: 769px) {
+
+  .about-page-hero {
+    position: relative !important;                                                                      
+    background-color: #174F50 !important;
+    background-image: none !important;
+    min-height: 0 !important;
+    height: auto !important;
+   padding: 5rem 0 1.8rem !important;
+    overflow: hidden !important;
+  }
+
+  .about-page-hero::before {
+    display: none !important;
+  }
+
+  .about-page-hero .container {
+    position: relative !important;
+    text-align: center !important;
+  }
+
+  .about-page-hero .service-eyebrow {
+    margin: 0 auto 1.45rem !important;
+    text-align: center !important;
+    color: #B8D8C8 !important;
+  }
+
+  .about-page-hero h1 {
+    margin: 0 auto 1.15rem !important;
+    text-align: center !important;
+    color: #F5EFE5 !important;
+  }
+
+  .about-page-hero .about-hero-lead {
+    max-width: 720px !important;
+   margin: 1rem auto 0.8rem !important;
+    text-align: center !important;
+    color: #F1EDE5 !important;
+  }
+
+  .about-page-hero .about-hero-lead + p {
+    max-width: 680px !important;
+   margin: 0 auto 5rem !important;
+    text-align: center !important;
+    color: #E8E3DA !important;
+  }
+
+  .about-page-hero .btn {
+    display: block !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+  }
+
+}
+/* ===========================
+   ABOUT MOBILE — CARD STYLING
+=========================== */
+
+@media (max-width: 768px) {
+
+  .about-value-card {
+    background-color: #2D5A5A !important;
+    color: #ffffff;
+  }
+
+  .about-value-number {
+    color: #D4A574;
+  }
+
+  .about-value-card h3 {
+    color: #ffffff;
+  }
+
+  .about-value-card p {
+    color: #f5eee5;
+  }
+
+}
+/* =========================================================
+   ABOUT PAGE — MOBILE WIDTH FIX
+   Isolated mobile override
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .about-page-hero,
+  .about-approach,
+  .about-values,
+  .about-mobile,
+  .about-experience,
+  .about-promise,
+  .about-services-link,
+  .service-cta {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-page-hero > .container,
+  .about-approach > .container,
+  .about-values > .container,
+  .about-mobile > .container,
+  .about-experience > .container,
+  .about-promise > .container,
+  .about-services-link > .container,
+  .service-cta > .container {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  .about-hero-grid,
+  .about-approach-grid,
+  .about-two-column,
+  .about-values-grid,
+  .about-experience-grid,
+  .about-promise-grid {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .about-hero-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-approach-grid,
+  .about-promise-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-content,
+  .about-hero-image,
+  .about-approach-image,
+  .about-approach-content,
+  .about-promise-content,
+  .about-promise-image {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .about-hero-image img,
+  .about-approach-image img,
+  .about-promise-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}                          
+/* FINAL FIX — REMOVE ABOUT HERO OVERLAY */
+@media (max-width: 768px) {
+  .about-page-hero::before,
+  .about-page-hero::after {
+    display: none !important;
+    content: none !important;
+  }
+}
+/* FINAL FIX — REMOVE ABOUT HERO OVERLAY */        
+@media (max-width: 768px) {
+  .about-page-hero::before,
+  .about-page-hero::after {
+    display: none !important;
+    content: none !important;
+  }
+}
+
+
+
+
+
+
+
