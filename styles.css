@@ -5484,10 +5484,10 @@ BOOKING FORM — SMALL PHONES
    ABOUT HERO — BACKGROUND + FINAL HEIGHT FIX
    ========================================================= */
 
-@media (min-width: 769px) {
+ {
 
   .about-page-hero {
-    position: relative !important;                                                                      
+    position: relative !important;                                                                  
     background-color: #174F50 !important;
     background-image: none !important;
     min-height: 0 !important;
@@ -10144,22 +10144,42 @@ Same as About Page
 @media (min-width: 769px) {
 
   .about-page-hero {
-    position: relative !important;                                                                      
+    position: relative !important;
+    width: 100% !important;
     background-color: #174F50 !important;
     background-image: none !important;
     min-height: 0 !important;
     height: auto !important;
-   padding: 5rem 0 1.8rem !important;
+    padding: 5rem 0 1.8rem !important;
     overflow: hidden !important;
+  }
+
+  .about-page-hero .container {
+    width: min(1180px, calc(100% - 48px)) !important;
+    max-width: 1180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .about-hero-grid {
+    width: 100% !important;
+    max-width: 1180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr) !important;
+    align-items: center !important;
+    gap: 3rem !important;
+  }
+
+  .about-hero-grid > * {
+    min-width: 0 !important;
   }
 
   .about-page-hero::before {
     display: none !important;
-  }
-
-  .about-page-hero .container {
-    position: relative !important;
-    text-align: center !important;
   }
 
   .about-page-hero .service-eyebrow {
@@ -10176,14 +10196,14 @@ Same as About Page
 
   .about-page-hero .about-hero-lead {
     max-width: 720px !important;
-   margin: 1rem auto 0.8rem !important;
+    margin: 1rem auto 0.8rem !important;
     text-align: center !important;
     color: #F1EDE5 !important;
   }
 
   .about-page-hero .about-hero-lead + p {
     max-width: 680px !important;
-   margin: 0 auto 5rem !important;
+    margin: 0 auto 5rem !important;
     text-align: center !important;
     color: #E8E3DA !important;
   }
@@ -10194,30 +10214,19 @@ Same as About Page
     margin: 0 auto !important;
   }
 
-}
-/* ===========================
-   ABOUT MOBILE — CARD STYLING
-=========================== */
-
-@media (max-width: 768px) {
-
-  .about-value-card {
-    background-color: #2D5A5A !important;
-    color: #ffffff;
+  .about-hero-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
   }
 
-  .about-value-number {
-    color: #D4A574;
+  .about-hero-image img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
   }
-
-  .about-value-card h3 {
-    color: #ffffff;
-  }
-
-  .about-value-card p {
-    color: #f5eee5;
-  }
-
 }
 /* =========================================================
    ABOUT PAGE — MOBILE WIDTH FIX
@@ -14211,52 +14220,99 @@ padding: 1.8rem;
 }
 
 /* =========================================================
-   HOMEPAGE — MOBILE WIDTH FIX
-   Prevent homepage sections from becoming narrower than
-   the phone viewport.
-   No zoom / transform / min-width changes.
+   HOMEPAGE HERO — FINAL DESKTOP LAYOUT FIX
+   Fixes horizontal positioning + oversized hero image
+   Desktop only — mobile untouched
    ========================================================= */
+
+@media (min-width: 769px) {
+
+  .hero {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .hero > .container.hero-grid {
+    width: min(1180px, calc(100% - 48px)) !important;
+    max-width: 1180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr) !important;
+    gap: 40px !important;
+    align-items: center !important;
+  }
+
+  .hero-text {
+    min-width: 0 !important;
+  }
+
+  .hero-image-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .hero-image-wrapper .hero-image {
+    display: block !important;
+    width: 100% !important;
+    max-width: 450px !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+}/* =========================================================
+   TESTIMONIALS — IMAGE & DESKTOP LAYOUT FIX
+   Prevent oversized testimonial images
+   ========================================================= */
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.testimonial-image-wrap {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-image-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 @media (max-width: 768px) {
 
-  .hero,
-  .why-choose,
-  .services,
-  .transformations,
-  .meet-groomer,
-  .faq,
-  .contact,
-  footer {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
-  .hero > .container,
-  .why-choose > .container,
-  .services > .container,
-  .transformations > .container,
-  .meet-groomer > .container,
-  .faq > .container,
-  .contact > .container,
-  footer > .container {
-    width: 100%;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
+  .testimonial-image-wrap {
+    height: 240px;
   }
 
-  .hero-grid,
-  .cards-grid,
-  .services-grid,
-  .transformations-grid,
-  .groomer-content,
-  .contact-methods,
-  .footer-content {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-  }
 }
