@@ -14210,9 +14210,53 @@ padding: 1.8rem;
   }
 }
 
+/* =========================================================
+   HOMEPAGE — MOBILE WIDTH FIX
+   Prevent homepage sections from becoming narrower than
+   the phone viewport.
+   No zoom / transform / min-width changes.
+   ========================================================= */
 
+@media (max-width: 768px) {
 
+  .hero,
+  .why-choose,
+  .services,
+  .transformations,
+  .meet-groomer,
+  .faq,
+  .contact,
+  footer {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
+  .hero > .container,
+  .why-choose > .container,
+  .services > .container,
+  .transformations > .container,
+  .meet-groomer > .container,
+  .faq > .container,
+  .contact > .container,
+  footer > .container {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
 
-
-
+  .hero-grid,
+  .cards-grid,
+  .services-grid,
+  .transformations-grid,
+  .groomer-content,
+  .contact-methods,
+  .footer-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+}
