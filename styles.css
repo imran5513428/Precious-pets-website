@@ -8857,7 +8857,3030 @@ Same as About Page
   }
 
 }
+/* ===========================================
+  /* =========================================================
+     7. LINDSAY'S PROMISE
+     ========================================================= */
+
+  .about-promise {
+    padding: 68px 0;
+    background: #ffffff;
+    text-align: center;
+  }
+
+  .about-promise-inner {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .about-promise-inner h2 {
+    max-width: 780px;
+    margin: 0 auto 18px !important;
+    color: #2D5A5A;
+    font-size: clamp(34px, 3.2vw, 48px);
+    line-height: 1.15;
+    letter-spacing: -0.7px;
+  }
+
+  .about-promise-inner > p:not(.service-eyebrow):not(.about-signature) {
+    max-width: 680px;
+    margin: 0 auto 16px;
+    color: #666;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .about-signature {
+    margin-top: 22px !important;
+  }
+
+
+  /* =========================================================
+     8. SERVICES CONNECTION
+     ========================================================= */
+
+  .about-services-link {
+    padding: 64px 0;
+    background: #f7f7f7;
+    text-align: center;
+  }
+
+  .about-services-link .container {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .about-services-link h2 {
+    max-width: 760px;
+    margin: 0 auto 16px !important;
+    color: #2D5A5A;
+    font-size: clamp(32px, 3vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.7px;
+  }
+
+  .about-services-link p:not(.service-eyebrow) {
+    max-width: 660px;
+    margin: 0 auto 22px;
+    color: #666;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .about-services-link .btn {
+    margin-top: 0;
+  }
+
+
+  /* =========================================================
+     9. FINAL CTA
+     ========================================================= */
+
+  .about-services-link + .service-cta {
+    margin-top: 0;
+  }
+
+  .about-services-link + .service-cta,
+  .about-page-hero + .about-approach {
+    border-top: none;
+  }
+
+  .service-cta {
+    padding: 68px 0;
+  }
+
+  .service-cta .container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .service-cta h2 {
+    max-width: 780px;
+    margin: 0 auto 16px !important;
+    font-size: clamp(34px, 3.2vw, 48px);
+    line-height: 1.15;
+  }
+
+  .service-cta p:not(.service-eyebrow) {
+    max-width: 660px;
+    margin: 0 auto 22px;
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+
+  /* =========================================================
+     10. ABOUT FOOTER
+     ========================================================= */
+
+  footer {
+    padding-top: 48px;
+    padding-bottom: 20px;
+  }
+
+  footer .footer-content {
+    gap: 42px;
+    margin-bottom: 24px;
+  }
+
+  footer .footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  footer .footer-section p,
+  footer .footer-section a {
+    font-size: 0.86rem;
+    line-height: 1.55;
+  }
+
+  footer .footer-section li {
+    margin-bottom: 0.25rem;
+  }
+
+  footer .footer-bottom {
+    padding-top: 18px;
+    margin-top: 0;
+    font-size: 0.8rem;
+  }
+
+}
+
+
 /* =========================================================
+   ABOUT PAGE — RESPONSIVE SYSTEM
+   Tablet + Mobile
+   ========================================================= */
+
+
+/* =========================================================
+   MEDIUM DESKTOP / TABLET
+   769px–1050px 
+   ========================================================= */
+
+@media (min-width: 769px) and (max-width: 1050px) {
+
+  /* ---------- HERO ---------- */
+
+  .about-page-hero {
+    padding: 3.2rem 0 3.8rem;
+  }
+
+  .about-hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.82fr);
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .about-hero-content {
+    max-width: 620px;
+  }
+
+  .about-hero-content h1 {
+    font-size: clamp(2.35rem, 4.5vw, 3rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  .about-hero-lead {
+    font-size: 1rem;
+    line-height: 1.65;
+    max-width: 570px;
+  }
+
+  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    max-width: 560px;
+  }
+
+  .about-hero-image {
+    max-width: 480px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .about-hero-image img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+  }
+
+
+  /* ---------- GENERAL SECTIONS ---------- */
+
+  .about-approach,
+  .about-values,
+  .about-mobile,
+  .about-experience,
+  .about-promise,
+  .about-services-link {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .about-narrow {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------- HEADINGS ---------- */
+
+  .about-narrow h2,
+  .about-values .service-section-heading h2,
+  .about-mobile-content h2,
+  .about-experience .service-section-heading h2,
+  .about-promise-inner h2,
+  .about-services-link h2 {
+    font-size: clamp(1.9rem, 3.2vw, 2.35rem);
+    line-height: 1.16;
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+  }
+
+
+  /* ---------- EYEBROWS ---------- */
+
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow {
+    margin-bottom: 0.5rem;
+    font-size: 0.76rem;
+    letter-spacing: 1.8px;
+  }
+
+
+  /* ---------- VALUE / EXPERIENCE CARDS ---------- */
+
+  .about-values .service-section-heading,
+  .about-experience .service-section-heading {
+    margin-bottom: 1.8rem;
+  }
+
+  .about-values-grid,
+  .about-experience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.15rem;
+  }
+
+  .about-value-card,
+  .about-experience-step {
+    padding: 1.5rem;
+  }
+
+  .about-value-card h3,
+  .about-experience-step h3 {
+    font-size: 1.08rem;
+    line-height: 1.3;
+  }
+
+  .about-value-card p,
+  .about-experience-step p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+
+  /* ---------- MOBILE GROOMING ---------- */
+
+  .about-two-column {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.7fr);
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .about-mobile-content {
+    max-width: 650px;
+  }
+
+  .about-mobile-highlight {
+    max-width: 340px;
+    margin-left: auto;
+    padding: 1.7rem;
+  }
+
+
+  /* ---------- PROMISE ---------- */
+
+  .about-promise-inner {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------- SERVICES CTA ---------- */
+
+  .about-services-link .container {
+    max-width: 760px;
+  }
+
+
+  /* ---------- FINAL CTA ---------- */
+
+  .service-cta {
+    padding: 3.6rem 0;
+  }
+
+  .service-cta h2 {
+    font-size: 2.15rem;
+    line-height: 1.17;
+    margin-bottom: 0.9rem;
+  }
+
+  .service-cta p:not(.service-eyebrow) {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.65;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  footer .footer-content {
+    gap: 2rem;
+  }
+
+}
+
+/* =========================================================
+   LARGE DESKTOP
+   1100px+
+   ========================================================= */
+
+@media (min-width: 1100px) {
+
+  .about-page-hero {
+    padding-top: 4rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .about-hero-grid {
+    gap: 4.5rem;
+  }
+
+  .about-values-grid,
+  .about-experience-grid {
+    gap: 1.25rem;
+  }
+
+}
+
+/* =========================================================
+   MOBILE
+   0–768px
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+
+  /* =======================================================
+     HERO
+     ======================================================= */
+
+  .about-page-hero {
+    padding: 2.5rem 0 2.8rem;
+  }
+
+  .about-hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about-hero-content {
+    width: 100%;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+
+  /* ---------- Hero eyebrow ---------- */
+
+  .about-hero-content .service-eyebrow {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 0.55rem !important;
+
+    font-size: 0.72rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: 1.8px !important;
+
+    text-align: center !important;
+  }
+
+
+  /* ---------- Hero heading ---------- */
+
+  .about-hero-content h1 {
+    max-width: 600px;
+
+    margin: 0 auto 0.9rem !important;
+
+    font-size: clamp(2rem, 8vw, 2.35rem);
+    line-height: 1.1;
+
+    text-align: center;
+  }
+
+
+  /* ---------- Hero lead ---------- */
+
+  .about-hero-lead {
+    max-width: 580px;
+
+    margin: 0 auto 0.8rem;
+
+    font-size: 0.98rem;
+    line-height: 1.6;
+
+    text-align: center;
+  }
+
+
+  /* ---------- Hero supporting paragraph ---------- */
+
+  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
+    max-width: 560px;
+
+    margin: 0 auto;
+
+    font-size: 0.9rem;
+    line-height: 1.62;
+
+    text-align: center;
+  }
+
+
+  /* ---------- Hero button ---------- */
+
+  .about-hero-content .btn {
+    margin-top: 1.25rem;
+  }
+
+
+  /* ---------- Hero image ---------- */
+
+  .about-hero-image {
+    width: 100%;
+    max-width: 520px;
+
+    margin: 1.8rem auto 0;
+  }
+
+  .about-hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    border-radius: 12px;
+  }
+
+
+
+  /* =======================================================
+     SECTION SPACING    
+     ======================================================= */
+
+  .about-approach {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .about-values {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .about-mobile {
+    padding: 3rem 0;
+  }
+
+  .about-experience {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .about-promise {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .about-services-link {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+
+
+  /* =======================================================
+     SECTION CONTAINERS
+     ======================================================= */
+
+  .about-narrow,
+  .about-promise-inner {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  /* =======================================================
+     SHARED SECTION HEADINGS
+     ======================================================= */
+
+  .about-narrow h2,
+  .about-values .service-section-heading h2,
+  .about-mobile-content h2,
+  .about-experience .service-section-heading h2,
+  .about-promise-inner h2,
+  .about-services-link h2 {
+
+    max-width: 650px;
+
+    margin: 0 auto 0.8rem !important;
+
+    font-size: clamp(1.65rem, 6.5vw, 1.9rem);
+    line-height: 1.18;
+
+    text-align: center;
+  }
+
+
+  /* =======================================================
+     SHARED BODY TEXT
+     ======================================================= */
+
+  .about-narrow p:not(.service-eyebrow),
+  .about-values .service-section-heading > p:last-child,
+  .about-mobile-content p:not(.service-eyebrow),
+  .about-experience .service-section-heading > p:last-child,
+  .about-promise-inner > p:not(.service-eyebrow):not(.about-signature),
+  .about-services-link p:not(.service-eyebrow) {
+
+    max-width: 650px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 0.94rem;
+    line-height: 1.65;
+  }
+
+
+  /* =======================================================
+     APPROACH PARAGRAPH RHYTHM
+     ======================================================= */
+
+  .about-narrow > p:not(.service-eyebrow) {
+    margin-bottom: 0.9rem;
+  }
+
+  .about-narrow > p:last-child {
+    margin-bottom: 0;
+  }
+
+
+
+  /* =======================================================
+     EYEBROWS
+     ======================================================= */
+
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow {
+
+    display: block;
+    width: fit-content;
+
+    margin: 0 auto 0.5rem !important;
+
+    font-size: 0.72rem !important;
+    letter-spacing: 1.8px !important;
+    line-height: 1.2 !important;
+
+    text-align: center !important;
+  }
+
+
+
+  /* =======================================================
+     VALUE / EXPERIENCE SECTION HEADINGS
+     ======================================================= */
+
+  .about-values .service-section-heading,
+  .about-experience .service-section-heading {
+    margin-bottom: 1.5rem;
+  }
+
+
+
+  /* =======================================================
+     VALUE + EXPERIENCE GRIDS
+     ======================================================= */
+
+  .about-values-grid,
+  .about-experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+
+  /* =======================================================
+     CARDS
+     ======================================================= */
+
+  .about-value-card,
+  .about-experience-step {
+
+    padding: 1.3rem 1.25rem;
+
+    text-align: left;
+
+    border-radius: 12px;
+  }
+
+
+  .about-value-card h3,
+  .about-experience-step h3 {
+
+    margin-top: 0.45rem;
+
+    font-size: 1.05rem;
+    line-height: 1.3;
+  }
+
+
+  .about-value-card p,
+  .about-experience-step p {
+
+    margin-bottom: 0;
+
+    font-size: 0.89rem;
+    line-height: 1.58;
+  }
+
+
+
+  /* =======================================================
+     MOBILE GROOMING
+     ======================================================= */
+
+  .about-two-column {
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 1.7rem;
+
+    align-items: start;
+  }
+
+
+  .about-mobile-content {
+
+    width: 100%;
+    max-width: 650px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+  }
+
+
+  .about-mobile-content .service-eyebrow {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+
+  .about-mobile-content p:not(.service-eyebrow) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------- Highlight card ---------- */
+
+  .about-mobile-highlight {
+
+    width: 100%;
+    max-width: 520px;
+
+    margin: 0 auto;
+
+    padding: 1.6rem;
+
+    text-align: center;
+
+    border-radius: 12px;
+  }
+
+
+  .about-mobile-highlight h3 {
+    font-size: 1.12rem;
+    line-height: 1.3;
+  }
+
+
+  .about-mobile-highlight p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+
+
+  /* =======================================================
+     PROMISE
+     ======================================================= */
+
+  .about-promise-inner {
+    text-align: center;
+  }
+
+
+  .about-promise-inner h2 {
+    max-width: 680px;
+  }
+
+
+  .about-signature {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+
+
+  /* =======================================================
+     SERVICES CTA
+     ======================================================= */
+
+  .about-services-link .container {
+    max-width: 650px;
+  }
+
+
+  .about-services-link .btn {
+    margin-top: 0.3rem;
+  }
+
+
+
+  /* =======================================================
+     FINAL CTA
+     ======================================================= */
+
+  .service-cta {
+    padding: 3.1rem 0;
+    text-align: center;
+  }
+
+
+  .service-cta .container {
+    max-width: 650px;
+  }
+
+
+  .service-cta h2 {
+
+    max-width: 620px;
+
+    margin: 0 auto 0.8rem !important;
+
+    font-size: clamp(1.7rem, 6.5vw, 1.95rem);
+    line-height: 1.18;
+
+    text-align: center;
+  }
+
+
+  .service-cta p:not(.service-eyebrow) {
+
+    max-width: 600px;
+
+    margin: 0 auto 1.35rem;
+
+    font-size: 0.94rem;
+    line-height: 1.65;
+
+    text-align: center;
+  }
+
+
+  .service-cta .service-eyebrow {
+    margin-bottom: 0.5rem !important;
+  }
+
+}
+
+
+
+/* =========================================================
+   SMALL PHONE
+   0–480px
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+
+  /* ---------- Hero ---------- */
+
+  .about-page-hero {
+    padding: 2.1rem 0 2.4rem;
+  }
+
+
+  .about-hero-content .service-eyebrow {
+    font-size: 0.68rem !important;
+    letter-spacing: 1.6px !important;
+  }
+
+
+  .about-hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+
+    margin-bottom: 0.8rem !important;
+  }
+
+
+  .about-hero-lead {
+    font-size: 0.94rem;
+    line-height: 1.58;
+  }
+
+
+  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+
+  .about-hero-content .btn {
+    margin-top: 1.1rem;
+  }
+
+
+  .about-hero-image {
+    margin-top: 1.5rem;
+  }
+
+
+
+  /* ---------- Section spacing ---------- */
+
+  .about-approach,
+  .about-values,
+  .about-mobile,
+  .about-experience,
+  .about-services-link {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+
+  .about-promise {
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
+  }
+
+
+
+  /* ---------- Section headings ---------- */
+
+  .about-narrow h2,
+  .about-values .service-section-heading h2,
+  .about-mobile-content h2,
+  .about-experience .service-section-heading h2,
+  .about-promise-inner h2,
+  .about-services-link h2 {
+
+    font-size: 1.62rem;
+    line-height: 1.17;
+
+    margin-bottom: 0.75rem !important;
+  }
+
+
+  /* ---------- Eyebrows ---------- */
+
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow {
+
+    font-size: 0.68rem !important;
+    letter-spacing: 1.55px !important;
+
+    margin-bottom: 0.45rem !important;
+  }
+
+
+  /* ---------- Body text ---------- */
+
+  .about-narrow p:not(.service-eyebrow),
+  .about-values .service-section-heading > p:last-child,
+  .about-mobile-content p:not(.service-eyebrow),
+  .about-experience .service-section-heading > p:last-child,
+  .about-promise-inner > p:not(.service-eyebrow):not(.about-signature),
+  .about-services-link p:not(.service-eyebrow) {
+
+    font-size: 0.9rem;
+    line-height: 1.62;
+  }
+
+
+  /* ---------- Cards ---------- */
+
+  .about-values-grid,   
+  .about-experience-grid {
+    gap: 0.8rem;
+  }
+
+
+  .about-value-card,
+  .about-experience-step {
+    padding: 1.2rem;
+  }
+
+
+  .about-value-card h3,
+  .about-experience-step h3 {
+    font-size: 1rem;
+  }
+
+
+  .about-value-card p,
+  .about-experience-step p {
+    font-size: 0.86rem;
+    line-height: 1.56;
+  }
+
+
+  /* ---------- Mobile highlight ---------- */
+
+  .about-mobile-highlight {
+    padding: 1.4rem;
+  }
+
+
+  .about-mobile-highlight h3 {
+    font-size: 1.05rem;
+  }
+
+
+  .about-mobile-highlight p {
+    font-size: 0.87rem;
+  }
+
+
+  /* ---------- Final CTA ---------- */
+
+  .service-cta {
+    padding: 2.7rem 0;
+  }
+
+
+  .service-cta h2 {
+    font-size: 1.62rem;
+    line-height: 1.17;
+  }
+
+
+  .service-cta p:not(.service-eyebrow) {
+    font-size: 0.9rem;
+    line-height: 1.62;  
+    margin-bottom: 1.25rem;
+  }
+
+}
+
+/* =========================================================
+   ABOUT PAGE — SMALL PHONE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .about-page-hero {
+    padding: 2rem 0 2.4rem;
+  }
+
+  .about-hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.12;
+  }
+
+  .about-hero-lead {
+    font-size: 0.96rem;
+  }
+
+  .about-hero-content > p:not(.service-eyebrow):not(.about-hero-lead) {
+    font-size: 0.9rem;
+  }
+
+  .about-hero-image {
+    margin-top: 1.5rem;
+  }
+
+  .about-approach,
+  .about-values,
+  .about-experience,
+  .about-services-link {
+    padding: 2.4rem 0;
+  }
+
+  .about-mobile,
+  .about-promise {
+    padding: 2.6rem 0;
+  }
+
+  .about-narrow h2,
+  .about-values .service-section-heading h2,
+  .about-mobile-content h2,
+  .about-experience .service-section-heading h2,
+  .about-promise-inner h2,
+  .about-services-link h2 {
+    font-size: 1.65rem;
+    line-height: 1.18;
+  }
+
+  .about-approach .service-eyebrow,
+  .about-values .service-eyebrow,
+  .about-mobile .service-eyebrow,
+  .about-experience .service-eyebrow,
+  .about-promise .service-eyebrow,
+  .about-services-link .service-eyebrow {
+    font-size: 0.78rem !important;
+    letter-spacing: 1.7px !important;
+  }
+
+  .about-value-card,
+  .about-experience-step {
+    padding: 1.25rem;
+  }
+
+  .about-mobile-highlight {
+    padding: 1.5rem;
+  }
+
+  .service-cta {
+    padding: 2.6rem 0;
+  }
+
+  .service-cta h2 {
+    font-size: 1.7rem;
+  }
+
+}
+/* =========================================================
+   PRECIOUS PETS — DESKTOP FOUNDATION RESET
+   PHASE 1 — WIDTH / HORIZONTAL RHYTHM ONLY
+   769px+
+   MOBILE IS NOT TOUCHED
+   ========================================================= */
+
+@media (min-width: 769px) {
+
+  /* ---------------------------------------------------------
+     GLOBAL DESKTOP BOX MODEL
+     --------------------------------------------------------- */
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+
+  /* ---------------------------------------------------------
+     ONE CONSISTENT DESKTOP CONTAINER
+     --------------------------------------------------------- */
+
+
+
+  /* ---------------------------------------------------------
+     PREVENT COMMON GRID/FLEX CHILD OVERFLOW
+     --------------------------------------------------------- */
+
+  .container > *,
+  .hero-grid > *,
+  .about-hero-grid > *,
+  .about-two-column > *,
+  .groomer-content > * {
+    min-width: 0;
+  }
+
+
+  /* ---------------------------------------------------------
+     HOMEPAGE GRIDS
+     --------------------------------------------------------- */
+
+  .hero-grid,
+  .cards-grid,
+  .services-grid,
+  .transformations-grid,
+  .groomer-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* ---------------------------------------------------------
+     ABOUT PAGE GRIDS
+     --------------------------------------------------------- */
+
+  .about-hero-grid,
+  .about-two-column,
+  .about-values-grid,
+  .about-experience-grid {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* ---------------------------------------------------------
+     IMAGES — NEVER CREATE DESKTOP OVERFLOW
+     --------------------------------------------------------- */
+
+  img,
+  picture,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+
+
+  /* ---------------------------------------------------------
+     HERO WIDTH CONTROL
+     --------------------------------------------------------- */
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero-grid {
+    width: 100%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     ABOUT HERO WIDTH CONTROL
+     --------------------------------------------------------- */
+
+  .about-page-hero {
+    width: 100%;
+  }
+
+  .about-hero-grid {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     ABOUT CONTENT WIDTH
+     --------------------------------------------------------- */
+
+  .about-approach .container,
+  .about-values .container,
+  .about-mobile .container,
+  .about-experience .container,
+  .about-promise .container,
+  .about-services-link .container {
+    width: min(1180px, calc(100% - 48px));
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     SECTION WIDTH PROTECTION
+     --------------------------------------------------------- */
+
+  .why-choose,
+  .testimonials,
+  .services,
+  .transformations,
+  .meet-groomer,
+  .faq,
+  .contact,
+  .about-approach,
+  .about-values,
+  .about-mobile,
+  .about-experience,
+  .about-promise,
+  .about-services-link,
+  .service-cta {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+
+  /* ---------------------------------------------------------
+     BOOKING FORM
+     --------------------------------------------------------- */
+
+  .booking-form-wrapper {
+    width: min(720px, 100%);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ---------------------------------------------------------
+     FOOTER
+     --------------------------------------------------------- */
+
+  footer {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  footer .container {
+    width: min(1180px, calc(100% - 48px));
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+/* =========================================================
+   ABOUT HERO — BACKGROUND + FINAL HEIGHT FIX
+   ========================================================= */
+
+@media (min-width: 769px) {
+
+  .about-page-hero {
+    position: relative !important;                                                                      
+    background-color: #174F50 !important;
+    background-image: none !important;
+    min-height: 0 !important;
+    height: auto !important;
+   padding: 5rem 0 1.8rem !important;
+    overflow: hidden !important;
+  }
+
+  .about-page-hero::before {
+    display: none !important;
+  }
+
+  .about-page-hero .container {
+    position: relative !important;
+    text-align: center !important;
+  }
+
+  .about-page-hero .service-eyebrow {
+    margin: 0 auto 1.45rem !important;
+    text-align: center !important;
+    color: #B8D8C8 !important;
+  }
+
+  .about-page-hero h1 {
+    margin: 0 auto 1.15rem !important;
+    text-align: center !important;
+    color: #F5EFE5 !important;
+  }
+
+  .about-page-hero .about-hero-lead {
+    max-width: 720px !important;
+   margin: 1rem auto 0.8rem !important;
+    text-align: center !important;
+    color: #F1EDE5 !important;
+  }
+
+  .about-page-hero .about-hero-lead + p {
+    max-width: 680px !important;
+   margin: 0 auto 5rem !important;
+    text-align: center !important;
+    color: #E8E3DA !important;
+  }
+
+  .about-page-hero .btn {
+    display: block !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+  }
+
+}
+/* ===========================
+   ABOUT MOBILE — CARD STYLING
+=========================== */
+
+@media (max-width: 768px) {
+
+  .about-value-card {
+    background-color: #2D5A5A !important;
+    color: #ffffff;
+  }
+
+  .about-value-number {
+    color: #D4A574;
+  }
+
+  .about-value-card h3 {
+    color: #ffffff;
+  }
+
+  .about-value-card p {
+    color: #f5eee5;
+  }
+
+}
+/* =========================================================
+   ABOUT PAGE — MOBILE WIDTH FIX
+   Isolated mobile override
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .about-page-hero,
+  .about-approach,
+  .about-values,
+  .about-mobile,
+  .about-experience,
+  .about-promise,
+  .about-services-link,
+  .service-cta {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-page-hero > .container,
+  .about-approach > .container,
+  .about-values > .container,
+  .about-mobile > .container,
+  .about-experience > .container,
+  .about-promise > .container,
+  .about-services-link > .container,
+  .service-cta > .container {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  .about-hero-grid,
+  .about-approach-grid,
+  .about-two-column,
+  .about-values-grid,
+  .about-experience-grid,
+  .about-promise-grid {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .about-hero-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-approach-grid,
+  .about-promise-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-content,
+  .about-hero-image,
+  .about-approach-image,
+  .about-approach-content,
+  .about-promise-content,
+  .about-promise-image {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .about-hero-image img,
+  .about-approach-image img,
+  .about-promise-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}                          
+/* FINAL FIX — REMOVE ABOUT HERO OVERLAY */
+@media (max-width: 768px) {
+  .about-page-hero::before,
+  .about-page-hero::after {
+    display: none !important;
+    content: none !important;
+  }
+}
+/* ===========================
+GLOBAL RESET & FOUNDATION
+=========================== */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 70px;
+width: 100%;
+}
+
+body {
+font-family: 'Calibri', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+line-height: 1.7;
+color: #333;
+background: #fff;
+overflow-x: hidden;
+width: 100%;
+min-width: 0;
+}
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+@media (max-width: 768px) {
+.container {
+width: 100%;
+max-width: 100%;
+padding-left: 16px;
+padding-right: 16px;
+}
+}
+
+/* ===========================
+TYPOGRAPHY
+=========================== */
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Georgia', serif;
+font-weight: 700;
+letter-spacing: -0.5px;
+}
+
+h1 {
+font-size: 3.2rem;
+line-height: 1.2;
+margin-bottom: 1.5rem;
+}
+
+h2 {
+font-size: 2.5rem;
+line-height: 1.2;
+margin-bottom: 1rem;
+}
+
+h3 {
+font-size: 1.35rem;
+margin-bottom: 0.8rem;
+}
+
+h4 {
+font-size: 1.1rem;
+margin-bottom: 0.5rem;
+}
+
+p {
+font-size: 1rem;
+line-height: 1.8;
+color: #555;
+}
+
+a {
+color: #2D5A5A;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+a:hover {
+color: #D4A574;
+}
+
+/* ===========================
+NAVBAR - PREMIUM STICKY
+=========================== */
+
+.navbar {
+background: #2D5A5A;
+color: white;
+padding: 0.9rem 0;
+position: sticky;
+top: 0;
+z-index: 1000;
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+transition: padding 0.3s ease;
+}
+
+.navbar .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 2rem;
+}
+
+.logo {
+font-family: 'Georgia', serif;
+font-size: 1.4rem;
+font-weight: 700;
+letter-spacing: 0.5px;
+white-space: nowrap;
+}
+
+.nav-links {
+display: flex;
+list-style: none;
+gap: 2rem;
+align-items: center;
+}
+
+.nav-links a {
+color: white;
+font-size: 0.95rem;
+font-weight: 500;
+transition: color 0.3s ease;
+position: relative;
+}
+
+.nav-links a::after {
+content: '';
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 0;
+height: 2px;
+background: #D4A574;
+transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+width: 100%;
+}
+
+.nav-links .cta-link {
+background: #D4A574;
+color: white;
+padding: 0.6rem 1.5rem;
+border-radius: 5px;
+font-weight: 600;
+transition: all 0.3s ease;
+}
+
+.nav-links .cta-link:hover {
+background: white;
+color: #2D5A5A;
+}
+
+/* ===========================
+HAMBURGER MENU - PREMIUM
+=========================== */
+
+.hamburger {
+display: none;
+flex-direction: column;
+cursor: pointer;
+background: none;
+border: none;
+gap: 5px;
+padding: 0;
+transition: all 0.3s ease;
+}
+
+.hamburger span {
+width: 26px;
+height: 3px;
+background: white;
+border-radius: 2px;
+transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger.active span:nth-child(1) {
+transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+opacity: 0;
+transform: translateX(-10px);
+}
+
+.hamburger.active span:nth-child(3) {
+transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* ===========================
+SLIDEDOWN ANIMATION
+=========================== */
+
+@keyframes slideDown {
+from {
+opacity: 0;
+transform: translateY(-15px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* ===========================
+HERO SECTION - PREMIUM IMPACT WITH IMAGE
+=========================== */
+
+.hero {
+background-size: cover;
+background-position: center 50%;
+background-attachment: scroll;
+background-repeat: no-repeat;
+color: white;
+padding: 5rem 0 4rem;
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+
+.hero::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(135deg, rgba(45, 90, 90, 0.65) 0%, rgba(61, 122, 122, 0.65) 100%);
+pointer-events: none;
+z-index: 1;
+}
+
+.hero-grid {
+position: relative;
+z-index: 2;
+display: grid;
+grid-template-columns: 1.1fr 0.9fr;
+align-items: start;
+gap: 40px;
+}
+
+.hero-text {
+text-align: left;
+}
+
+.hero h1 {
+color: white;
+margin-bottom: 1.5rem;
+text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+color: rgba(255, 255, 255, 0.95);
+font-size: 1.2rem;
+max-width: 700px;
+margin-bottom: 3rem;
+margin-left: 0;
+line-height: 1.8;
+text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-buttons {
+display: flex;
+gap: 1.5rem;
+justify-content: flex-start;
+flex-wrap: wrap;
+}
+
+.hero-image-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 0;
+}
+
+.hero-image {
+width: 100%;
+max-width: 450px;
+height: auto;
+border-radius: 12px;
+object-fit: cover;
+display: block;
+}
+
+/* ===========================
+BUTTONS - PREMIUM
+=========================== */
+
+.btn {
+padding: 1.1rem 2.8rem;
+border: none;
+border-radius: 6px;
+font-size: 1rem;
+cursor: pointer;
+transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+text-decoration: none;
+display: inline-block;
+font-weight: 600;
+letter-spacing: 0.3px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+background: white;
+color: #2D5A5A;
+}
+
+.btn-primary:hover {
+background: #D4A574;
+color: white;
+transform: translateY(-3px);
+box-shadow: 0 8px 28px rgba(212, 165, 116, 0.4);
+}
+
+.btn-secondary {
+background: transparent;
+color: white;
+border: 2px solid white;
+}
+
+.btn-secondary:hover {
+background: #D4A574;
+border-color: #D4A574;
+color: white;
+transform: translateY(-3px);
+box-shadow: 0 8px 28px rgba(212, 165, 116, 0.4);
+}
+
+.btn-large {
+padding: 1.3rem 3.5rem;
+font-size: 1.05rem;
+}
+
+/* ===========================
+ANIMATIONS
+=========================== */
+
+@keyframes fadeUp {
+from {
+opacity: 0;
+transform: translateY(30px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.fade-up {
+opacity: 0;
+animation: fadeUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.fade-up.visible {
+animation: fadeUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+/* ===========================
+SECTIONS - SPACING
+=========================== */
+
+.section-title {
+text-align: center;
+color: #2D5A5A;
+font-size: 2.8rem;
+margin-bottom: 0.8rem;
+line-height: 1.2;
+}
+
+.section-subtitle {
+text-align: center;
+color: #666;
+font-size: 1.1rem;
+line-height: 1.7;
+max-width: 700px;
+margin: 0 auto 2rem;
+}
+
+/* ===========================
+WHY CHOOSE US
+=========================== */
+
+.why-choose {
+padding: 3.5rem 0;
+background: white;
+}
+
+.cards-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 1.5rem;
+}
+
+.card {
+background: white;
+padding: 2.2rem;
+border-radius: 8px;
+border-left: 5px solid #D4A574;
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+color: #2D5A5A;
+margin-bottom: 1rem;
+}
+
+.card p {
+color: #666;
+line-height: 1.8;
+}
+
+/* ===========================
+TESTIMONIALS
+=========================== */
+
+.testimonials {
+padding: 3.5rem 0;
+background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+}
+
+.testimonial-card {
+max-width: 600px;
+margin: 0 auto;
+background: white;
+padding: 2.2rem;
+border-radius: 8px;
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.quote-mark {
+font-size: 4rem;
+color: #D4A574;
+line-height: 1;
+margin-bottom: 1rem;
+}
+
+.testimonial-text {
+font-size: 1.15rem;
+color: #333;
+margin-bottom: 1.5rem;
+line-height: 1.8;
+font-weight: 500;
+}
+
+.testimonial-author {
+color: #2D5A5A;
+font-weight: 600;
+margin-bottom: 0.5rem;
+}
+
+.stars {
+color: #D4A574;
+font-size: 1.1rem;
+letter-spacing: 2px;
+}
+
+/* ===========================
+SERVICES
+=========================== */
+
+.services {
+padding: 3rem 0;
+background: white;
+}
+
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+gap: 2rem;
+}
+
+.service-card {
+background: #f9f9f9;
+padding: 2rem;
+border-radius: 8px;
+border-top: 4px solid #D4A574;
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+display: flex;
+flex-direction: column;
+}
+
+.service-card:hover {
+transform: translateY(-12px);
+background: white;
+box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.service-card h3 {
+color: #2D5A5A;
+margin-bottom: 1rem;
+}
+
+.service-card p {
+color: #666;
+margin-bottom: 1.5rem;
+flex-grow: 1;
+}
+
+.price {
+color: #D4A574;
+font-weight: 700;
+font-size: 1.2rem;
+margin-bottom: 1.5rem;
+}
+
+.learn-more {
+color: #2D5A5A;
+font-weight: 600;
+transition: all 0.3s ease;
+display: inline-block;
+}
+
+.learn-more:hover {
+color: #D4A574;
+transform: translateX(5px);
+}
+
+/* ===========================
+TRANSFORMATIONS WITH IMAGES
+=========================== */
+
+.transformations {
+padding: 3rem 0;
+background: linear-gradient(to bottom, #f5f5f5 0%, white 50%, #f5f5f5 100%);
+}
+
+.transformations-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+}
+
+.transformation {
+background: white;
+padding: 0;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.transformation:hover {
+transform: translateY(-10px);
+box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.transformation-image {
+width: 100%;
+aspect-ratio: 16 / 9;
+height: auto;
+object-fit: contain;
+object-position: center center;
+display: block;
+background: #f5f5f5;
+}
+
+.transformation > h3,
+.transformation > p,
+.transformation > .stars {
+padding: 0 1.5rem;
+}
+
+.transformation > h3 {
+padding-top: 1.5rem;
+color: #2D5A5A;
+margin-bottom: 0.8rem;
+}
+
+.transformation-testimonial {
+color: #333;
+font-size: 1.05rem;
+font-weight: 500;
+margin-bottom: 0.5rem;
+line-height: 1.6;
+padding: 0 1.5rem;
+}
+
+.transformation-pet {
+color: #999;
+font-size: 0.9rem;
+margin-bottom: 0.8rem;
+padding: 0 1.5rem;
+}
+
+.transformation > .stars {
+padding-bottom: 1.5rem;
+}
+
+/* ===========================
+MEET THE GROOMER WITH IMAGE
+=========================== */
+
+.meet-groomer {
+padding: 3rem 0 1.5rem;
+background: white;
+}
+
+.groomer-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+align-items: center;
+}
+
+.groomer-text h2 {
+color: #2D5A5A;
+margin-bottom: 1.5rem;
+}
+
+.groomer-text p {
+color: #666;
+margin-bottom: 1.5rem;
+line-height: 1.8;
+}
+
+.groomer-text strong {
+color: #2D5A5A;
+font-weight: 700;
+}
+
+.groomer-benefits {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1.5rem;
+margin-top: 2rem;
+}
+
+.benefit {
+padding: 1.5rem;
+background: #f9f9f9;
+border-radius: 6px;
+transition: all 0.3s ease;
+}
+
+.benefit:hover {
+background: #f0f0f0;
+transform: translateY(-3px);
+}
+
+.benefit h4 {
+color: #2D5A5A;
+margin-bottom: 0.5rem;
+font-size: 1rem;
+}
+
+.benefit p {
+color: #666;
+font-size: 0.9rem;
+line-height: 1.6;
+}
+
+.groomer-image {
+width: 100%;
+max-width: 500px;
+margin: 0 auto;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.lindsay-photo {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 8px;
+}
+
+/* ===========================
+FAQ SECTION
+=========================== */
+
+.faq {
+padding: 1.5rem 0 4rem;
+background: linear-gradient(to bottom, white 0%, #f9f9f9 100%);
+}
+
+.faq-items {
+max-width: 900px;
+margin: 0 auto;
+display: grid;
+gap: 1rem;
+}
+
+.faq-item {
+background: white;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+transition: all 0.3s ease;
+}
+
+.faq-item.active {
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.faq-trigger {
+width: 100%;
+padding: 1.8rem;
+background: white;
+border: none;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: all 0.3s ease;
+font-size: 1rem;
+font-weight: 600;
+color: #2D5A5A;
+}
+
+.faq-trigger:hover {
+background: #f9f9f9;
+}
+
+.faq-item.active .faq-trigger {
+background: #f0f8f8;
+color: #2D5A5A;
+}
+
+.faq-question {
+text-align: left;
+flex: 1;
+}
+
+.faq-icon {
+font-size: 1.5rem;
+color: #D4A574;
+transition: transform 0.3s ease;
+margin-left: 1rem;
+}
+
+.faq-item.active .faq-icon {
+transform: rotate(45deg);
+}
+
+.faq-content {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.faq-item.active .faq-content {
+max-height: 500px;
+}
+
+.faq-content p {
+padding: 0 1.8rem 1.8rem;
+color: #666;
+line-height: 1.8;
+}
+
+/* ===========================
+CONTACT SECTION
+=========================== */
+
+.contact {
+padding: 3rem 0;
+background: linear-gradient(135deg, #2D5A5A 0%, #3d7a7a 100%);
+color: white;
+text-align: center;
+}
+
+.contact h2 {
+color: white;
+margin-bottom: 1rem;
+}
+
+.contact-intro {
+color: rgba(255, 255, 255, 0.9);
+font-size: 1.1rem;
+margin-bottom: 3rem;
+}
+
+.contact-methods {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 1.5rem;
+margin-bottom: 3rem;
+}
+
+.contact-method {
+background: rgba(255, 255, 255, 0.1);
+padding: 2rem;
+border-radius: 8px;
+backdrop-filter: blur(10px);
+}
+
+.contact-method h4 {
+color: #D4A574;
+margin-bottom: 1rem;
+}
+
+.contact-method p {
+color: white;
+margin-bottom: 0.5rem;
+}
+
+.contact-method a {
+color: #D4A574;
+font-weight: 600;
+transition: color 0.3s ease;
+}
+
+.contact-method a:hover {
+color: white;
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer {
+background: #1a3a3a;
+color: white;
+padding: 3rem 0 1.5rem;
+}
+
+.footer-content {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+color: #D4A574;
+margin-bottom: 1rem;
+}
+
+.footer-section p, .footer-section a {
+color: rgba(255, 255, 255, 0.8);
+font-size: 0.95rem;
+line-height: 1.7;
+}
+
+.footer-section ul {
+list-style: none;
+}
+
+.footer-section li {
+margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+text-align: center;
+padding-top: 2rem;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+color: rgba(255, 255, 255, 0.6);
+font-size: 0.9rem;
+}
+
+/* ===========================
+MOBILE RESPONSIVE - TABLET (768px)
+=========================== */
+
+@media (max-width: 768px) {
+.hamburger {
+display: flex;
+}
+
+.nav-links {
+position: absolute !important;
+top: 100% !important;
+left: 0 !important;
+right: 0 !important;
+background: #2D5A5A !important;
+flex-direction: column !important;
+gap: 0 !important;
+display: none !important;
+padding: 0 !important;
+margin: 0 !important;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+animation: slideDown 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav-links.active {
+display: flex !important;
+}
+
+.nav-links li {
+padding: 1rem 20px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+transition: background 0.2s ease;
+}
+
+.nav-links li:hover {
+background: rgba(255, 255, 255, 0.08);
+}
+
+.nav-links li:last-child {
+border-bottom: none;
+}
+
+.nav-links a {
+display: block;
+color: white;
+}
+
+h1 {
+font-size: 2.5rem;
+}
+
+h2 {
+font-size: 2rem;
+}
+
+.hero {
+padding: 5rem 0 3rem;
+}
+
+.hero h1 {
+margin-bottom: 1.2rem;
+}
+
+.hero p {
+font-size: 1rem;
+margin-bottom: 2rem;
+margin-left: 0;
+max-width: 90%;
+line-height: 1.9;
+}
+
+.hero-buttons {
+flex-direction: column;
+gap: 1rem;
+}
+
+.hero-grid {
+grid-template-columns: 1fr;
+gap: 30px;
+}
+
+.hero-image {
+max-width: 360px;
+margin: auto;
+}
+
+.btn {
+width: 100%;
+}
+
+.why-choose,
+.services,
+.transformations,
+.meet-groomer,
+.faq,
+.contact {
+padding: 2.5rem 0;
+}
+
+.groomer-content {
+grid-template-columns: 1fr;
+gap: 2rem;
+}
+
+.groomer-image {
+height: auto;
+}
+
+.groomer-benefits {
+grid-template-columns: 1fr;
+}
+
+.cards-grid,
+.services-grid,
+.transformations-grid {
+grid-template-columns: 1fr;
+}
+
+.section-title {
+font-size: 2rem;
+}
+
+.contact-methods {
+grid-template-columns: 1fr;
+}
+
+.footer-content {
+grid-template-columns: 1fr;
+gap: 2rem;
+}
+
+.transformation-image {
+width: 100%;
+height: auto;
+aspect-ratio: 16 / 9;
+object-fit: contain;
+object-position: center center;
+display: block;
+}
+}
+
+/* ===========================
+MOBILE RESPONSIVE - PHONE (480px)
+=========================== */
+
+/* ===========================
+MOBILE RESPONSIVE - PHONE (480px)
+=========================== */
+
+@media (max-width: 480px) {
+.navbar {
+padding: 0.8rem 0;
+}
+
+.logo {
+font-size: 1.2rem;
+}
+
+.nav-links .cta-link {
+display: none;
+}
+
+h1 {
+font-size: 1.9rem;
+}
+
+h2 {
+font-size: 1.6rem;
+}
+
+.hero {
+padding: 4rem 0 3rem;
+}
+
+.hero h1 {
+margin-bottom: 1rem;
+}
+
+.btn {
+padding: 0.9rem 1.8rem;
+font-size: 0.95rem;
+}
+
+.btn-large {
+padding: 1rem 2rem;
+}
+
+.section-title {
+font-size: 1.6rem;
+margin-bottom: 1rem;
+}
+
+.card,
+.service-card,
+.faq-item {
+padding: 1.5rem;
+}
+
+.groomer-benefits {
+gap: 1rem;
+}
+}
+
+/* =========================================================
+SERVICE PAGES — PREMIUM SERVICE DETAIL LAYOUT
+Wash & Go + future service pages
+========================================================= */
+
+/* ===========================
+SERVICE HERO
+=========================== */
+
+.service-page-hero {
+background: linear-gradient(135deg, #f7f4ef 0%, #ffffff 100%);
+padding: 4.5rem 0;
+overflow: hidden;
+}
+
+.service-hero-grid {
+display: grid;
+grid-template-columns: 0.9fr 1.1fr;
+align-items: center;
+gap: 4rem;
+}
+
+.service-hero-content {
+max-width: 560px;
+}
+
+.service-eyebrow {
+color: #D4A574;
+font-size: 0.85rem;
+font-weight: 800;
+letter-spacing: 2px;
+line-height: 1.4;
+margin-bottom: 1rem;
+text-transform: uppercase;
+}
+
+.service-hero-content h1 {
+color: #2D5A5A;
+font-size: 3.4rem;
+margin-bottom: 1.2rem;
+}
+
+.service-hero-content h2 {
+color: #333;
+font-family: 'Calibri', 'Segoe UI', sans-serif;
+font-size: 1.35rem;
+font-weight: 600;
+line-height: 1.6;
+letter-spacing: 0;
+margin-bottom: 1.3rem;
+}
+
+.service-hero-content > p:not(.service-eyebrow) {
+color: #666;
+font-size: 1.05rem;
+line-height: 1.85;
+margin-bottom: 2rem;
+}
+
+.service-hero-image {
+width: 100%;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+background: #f5f5f5;
+}
+
+.service-hero-image img {
+width: 100%;
+aspect-ratio: 16 / 9;
+object-fit: cover;
+object-position: center;
+display: block;
+}
+
+/* ===========================
+SERVICE INTRODUCTION
+=========================== */
+
+.service-introduction {
+padding: 3.5rem 0;
+background: white;
+text-align: center;
+}
+
+.service-narrow {
+max-width: 820px;
+}
+
+.service-narrow h2 {
+color: #2D5A5A;
+margin-bottom: 1.2rem;
+}
+
+.service-narrow > p:not(.service-eyebrow) {
+color: #666;
+font-size: 1.05rem;
+line-height: 1.85;
+}
+
+/* ===========================
+SECTION HEADINGS
+=========================== */
+
+.service-section-heading {
+max-width: 760px;
+margin: 0 auto 2.8rem;
+text-align: center;
+}
+
+.service-section-heading h2 {
+color: #2D5A5A;
+margin-bottom: 1rem;
+}
+
+.service-section-heading > p:last-child {
+color: #666;
+line-height: 1.8;
+}
+
+/* ===========================
+WHAT'S INCLUDED
+=========================== */
+
+.service-details {
+padding: 4rem 0;
+background: #f7f7f7;
+}
+
+.service-included-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.5rem;
+}
+
+.service-included-card {
+position: relative;
+background: white;
+padding: 2rem;
+min-height: 190px;
+border-radius: 8px;
+border-top: 3px solid #D4A574;
+box-shadow: 0 3px 14px rgba(0, 0, 0, 0.06);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-included-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-number {
+display: block;
+color: #D4A574;
+font-size: 0.8rem;
+font-weight: 700;
+letter-spacing: 1.5px;
+margin-bottom: 1rem;
+}
+
+.service-included-card h3 {
+color: #2D5A5A;
+margin-bottom: 0.7rem;
+}
+
+.service-included-card p {
+color: #666;
+font-size: 0.95rem;
+line-height: 1.7;
+}
+
+/* ===========================
+SERVICE SUITABILITY
+=========================== */
+
+.service-suitability {
+padding: 4rem 0;
+background: white;
+}
+
+.service-two-column {
+display: grid;
+grid-template-columns: 1.1fr 0.9fr;
+gap: 4rem;
+align-items: center;
+}
+
+.service-suitability-content h2 {
+color: #2D5A5A;
+margin-bottom: 1.8rem;
+}
+
+.service-check-list {
+list-style: none;
+display: grid;
+gap: 1rem;
+}
+
+.service-check-list li {
+position: relative;
+padding: 1rem 1rem 1rem 3rem;
+background: #f8f8f8;
+border-radius: 6px;
+color: #555;
+line-height: 1.6;
+}
+
+.service-check-list li::before {
+content: '✓';
+position: absolute;
+left: 1rem;
+top: 50%;
+transform: translateY(-50%);
+color: #D4A574;
+font-weight: 700;
+font-size: 1.1rem;
+}
+
+.service-highlight-box {
+background: #2D5A5A;
+color: white;
+padding: 3rem;
+border-radius: 10px;
+box-shadow: 0 10px 28px rgba(45, 90, 90, 0.18);
+}
+
+.highlight-icon {
+display: block;
+color: #D4A574;
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.service-highlight-box h3 {
+color: white;
+margin-bottom: 1rem;
+}
+
+.service-highlight-box p {
+color: rgba(255, 255, 255, 0.88);
+line-height: 1.8;
+}
+
+/* ===========================
+WHAT TO EXPECT / RESULT
+=========================== */
+
+.service-result {
+padding: 4rem 0;
+background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+text-align: center;
+}
+
+.service-result-inner {
+max-width: 760px;
+}
+
+.service-result h2 {
+color: #2D5A5A;
+margin-bottom: 1rem;
+}
+
+.service-result p:last-child {
+color: #666;
+font-size: 1.1rem;
+line-height: 1.85;
+}
+
+/* ===========================
+PRICING
+=========================== */
+
+.service-pricing {
+padding: 4rem 0;
+background: white;
+}
+
+.pricing-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.5rem;
+max-width: 950px;
+margin: 0 auto;
+}
+
+.pricing-card {
+padding: 2.2rem 1.5rem;
+background: #f8f8f8;
+border-radius: 8px;
+text-align: center;
+border: 1px solid #eeeeee;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-card.featured {
+background: #f0f8f8;
+border: 2px solid #D4A574;
+transform: translateY(-5px);
+}
+
+.pricing-card.featured:hover {
+transform: translateY(-8px);
+}
+
+.pricing-size {
+display: block;
+color: #2D5A5A;
+font-size: 0.78rem;
+font-weight: 700;
+letter-spacing: 1.3px;
+margin-bottom: 1rem;
+}
+
+.pricing-card strong {
+display: block;
+color: #D4A574;
+font-family: 'Georgia', serif;
+font-size: 1.8rem;
+}
+
+/* ===========================
+FINAL SERVICE CTA
+=========================== */
+
+.service-cta {
+padding: 4rem 0;
+background: linear-gradient(135deg, #2D5A5A 0%, #3d7a7a 100%);
+color: white;
+text-align: center;
+}
+
+.service-cta .service-eyebrow {
+color: #D4A574;
+}
+
+.service-cta h2 {
+color: white;
+max-width: 800px;
+margin: 0 auto 1rem;
+}
+
+.service-cta p:not(.service-eyebrow) {
+color: rgba(255, 255, 255, 0.9);
+max-width: 700px;
+margin: 0 auto 2rem;
+font-size: 1.05rem;
+line-height: 1.8;
+}
+
+/* ===========================
+SERVICE PAGE — TABLET
+=========================== */
+
+@media (max-width: 900px) {
+
+.service-hero-grid {
+grid-template-columns: 1fr;
+gap: 2.5rem;
+}
+
+.service-hero-content {
+max-width: 760px;
+text-align: center;
+margin: 0 auto;
+}
+
+.service-hero-image {
+max-width: 760px;
+margin: 0 auto;
+}
+
+.service-included-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.service-two-column {
+grid-template-columns: 1fr;
+gap: 2.5rem;
+}
+
+.service-suitability-content {
+max-width: 760px;
+margin: 0 auto;
+}
+
+.service-highlight-box {
+max-width: 760px;
+margin: 0 auto;
+}
+
+.pricing-grid {
+max-width: 760px;
+}
+}
+
+/* ===========================
+SERVICE PAGE — MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+.service-page-hero {
+padding: 3.5rem 0;
+}
+
+.service-hero-content h1 {
+font-size: 2.5rem;
+}
+
+.service-hero-content h2 {
+font-size: 1.15rem;
+}
+
+.service-hero-content > p:not(.service-eyebrow) {
+font-size: 1rem;
+}
+
+.service-hero-image img {
+aspect-ratio: 4 / 3;
+}
+
+.service-introduction,
+.service-details,
+.service-suitability,
+.service-result,
+.service-pricing,
+.service-cta {
+padding: 3.5rem 0;
+}
+
+.service-included-grid {
+grid-template-columns: 1fr;
+}
+
+.service-included-card {
+min-height: auto;
+}
+
+.pricing-grid {
+grid-template-columns: 1fr;
+max-width: 420px;
+}
+
+.pricing-card.featured {
+transform: none;
+}
+
+.pricing-card.featured:hover {
+transform: translateY(-5px);
+}
+
+.service-highlight-box {
+padding: 2.2rem;
+}
+}
+
+/* ===========================
+SERVICE PAGE — SMALL PHONE
+=========================== */
+
+@media (max-width: 480px) {
+
+.service-page-hero {
+padding: 3rem 0;
+}
+
+.service-hero-content h1 {
+font-size: 2.1rem;
+}
+
+.service-hero-content h2 {
+font-size: 1.05rem;
+}
+
+.service-eyebrow {
+font-size: 0.7rem;
+letter-spacing: 1.5px;
+}
+
+.service-hero-image img {
+aspect-ratio: 4 / 3;
+}
+
+.service-section-heading h2,
+.service-narrow h2,
+.service-suitability-content h2,
+.service-result h2,
+.service-cta h2 {
+font-size: 1.7rem;
+}
+
+.service-included-card {
+padding: 1.6rem;
+}
+
+.service-check-list li {
+padding-left: 2.7rem;
+}
+
+.service-highlight-box {
+padding: 1.8rem;
+}
+}
+==============
    FINAL BOOKING FORM ALIGNMENT
    Controlled fix — protects existing mobile layout
    ========================================================= */
