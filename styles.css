@@ -14531,3 +14531,91 @@ padding: 1.8rem;
   }
 
 }
+/* =========================================================
+   FINAL VISUAL POLISH — SERVICES + EYEBROWS
+   READABILITY ONLY
+   NO LAYOUT / ZOOM / WIDTH CHANGES
+   ========================================================= */
+
+
+/* =========================================================
+   1. PHOTO SERVICE CARDS — IMPROVE TEXT READABILITY
+   Cards 2, 4, 6
+   ========================================================= */
+
+.services-grid .service-card:nth-child(2),
+.services-grid .service-card:nth-child(4),
+.services-grid .service-card:nth-child(6) {
+  position: relative;
+}
+
+
+/* Darker photographic overlay */
+
+.services-grid .service-card:nth-child(2)::before,
+.services-grid .service-card:nth-child(4)::before,
+.services-grid .service-card:nth-child(6)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: inherit;
+  z-index: 0;
+}
+
+
+/* Keep all card content above the overlay */
+
+.services-grid .service-card:nth-child(2) > *,
+.services-grid .service-card:nth-child(4) > *,
+.services-grid .service-card:nth-child(6) > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Stronger readable text */
+
+.services-grid .service-card:nth-child(2) h3,
+.services-grid .service-card:nth-child(4) h3,
+.services-grid .service-card:nth-child(6) h3 {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.65);
+}
+
+.services-grid .service-card:nth-child(2) p,
+.services-grid .service-card:nth-child(4) p,
+.services-grid .service-card:nth-child(6) p {
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.services-grid .service-card:nth-child(2) .price,
+.services-grid .service-card:nth-child(4) .price,
+.services-grid .service-card:nth-child(6) .price {
+  color: #D4A574;
+  font-weight: 800;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.65);
+}
+
+.services-grid .service-card:nth-child(2) .learn-more,
+.services-grid .service-card:nth-child(4) .learn-more,
+.services-grid .service-card:nth-child(6) .learn-more {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.65);
+}
+
+
+/* =========================================================
+   2. CENTER EYEBROW HEADINGS
+   ========================================================= */
+
+.service-eyebrow {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
