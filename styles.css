@@ -14741,65 +14741,150 @@ padding: 1.8rem;
 
 }
 /* =========================================================
-   GALLERY HERO — RESTORE BACKGROUND IMAGE
-   Desktop + Mobile
+   GALLERY HERO — FINAL BACKGROUND IMAGE
+   DESKTOP + MOBILE
    ========================================================= */
 
 .gallery-hero {
-  position: relative;
+  position: relative !important;
+
   background-image:
     linear-gradient(
-      rgba(0, 0, 0, 0.48),
-      rgba(0, 0, 0, 0.48)
+      rgba(0, 0, 0, 0.38),
+      rgba(0, 0, 0, 0.38)
     ),
     url("gallary image4.png") !important;
+
   background-size: cover !important;
-  background-position: center !important;
+  background-position: center center !important;
   background-repeat: no-repeat !important;
 }
 
-/* Keep hero content above the background overlay */
+/* Keep the Gallery content above the background */
 
 .gallery-hero .container {
-  position: relative;
-  z-index: 2;
+  position: relative !important;
+  z-index: 2 !important;
 }
 
-/* Use the hero as a single background section */
-
-.gallery-hero-grid {
-  display: block !important;
-}
-
-/* The image is now used as the background,
-   so don't display the separate image element */
+/* Use the photograph as the hero background,
+   not as a separate large image */
 
 .gallery-hero-image {
   display: none !important;
 }
 
-/* Make the hero text readable over the photograph */
+/* Desktop */
 
-.gallery-hero .service-hero-content {
-  position: relative;
-  z-index: 3;
+@media (min-width: 769px) {
+
+  .gallery-hero {
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.38),
+        rgba(0, 0, 0, 0.38)
+      ),
+      url("gallary image4.png") !important;
+
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .gallery-hero-grid {
+    display: block !important;
+  }
+
+  .gallery-hero .service-hero-content {
+    position: relative !important;
+    z-index: 3 !important;
+  }
+
+  .gallery-hero .service-hero-content h1,
+  .gallery-hero .service-hero-content p {
+    color: #ffffff !important;
+  }
+
+  .gallery-hero .service-eyebrow {
+    color: #D4A574 !important;
+  }
+
+  .gallery-hero .service-hero-content h1 {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85) !important;
+  }
+
+  .gallery-hero .service-hero-content p:not(.service-eyebrow) {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85) !important;
+  }
 }
 
-.gallery-hero .service-hero-content h1,
-.gallery-hero .service-hero-content p {
-  color: #ffffff !important;
-}
+/* Mobile */
 
-.gallery-hero .service-hero-content h1 {
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
-}
+@media (max-width: 768px) {
 
-.gallery-hero .service-hero-lead,
-.gallery-hero .service-hero-content > p:not(.service-eyebrow) {
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
-}
+  .gallery-hero {
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.38),
+        rgba(0, 0, 0, 0.38)
+      ),
+      url("gallary image4.png") !important;
 
-.gallery-hero .service-eyebrow {
-  color: #D4A574 !important;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .gallery-hero-image {
+    display: none !important;
+  }
+
+  .gallery-hero .service-hero-content h1,
+  .gallery-hero .service-hero-content p {
+    color: #ffffff !important;
+  }
+
+  .gallery-hero .service-eyebrow {
+    color: #D4A574 !important;
+  }
+} =========================================================
+   DESKTOP — SERVICE PHOTO CARD READABILITY
+   Cards 2, 4, 6
+   ========================================================= */
+
+@media (min-width: 769px) {
+
+  .services-grid .service-card:nth-child(2)::before,
+  .services-grid .service-card:nth-child(4)::before,
+  .services-grid .service-card:nth-child(6)::before {
+    background: rgba(0, 0, 0, 0.68) !important;
+  }
+
+  .services-grid .service-card:nth-child(2) h3,
+  .services-grid .service-card:nth-child(4) h3,
+  .services-grid .service-card:nth-child(6) h3 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 7px rgba(0, 0, 0, 0.95) !important;
+  }
+
+  .services-grid .service-card:nth-child(2) p,
+  .services-grid .service-card:nth-child(4) p,
+  .services-grid .service-card:nth-child(6) p {
+    color: #ffffff !important;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95) !important;
+  }
+
+  .services-grid .service-card:nth-child(2) .price,
+  .services-grid .service-card:nth-child(4) .price,
+  .services-grid .service-card:nth-child(6) .price {
+    color: #D4A574 !important;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95) !important;
+  }
+
+  .services-grid .service-card:nth-child(2) .learn-more,
+  .services-grid .service-card:nth-child(4) .learn-more,
+  .services-grid .service-card:nth-child(6) .learn-more {
+    color: #ffffff !important;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95) !important;
+  }
 }
