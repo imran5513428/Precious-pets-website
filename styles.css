@@ -14740,3 +14740,66 @@ padding: 1.8rem;
   }
 
 }
+/* =========================================================
+   GALLERY HERO — RESTORE BACKGROUND IMAGE
+   Desktop + Mobile
+   ========================================================= */
+
+.gallery-hero {
+  position: relative;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.48),
+      rgba(0, 0, 0, 0.48)
+    ),
+    url("gallary image4.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Keep hero content above the background overlay */
+
+.gallery-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Use the hero as a single background section */
+
+.gallery-hero-grid {
+  display: block !important;
+}
+
+/* The image is now used as the background,
+   so don't display the separate image element */
+
+.gallery-hero-image {
+  display: none !important;
+}
+
+/* Make the hero text readable over the photograph */
+
+.gallery-hero .service-hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+.gallery-hero .service-hero-content h1,
+.gallery-hero .service-hero-content p {
+  color: #ffffff !important;
+}
+
+.gallery-hero .service-hero-content h1 {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+.gallery-hero .service-hero-lead,
+.gallery-hero .service-hero-content > p:not(.service-eyebrow) {
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
+}
+
+.gallery-hero .service-eyebrow {
+  color: #D4A574 !important;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+}
